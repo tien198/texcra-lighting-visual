@@ -3,6 +3,8 @@ import { useEffect, useMemo, useRef } from 'react'
 import type { RefObject } from 'react'
 import * as THREE from 'three'
 
+const FLOW_SPEED = 0.52
+
 const vertexShader = /* glsl */ `
   uniform float uInteraction;
   uniform vec2 uPointer;
@@ -34,13 +36,26 @@ const fragmentShader = /* glsl */ `
   varying float vFacing;
 
   void main() {
-    float carrier = sin((vUv.x * 8.0 - uTime * (0.7 + uSeed * 0.05) + uSeed) * 6.28318);
-    float packet = smoothstep(0.08, 0.92, carrier * 0.5 + 0.5);
-    float filament = pow(sin(vUv.y * 3.14159), 1.7);
+    float phase = (vUv.x * 8.0 - uTime * (0.72 + uSeed * 0.045) + uSeed) * 6.28318;
+    float carrier = sin(phase) * 0.5 + 0.5;
+    float secondaryCarrier = sin(phase * 0.47 - 1.7) * 0.5 + 0.5;
+    float packet = smoothstep(0.38, 0.94, carrier);
+    float secondaryPacket = smoothstep(0.58, 0.96, secondaryCarrier);
+    float crossSection = max(sin(vUv.y * 3.14159), 0.0);
+    float halo = pow(crossSection, 0.62);
+    float core = pow(crossSection, 7.5);
     float endFade = smoothstep(0.0, 0.06, vUv.x) * (1.0 - smoothstep(0.92, 1.0, vUv.x));
-    float shimmer = 0.7 + packet * (0.62 + uEnergy * 0.3);
-    float alpha = endFade * filament * (0.26 + packet * 0.32 + vFacing * 0.14);
-    vec3 color = uColor * shimmer;
+    float strandVariation = 0.88 + sin(uSeed * 11.3) * 0.12;
+    float energy = 0.72 + packet * 0.76 + secondaryPacket * 0.22 + uEnergy * 0.28;
+    vec3 hotCore = mix(uColor, vec3(0.96, 0.99, 1.0), 0.78);
+    vec3 color =
+      uColor * halo * energy * strandVariation +
+      hotCore * core * (1.35 + packet * 1.7 + uEnergy * 0.5);
+    float alpha = endFade * (
+      halo * (0.08 + packet * 0.16) +
+      core * 0.72 +
+      vFacing * 0.08
+    );
     gl_FragColor = vec4(color, alpha);
   }
 `
@@ -124,7 +139,7 @@ function FlowStrand({
 
   useFrame((_, delta) => {
     if (!material.current) return
-    animationTime.current += Math.min(delta, 1 / 30) * 0.28
+    animationTime.current += Math.min(delta, 1 / 30) * FLOW_SPEED
     material.current.uniforms.uTime.value = animationTime.current
     material.current.uniforms.uPointer.value.copy(interaction.current.point)
     material.current.uniforms.uInteraction.value = interaction.current.strength
