@@ -64,8 +64,9 @@ function makeStrands() {
       new THREE.Vector3(5.9, 1.72 + offset * 0.67, depth - 0.12),
     ]
 
+    const curve = new THREE.CatmullRomCurve3(points, false, 'centripetal', 0.5)
     return {
-      curve: new THREE.CatmullRomCurve3(points, false, 'catmullrom', 0.38),
+      curve,
       color: new THREE.Color(colors[index % colors.length]),
       radius: index % 9 === 0 ? 0.016 : index % 4 === 0 ? 0.009 : 0.0065,
       seed: normalized * 4.7 + (index % 5) * 0.31,
@@ -78,7 +79,14 @@ interface FlowStrandProps extends StrandDefinition {
   engaged: boolean
 }
 
-function FlowStrand({ curve, color, radius, seed, index, engaged }: FlowStrandProps) {
+function FlowStrand({
+  curve,
+  color,
+  radius,
+  seed,
+  index,
+  engaged,
+}: FlowStrandProps) {
   const material = useRef<THREE.ShaderMaterial>(null)
   const animationTime = useRef(0)
   const uniforms = useMemo(
@@ -105,7 +113,7 @@ function FlowStrand({ curve, color, radius, seed, index, engaged }: FlowStrandPr
 
   return (
     <mesh renderOrder={index % 3}>
-      <tubeGeometry args={[curve, 72, radius, radius > 0.01 ? 5 : 3, false]} />
+      <tubeGeometry args={[curve, 112, radius, radius > 0.01 ? 7 : 5, false]} />
       <shaderMaterial
         ref={material}
         uniforms={uniforms}
@@ -125,24 +133,10 @@ interface FlowFieldProps {
 }
 
 export function FlowField({ engaged }: FlowFieldProps) {
-  const group = useRef<THREE.Group>(null)
-  const animationTime = useRef(0)
   const strands = useMemo(() => makeStrands(), [])
 
-  useFrame((_, delta) => {
-    if (!group.current) return
-    animationTime.current += Math.min(delta, 1 / 30)
-    const motionScale = engaged ? 1 : 0.35
-    group.current.position.y = THREE.MathUtils.damp(
-      group.current.position.y,
-      Math.sin(animationTime.current * 0.42) * 0.035 * motionScale,
-      2,
-      delta,
-    )
-  })
-
   return (
-    <group ref={group} rotation={[0.02, -0.04, -0.025]}>
+    <group rotation={[0.02, -0.04, -0.025]}>
       {strands.map((strand, index) => (
         <FlowStrand key={index} {...strand} index={index} engaged={engaged} />
       ))}

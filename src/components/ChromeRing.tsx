@@ -3,6 +3,11 @@ import { useFrame } from '@react-three/fiber'
 import { useMemo, useRef } from 'react'
 import * as THREE from 'three'
 
+const BASE_ROTATION_X = 0.08
+const BASE_ROTATION_Y = -0.2
+const BASE_ROTATION_Z = -0.08
+const MAX_TILT = THREE.MathUtils.degToRad(30)
+
 interface ChromeRingProps {
   engaged: boolean
 }
@@ -12,6 +17,7 @@ export function ChromeRing({ engaged }: ChromeRingProps) {
   const drag = useRef(new THREE.Vector2())
   const dragging = useRef(false)
   const hovered = useRef(false)
+  const targetTilt = useRef(new THREE.Vector2())
   const tickMarks = useMemo(
     () =>
       Array.from({ length: 48 }, (_, index) => {
@@ -26,28 +32,25 @@ export function ChromeRing({ engaged }: ChromeRingProps) {
   useFrame(({ pointer }, delta) => {
     if (!ring.current) return
     const frameDelta = Math.min(delta, 1 / 30)
-    ring.current.position.x = THREE.MathUtils.damp(
-      ring.current.position.x,
-      pointer.x * 0.018,
-      4,
-      frameDelta,
+    targetTilt.current.set(
+      -pointer.y * MAX_TILT + drag.current.y,
+      pointer.x * MAX_TILT + drag.current.x,
     )
-    ring.current.position.y = THREE.MathUtils.damp(
-      ring.current.position.y,
-      pointer.y * 0.012,
-      4,
-      frameDelta,
-    )
+
+    if (targetTilt.current.lengthSq() > MAX_TILT * MAX_TILT) {
+      targetTilt.current.setLength(MAX_TILT)
+    }
+
     ring.current.rotation.x = THREE.MathUtils.damp(
       ring.current.rotation.x,
-      0.08 + drag.current.y,
-      3,
+      BASE_ROTATION_X + targetTilt.current.x,
+      3.5,
       frameDelta,
     )
     ring.current.rotation.y = THREE.MathUtils.damp(
       ring.current.rotation.y,
-      -0.2 + drag.current.x,
-      3,
+      BASE_ROTATION_Y + targetTilt.current.y,
+      3.5,
       frameDelta,
     )
   })
@@ -84,7 +87,7 @@ export function ChromeRing({ engaged }: ChromeRingProps) {
   return (
     <group position={[1.35, -0.16, 0.18]}>
       <mesh
-        rotation={[0.08, -0.2, -0.08]}
+        rotation={[BASE_ROTATION_X, BASE_ROTATION_Y, BASE_ROTATION_Z]}
         onPointerEnter={(event) => {
           event.stopPropagation()
           hovered.current = true
@@ -102,7 +105,10 @@ export function ChromeRing({ engaged }: ChromeRingProps) {
         <meshBasicMaterial transparent opacity={0} colorWrite={false} depthWrite={false} />
       </mesh>
 
-      <group ref={ring} rotation={[0.08, -0.2, -0.08]}>
+      <group
+        ref={ring}
+        rotation={[BASE_ROTATION_X, BASE_ROTATION_Y, BASE_ROTATION_Z]}
+      >
         <mesh>
           <torusGeometry args={[1.6, 0.058, 18, 220]} />
           <meshPhysicalMaterial
