@@ -7,6 +7,7 @@ import {
   Vignette,
 } from "@react-three/postprocessing";
 import * as THREE from "three";
+import styles from "./VisualScene.module.css";
 import { ChromeRing } from "./ChromeRing";
 import { FlowField } from "./FlowField";
 import { TechnicalGrid } from "./TechnicalGrid";
@@ -85,7 +86,7 @@ function SceneContent({ engaged }: VisualSceneProps) {
 
 export function VisualScene({ engaged }: VisualSceneProps) {
   return (
-    <div className="visual-scene" aria-hidden="true">
+    <div className={styles.visualScene} aria-hidden="true">
       <Canvas
         camera={{ position: [0, 0, 10], fov: 36, near: 0.1, far: 100 }}
         dpr={[1, 1.75]}
