@@ -1,13 +1,18 @@
-import { Environment, Lightformer } from '@react-three/drei'
-import { Canvas, useThree } from '@react-three/fiber'
-import { Bloom, EffectComposer, SMAA, Vignette } from '@react-three/postprocessing'
-import * as THREE from 'three'
-import { ChromeRing } from './ChromeRing'
-import { FlowField } from './FlowField'
-import { TechnicalGrid } from './TechnicalGrid'
+import { Environment, Lightformer } from "@react-three/drei";
+import { Canvas, useThree } from "@react-three/fiber";
+import {
+  Bloom,
+  EffectComposer,
+  SMAA,
+  Vignette,
+} from "@react-three/postprocessing";
+import * as THREE from "three";
+import { ChromeRing } from "./ChromeRing";
+import { FlowField } from "./FlowField";
+import { TechnicalGrid } from "./TechnicalGrid";
 
 interface VisualSceneProps {
-  engaged: boolean
+  engaged: boolean;
 }
 
 function StudioEnvironment() {
@@ -44,12 +49,12 @@ function StudioEnvironment() {
         />
       </group>
     </Environment>
-  )
+  );
 }
 
 function SceneContent({ engaged }: VisualSceneProps) {
-  const { viewport } = useThree()
-  const compact = viewport.width < 8
+  const { viewport } = useThree();
+  const compact = viewport.width < 8;
 
   return (
     <>
@@ -65,12 +70,17 @@ function SceneContent({ engaged }: VisualSceneProps) {
       </group>
       <StudioEnvironment />
       <EffectComposer multisampling={0}>
-        <Bloom intensity={0.7} luminanceThreshold={0.68} luminanceSmoothing={0.5} mipmapBlur />
+        <Bloom
+          intensity={0.7}
+          luminanceThreshold={0.68}
+          luminanceSmoothing={0.5}
+          mipmapBlur
+        />
         <Vignette eskil={false} offset={0.25} darkness={0.64} />
         <SMAA />
       </EffectComposer>
     </>
-  )
+  );
 }
 
 export function VisualScene({ engaged }: VisualSceneProps) {
@@ -82,7 +92,7 @@ export function VisualScene({ engaged }: VisualSceneProps) {
         gl={{
           alpha: true,
           antialias: true,
-          powerPreference: 'high-performance',
+          powerPreference: "high-performance",
           toneMapping: THREE.ACESFilmicToneMapping,
           outputColorSpace: THREE.SRGBColorSpace,
         }}
@@ -90,5 +100,5 @@ export function VisualScene({ engaged }: VisualSceneProps) {
         <SceneContent engaged={engaged} />
       </Canvas>
     </div>
-  )
+  );
 }

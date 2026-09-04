@@ -1,11 +1,14 @@
 interface InterfaceOverlayProps {
-  engaged: boolean
-  onToggle: () => void
+  engaged: boolean;
+  onToggle: () => void;
 }
 
 export function InterfaceOverlay({ engaged, onToggle }: InterfaceOverlayProps) {
   return (
-    <section className="interface" aria-label="Texcra Continuum Craft visualizer">
+    <section
+      className="interface"
+      aria-label="Texcra Continuum Craft visualizer"
+    >
       <div className="frame" aria-hidden="true">
         <span className="frame-notch frame-notch-top" />
         <span className="frame-notch frame-notch-bottom" />
@@ -38,18 +41,23 @@ export function InterfaceOverlay({ engaged, onToggle }: InterfaceOverlayProps) {
         type="button"
         onClick={onToggle}
         aria-pressed={engaged}
-        aria-label={`${engaged ? 'Disengage' : 'Engage'} continuum flow`}
+        aria-label={`${engaged ? "Disengage" : "Engage"} continuum flow`}
       >
         <span className="panel-heading">
           Continuity index
-          <span className={`signal ${engaged ? 'is-live' : ''}`} />
+          <span className={`signal ${engaged ? "is-live" : ""}`} />
         </span>
         <span className="metric">
-          {engaged ? '100.00' : '99.997'}<small>%</small>
+          {engaged ? "100.00" : "99.997"}
+          <small>%</small>
         </span>
         <span className="panel-divider" />
-        <span className="panel-meta">△ 0.0001&nbsp;&nbsp; / &nbsp;&nbsp;R ∞</span>
-        <span className="panel-action">{engaged ? 'Flow engaged' : 'Activate flow'}</span>
+        <span className="panel-meta">
+          △ 0.0001&nbsp;&nbsp; / &nbsp;&nbsp;R ∞
+        </span>
+        <span className="panel-action">
+          {engaged ? "Flow engaged" : "Activate flow"}
+        </span>
       </button>
 
       <footer className="footer-data">
@@ -63,7 +71,9 @@ export function InterfaceOverlay({ engaged, onToggle }: InterfaceOverlayProps) {
         </div>
       </footer>
 
-      <p className="interaction-hint">Drag the ring&nbsp; / &nbsp;move to refract</p>
+      <p className="interaction-hint">
+        Drag the ring&nbsp; / &nbsp;move to refract
+      </p>
     </section>
-  )
+  );
 }
