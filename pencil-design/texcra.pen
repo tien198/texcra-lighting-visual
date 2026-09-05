@@ -1,0 +1,3865 @@
+{
+  "version": "2.17",
+  "children": [
+    {
+      "type": "frame",
+      "id": "rcPXs",
+      "x": 0,
+      "y": 0,
+      "name": "Reference · Continuum Craft canvas",
+      "clip": true,
+      "width": 792.5,
+      "height": 496,
+      "fill": {
+        "type": "image",
+        "enabled": true,
+        "url": "../texcra-canvas-design/texcra_continuum_craft_modern_chrome.png",
+        "mode": "fit"
+      },
+      "layout": "none"
+    },
+    {
+      "type": "frame",
+      "id": "jICoI",
+      "x": 880,
+      "y": 0,
+      "name": "TexCra · Design foundations",
+      "width": 560,
+      "fill": "$navy",
+      "layout": "vertical",
+      "gap": 24,
+      "padding": 32,
+      "children": [
+        {
+          "type": "text",
+          "id": "DbFv3",
+          "name": "Foundation heading",
+          "fill": "$silver",
+          "content": "TEXCRA / CONTINUUM CRAFT",
+          "fontFamily": "$mono",
+          "fontSize": 12,
+          "fontWeight": "normal",
+          "letterSpacing": 2
+        },
+        {
+          "type": "frame",
+          "id": "DtZB3",
+          "name": "Button · Primary",
+          "context": "Primary conversion action: scroll to the project enquiry section. Minimum visual height 48 px.",
+          "reusable": true,
+          "fill": "$blue",
+          "cornerRadius": 2,
+          "gap": 32,
+          "padding": [
+            18,
+            24
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "aI10y",
+              "name": "Button label",
+              "fill": "$ink",
+              "content": "Start a project",
+              "fontFamily": "$sans",
+              "fontSize": 14,
+              "fontWeight": "600"
+            },
+            {
+              "type": "icon",
+              "id": "n8Col",
+              "name": "Arrow up right",
+              "width": 18,
+              "height": 18,
+              "icon": "arrow-up-right",
+              "library": "lucide",
+              "fill": "$ink"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "o8188c",
+          "name": "Type and palette notes",
+          "fill": "$silver",
+          "content": "Manrope / IBM Plex Mono\nMidnight navy · Warm ivory · Reflected blue",
+          "lineHeight": 1.7,
+          "fontFamily": "$sans",
+          "fontSize": 14,
+          "fontWeight": "normal"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "sZKQH",
+      "x": 0,
+      "y": 680,
+      "name": "Home · Desktop / 1440",
+      "clip": true,
+      "width": 1440,
+      "fill": "$ivory",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "FNxtN",
+          "name": "01 · Hero / The promise",
+          "clip": true,
+          "width": "fill_container",
+          "height": 900,
+          "fill": "$navy",
+          "layout": "none",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "Mq0R9",
+              "x": -190,
+              "y": 0,
+              "name": "Continuum Craft · Original chrome artwork",
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "../texcra-canvas-design/texcra_continuum_craft_modern_chrome.png",
+                "mode": "fill"
+              },
+              "width": 1645,
+              "height": 1029
+            },
+            {
+              "type": "rectangle",
+              "id": "QSrpR",
+              "x": 0,
+              "y": 0,
+              "name": "Readable navy clearing",
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "enabled": true,
+                "rotation": 90,
+                "size": {
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "#06182800",
+                    "position": 0
+                  },
+                  {
+                    "color": "#06182825",
+                    "position": 0.35
+                  },
+                  {
+                    "color": "#061828F5",
+                    "position": 0.62
+                  },
+                  {
+                    "color": "#061828",
+                    "position": 1
+                  }
+                ]
+              },
+              "width": 1440,
+              "height": 900
+            },
+            {
+              "type": "rectangle",
+              "id": "gdYq5",
+              "x": 0,
+              "y": 655,
+              "name": "Lower atmospheric fade",
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "enabled": true,
+                "rotation": 180,
+                "size": {
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "#06182800",
+                    "position": 0
+                  },
+                  {
+                    "color": "#061828",
+                    "position": 0.5
+                  },
+                  {
+                    "color": "#061828",
+                    "position": 1
+                  }
+                ]
+              },
+              "width": 1440,
+              "height": 245
+            },
+            {
+              "type": "frame",
+              "id": "x0znw",
+              "x": 0,
+              "y": 0,
+              "name": "Navigation",
+              "width": 1440,
+              "height": 100,
+              "fill": "#061828F5",
+              "stroke": "#FFFFFF20",
+              "strokeWidth": {
+                "bottom": 1
+              },
+              "padding": [
+                24,
+                72
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "OUBXs",
+                  "name": "TexCra wordmark",
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Htvg0",
+                      "name": "TexCra",
+                      "fill": "$ivory",
+                      "content": "TexCra",
+                      "fontFamily": "$sans",
+                      "fontSize": 30,
+                      "fontWeight": "500",
+                      "letterSpacing": -1
+                    },
+                    {
+                      "type": "text",
+                      "id": "k49kT",
+                      "name": "Technology craftsmanship",
+                      "fill": "$silver",
+                      "content": "TECHNOLOGY CRAFTSMANSHIP",
+                      "fontFamily": "$mono",
+                      "fontSize": 8,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1.5
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "S2mr5",
+                  "name": "Navigation links",
+                  "gap": 32,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "uOEWM",
+                      "name": "Expertise",
+                      "fill": "#D3DCE2",
+                      "content": "Expertise",
+                      "fontFamily": "$sans",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "v5KNCV",
+                      "name": "Our approach",
+                      "fill": "#D3DCE2",
+                      "content": "Our approach",
+                      "fontFamily": "$sans",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "b6H3dj",
+                      "name": "The process",
+                      "fill": "#D3DCE2",
+                      "content": "The process",
+                      "fontFamily": "$sans",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "id": "Rz0IU",
+                      "type": "ref",
+                      "ref": "DtZB3",
+                      "name": "Navigation · Start a project",
+                      "padding": [
+                        14,
+                        20
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "mOgxI",
+              "x": 72,
+              "y": 212,
+              "name": "Hero narrative",
+              "width": 744,
+              "layout": "vertical",
+              "gap": 30,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "n2SsF",
+                  "name": "Studio positioning",
+                  "fill": "$blue",
+                  "content": "WEBSITE DESIGN & SOFTWARE ENGINEERING",
+                  "fontFamily": "$mono",
+                  "fontSize": 11,
+                  "fontWeight": "normal",
+                  "letterSpacing": 2.1
+                },
+                {
+                  "type": "text",
+                  "id": "ZbXDk",
+                  "name": "Hero headline",
+                  "fill": "$ivory",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Distinct by design.\nBuilt to endure.",
+                  "lineHeight": 1.13,
+                  "fontFamily": "$sans",
+                  "fontSize": 76,
+                  "fontWeight": "300",
+                  "letterSpacing": -3.4
+                },
+                {
+                  "type": "text",
+                  "id": "uiClS",
+                  "name": "Hero value proposition",
+                  "fill": "#C6D1D9",
+                  "textGrowth": "fixed-width",
+                  "width": 560,
+                  "content": "Immersive websites and dependable software,\ncrafted with care from first impression to lasting scale.",
+                  "lineHeight": 1.7,
+                  "fontFamily": "$sans",
+                  "fontSize": 18,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "k1KuP",
+                  "name": "Hero actions",
+                  "gap": 30,
+                  "padding": [
+                    6,
+                    0,
+                    0,
+                    0
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "id": "kpmtV",
+                      "type": "ref",
+                      "ref": "DtZB3",
+                      "name": "Hero · Start a project"
+                    },
+                    {
+                      "type": "text",
+                      "id": "PFJnU",
+                      "name": "Explore our expertise",
+                      "fill": "$ivory",
+                      "content": "Explore our expertise  ↓",
+                      "fontFamily": "$sans",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "oXoxD",
+              "x": 72,
+              "y": 798,
+              "name": "Hero capability rail",
+              "width": 1296,
+              "stroke": "#B8CCD23D",
+              "strokeWidth": {
+                "top": 1
+              },
+              "padding": [
+                24,
+                0
+              ],
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "fokQs",
+                  "name": "01 / WEBSITE DESIGN & DEVELOPMENT",
+                  "fill": "$silver",
+                  "content": "01 / WEBSITE DESIGN & DEVELOPMENT",
+                  "fontFamily": "$mono",
+                  "fontSize": 10,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1.4
+                },
+                {
+                  "type": "text",
+                  "id": "QobY2",
+                  "name": "02 / SOFTWARE ENGINEERING",
+                  "fill": "$silver",
+                  "content": "02 / SOFTWARE ENGINEERING",
+                  "fontFamily": "$mono",
+                  "fontSize": 10,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1.4
+                },
+                {
+                  "type": "text",
+                  "id": "glPVC",
+                  "name": "SCROLL TO EXPLORE ↓",
+                  "fill": "$silver",
+                  "content": "SCROLL TO EXPLORE ↓",
+                  "fontFamily": "$mono",
+                  "fontSize": 10,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1.4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "im85O",
+          "name": "02 · Positioning / Technology, with care",
+          "width": "fill_container",
+          "fill": "$ivory",
+          "gap": 96,
+          "padding": [
+            96,
+            72,
+            80,
+            72
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "bdKo0",
+              "name": "Section 01 label",
+              "fill": "$muted",
+              "textGrowth": "fixed-width",
+              "width": 312,
+              "content": "01 / THE TEXCRA STANDARD",
+              "fontFamily": "$mono",
+              "fontSize": 10,
+              "fontWeight": "normal",
+              "letterSpacing": 1.6
+            },
+            {
+              "type": "frame",
+              "id": "m0zl7U",
+              "name": "Brand point of view",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "PwTrc",
+                  "name": "Positioning headline",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "The difference is\nin the details.",
+                  "lineHeight": 1.16,
+                  "fontFamily": "$sans",
+                  "fontSize": 54,
+                  "letterSpacing": -2.3
+                },
+                {
+                  "type": "text",
+                  "id": "I1DW6K",
+                  "name": "Positioning statement",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": 745,
+                  "content": "A website should feel as considered as the business behind it. Software should stay dependable as that business grows. At TexCra, we bring design sensitivity and engineering discipline to every detail.",
+                  "lineHeight": 1.75,
+                  "fontFamily": "$sans",
+                  "fontSize": 18,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "B9rvA",
+          "name": "03 · Expertise / What we create",
+          "context": "Expertise section. Navigation and the secondary hero action scroll here.",
+          "width": "fill_container",
+          "fill": "$ivory",
+          "layout": "vertical",
+          "gap": 44,
+          "padding": [
+            20,
+            72,
+            96,
+            72
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "yFLQy",
+              "name": "Expertise introduction",
+              "width": "fill_container",
+              "stroke": "$line",
+              "strokeWidth": {
+                "top": 1
+              },
+              "padding": [
+                36,
+                0,
+                0,
+                0
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "end",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "xfSR4",
+                  "name": "Expertise headline",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": 680,
+                  "content": "Your ambition.\nOur expertise.",
+                  "lineHeight": 1.16,
+                  "fontFamily": "$sans",
+                  "fontSize": 54,
+                  "letterSpacing": -2.3
+                },
+                {
+                  "type": "text",
+                  "id": "T6xZY",
+                  "name": "Expertise summary",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": 376,
+                  "content": "From a distinctive first impression\nto the systems working behind it.",
+                  "lineHeight": 1.65,
+                  "fontFamily": "$sans",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "yRIXr",
+              "name": "Three connected capabilities",
+              "width": "fill_container",
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "ssww4",
+                  "name": "Website design · Service row",
+                  "width": "fill_container",
+                  "stroke": "$line",
+                  "strokeWidth": {
+                    "top": 1
+                  },
+                  "gap": 32,
+                  "padding": [
+                    32,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "T40OD",
+                      "name": "Website design index",
+                      "fill": "$muted",
+                      "textGrowth": "fixed-width",
+                      "width": 64,
+                      "content": "01",
+                      "fontFamily": "$mono",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "f9z0k",
+                      "name": "Website design title",
+                      "fill": "$ink",
+                      "textGrowth": "fixed-width",
+                      "width": 410,
+                      "content": "Website design",
+                      "fontFamily": "$sans",
+                      "fontSize": 30,
+                      "letterSpacing": -1
+                    },
+                    {
+                      "type": "frame",
+                      "id": "BmMzN",
+                      "name": "Website design narrative",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 20,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "N0BC7",
+                          "name": "Website design benefit",
+                          "fill": "$muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Turn your brand into a digital experience people feel, understand, and remember.",
+                          "lineHeight": 1.65,
+                          "fontFamily": "$sans",
+                          "fontSize": 17,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "PaWrX",
+                          "name": "Website design scope",
+                          "fill": "$muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "VISUAL DIRECTION / UX & UI / INTERACTION",
+                          "lineHeight": 1.6,
+                          "fontFamily": "$mono",
+                          "fontSize": 10,
+                          "fontWeight": "normal",
+                          "letterSpacing": 0.7
+                        }
+                      ]
+                    },
+                    {
+                      "type": "icon",
+                      "id": "fn4qU",
+                      "name": "Website design direction",
+                      "width": 28,
+                      "height": 28,
+                      "icon": "arrow-up-right",
+                      "library": "lucide",
+                      "fill": "$ink"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Nfixq",
+                  "name": "Web development · Service row",
+                  "width": "fill_container",
+                  "stroke": "$line",
+                  "strokeWidth": {
+                    "top": 1
+                  },
+                  "gap": 32,
+                  "padding": [
+                    32,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "TuGTL",
+                      "name": "Web development index",
+                      "fill": "$muted",
+                      "textGrowth": "fixed-width",
+                      "width": 64,
+                      "content": "02",
+                      "fontFamily": "$mono",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "n4AlM",
+                      "name": "Web development title",
+                      "fill": "$ink",
+                      "textGrowth": "fixed-width",
+                      "width": 410,
+                      "content": "Web development",
+                      "fontFamily": "$sans",
+                      "fontSize": 30,
+                      "letterSpacing": -1
+                    },
+                    {
+                      "type": "frame",
+                      "id": "sIzSp",
+                      "name": "Web development narrative",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 20,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "kqa1S",
+                          "name": "Web development benefit",
+                          "fill": "$muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Bring every detail to life with responsive, thoughtfully engineered websites.",
+                          "lineHeight": 1.65,
+                          "fontFamily": "$sans",
+                          "fontSize": 17,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "hewFR",
+                          "name": "Web development scope",
+                          "fill": "$muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "RESPONSIVE WEBSITES / PERFORMANCE / PRECISION",
+                          "lineHeight": 1.6,
+                          "fontFamily": "$mono",
+                          "fontSize": 10,
+                          "fontWeight": "normal",
+                          "letterSpacing": 0.7
+                        }
+                      ]
+                    },
+                    {
+                      "type": "icon",
+                      "id": "Y8dChE",
+                      "name": "Web development direction",
+                      "width": 28,
+                      "height": 28,
+                      "icon": "arrow-up-right",
+                      "library": "lucide",
+                      "fill": "$ink"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "p81Lr",
+                  "name": "Software engineering · Service row",
+                  "width": "fill_container",
+                  "stroke": "$line",
+                  "strokeWidth": {
+                    "top": 1
+                  },
+                  "gap": 32,
+                  "padding": [
+                    32,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ezMKx",
+                      "name": "Software engineering index",
+                      "fill": "$muted",
+                      "textGrowth": "fixed-width",
+                      "width": 64,
+                      "content": "03",
+                      "fontFamily": "$mono",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "D8E5QJ",
+                      "name": "Software engineering title",
+                      "fill": "$ink",
+                      "textGrowth": "fixed-width",
+                      "width": 410,
+                      "content": "Software engineering",
+                      "fontFamily": "$sans",
+                      "fontSize": 30,
+                      "letterSpacing": -1
+                    },
+                    {
+                      "type": "frame",
+                      "id": "C2UiD",
+                      "name": "Software engineering narrative",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 20,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Gyths",
+                          "name": "Software engineering benefit",
+                          "fill": "$muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Build dependable foundations for complex ideas, evolving needs, and lasting scale.",
+                          "lineHeight": 1.65,
+                          "fontFamily": "$sans",
+                          "fontSize": 17,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Jkw8C",
+                          "name": "Software engineering scope",
+                          "fill": "$muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "CUSTOM SOFTWARE / SYSTEM ARCHITECTURE / SCALABILITY",
+                          "lineHeight": 1.6,
+                          "fontFamily": "$mono",
+                          "fontSize": 10,
+                          "fontWeight": "normal",
+                          "letterSpacing": 0.7
+                        }
+                      ]
+                    },
+                    {
+                      "type": "icon",
+                      "id": "NwKzM",
+                      "name": "Software engineering direction",
+                      "width": 28,
+                      "height": 28,
+                      "icon": "arrow-up-right",
+                      "library": "lucide",
+                      "fill": "$ink"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "H2QGw",
+          "name": "04 · Our approach / The craft beneath",
+          "context": "Our approach section. Explains visual depth, engineering precision, scalability, and persistence.",
+          "width": "fill_container",
+          "fill": "$navy",
+          "gap": 88,
+          "padding": [
+            88,
+            72
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "W7QjI",
+              "name": "Continuum detail / Reflective aperture",
+              "clip": true,
+              "width": 544,
+              "height": 558,
+              "fill": "$navy",
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "id": "u2axq",
+                  "x": -542,
+                  "y": -120,
+                  "name": "Chrome detail from original canvas",
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "../texcra-canvas-design/texcra_continuum_craft_modern_chrome.png",
+                    "mode": "fill"
+                  },
+                  "width": 1250,
+                  "height": 782
+                },
+                {
+                  "type": "rectangle",
+                  "id": "ig2BQ",
+                  "x": 0,
+                  "y": 350,
+                  "name": "Detail lower fade",
+                  "fill": {
+                    "type": "gradient",
+                    "gradientType": "linear",
+                    "enabled": true,
+                    "rotation": 180,
+                    "size": {
+                      "height": 1
+                    },
+                    "colors": [
+                      {
+                        "color": "#06182800",
+                        "position": 0
+                      },
+                      {
+                        "color": "#061828",
+                        "position": 0.6
+                      }
+                    ]
+                  },
+                  "width": 544,
+                  "height": 208
+                },
+                {
+                  "type": "frame",
+                  "id": "J093ml",
+                  "x": 0,
+                  "y": 502,
+                  "name": "Aperture caption",
+                  "width": 544,
+                  "stroke": "#AEC2D050",
+                  "strokeWidth": {
+                    "top": 1
+                  },
+                  "padding": [
+                    18,
+                    0,
+                    0,
+                    0
+                  ],
+                  "justifyContent": "space_between",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "rASX7",
+                      "name": "FORM / FLOW / FUNCTION",
+                      "fill": "$silver",
+                      "content": "FORM / FLOW / FUNCTION",
+                      "fontFamily": "$mono",
+                      "fontSize": 9,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "tidHC",
+                      "name": "THE CONTINUUM STUDY",
+                      "fill": "$silver",
+                      "content": "THE CONTINUUM STUDY",
+                      "fontFamily": "$mono",
+                      "fontSize": 9,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1.5
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "DHOhV",
+              "name": "What craftsmanship means",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 28,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "koUdL",
+                  "name": "Approach section label",
+                  "fill": "$blue",
+                  "content": "02 / OUR APPROACH",
+                  "fontFamily": "$mono",
+                  "fontSize": 10,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1.8
+                },
+                {
+                  "type": "text",
+                  "id": "nXrSe",
+                  "name": "Approach headline",
+                  "fill": "$ivory",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Beauty on the surface.\nRigor underneath.",
+                  "lineHeight": 1.2,
+                  "fontFamily": "$sans",
+                  "fontSize": 45,
+                  "fontWeight": "300",
+                  "letterSpacing": -1.8
+                },
+                {
+                  "type": "text",
+                  "id": "ubLIs",
+                  "name": "Approach introduction",
+                  "fill": "$silver",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "The strongest digital experiences connect what people see with what they can rely on.",
+                  "lineHeight": 1.7,
+                  "fontFamily": "$sans",
+                  "fontSize": 17,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "zZJN4",
+                  "name": "Depth you can feel",
+                  "width": "fill_container",
+                  "stroke": "#A5B9C52E",
+                  "strokeWidth": {
+                    "top": 1
+                  },
+                  "gap": 22,
+                  "padding": [
+                    20,
+                    0,
+                    0,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "S3cF8",
+                      "name": "Depth you can feel index",
+                      "fill": "$blue",
+                      "content": "01",
+                      "fontFamily": "$mono",
+                      "fontSize": 10,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "qLWtq",
+                      "name": "Depth you can feel content",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 7,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "iyoTR",
+                          "name": "Depth you can feel heading",
+                          "fill": "$ivory",
+                          "content": "Depth you can feel",
+                          "fontFamily": "$sans",
+                          "fontSize": 19,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "b3aKLB",
+                          "name": "Depth you can feel explanation",
+                          "fill": "$silver",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Layered visuals and thoughtful motion bring a distinctive sense of presence.",
+                          "lineHeight": 1.65,
+                          "fontFamily": "$sans",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "rSuAO",
+                  "name": "Precision you can trust",
+                  "width": "fill_container",
+                  "stroke": "#A5B9C52E",
+                  "strokeWidth": {
+                    "top": 1
+                  },
+                  "gap": 22,
+                  "padding": [
+                    20,
+                    0,
+                    0,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "GPizF",
+                      "name": "Precision you can trust index",
+                      "fill": "$blue",
+                      "content": "02",
+                      "fontFamily": "$mono",
+                      "fontSize": 10,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Mq92N",
+                      "name": "Precision you can trust content",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 7,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "eX744",
+                          "name": "Precision you can trust heading",
+                          "fill": "$ivory",
+                          "content": "Precision you can trust",
+                          "fontFamily": "$sans",
+                          "fontSize": 19,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "VAoax",
+                          "name": "Precision you can trust explanation",
+                          "fill": "$silver",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Considered interactions and careful engineering make complexity feel simple.",
+                          "lineHeight": 1.65,
+                          "fontFamily": "$sans",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "SCv4b",
+                  "name": "Foundations that endure",
+                  "width": "fill_container",
+                  "stroke": "#A5B9C52E",
+                  "strokeWidth": {
+                    "top": 1
+                  },
+                  "gap": 22,
+                  "padding": [
+                    20,
+                    0,
+                    0,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "J0WKt",
+                      "name": "Foundations that endure index",
+                      "fill": "$blue",
+                      "content": "03",
+                      "fontFamily": "$mono",
+                      "fontSize": 10,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "L3pwMc",
+                      "name": "Foundations that endure content",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 7,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "vtBRr",
+                          "name": "Foundations that endure heading",
+                          "fill": "$ivory",
+                          "content": "Foundations that endure",
+                          "fontFamily": "$sans",
+                          "fontSize": 19,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "i3Rgt",
+                          "name": "Foundations that endure explanation",
+                          "fill": "$silver",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Scalable systems and persistent data support what comes next.",
+                          "lineHeight": 1.65,
+                          "fontFamily": "$sans",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "n7n6P",
+          "name": "05 · Process / From intent to impact",
+          "context": "Process section. Four proposed stages; no delivery timeline is implied.",
+          "width": "fill_container",
+          "fill": "$ivory",
+          "layout": "vertical",
+          "gap": 56,
+          "padding": [
+            96,
+            72
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "weYos",
+              "name": "Process introduction",
+              "width": "fill_container",
+              "gap": 80,
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "xHQl7",
+                  "name": "Process section label",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": 328,
+                  "content": "03 / HOW WE WORK",
+                  "fontFamily": "$mono",
+                  "fontSize": 10,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1.8
+                },
+                {
+                  "type": "frame",
+                  "id": "hjXle",
+                  "name": "Process narrative",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 20,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Xht9J",
+                      "name": "Process headline",
+                      "fill": "$ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Clarity at every step.\nCare all the way through.",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$sans",
+                      "fontSize": 48,
+                      "letterSpacing": -2
+                    },
+                    {
+                      "type": "text",
+                      "id": "m75Y0Q",
+                      "name": "Process description",
+                      "fill": "$muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "A considered path from the first conversation to the final refinement.",
+                      "lineHeight": 1.7,
+                      "fontFamily": "$sans",
+                      "fontSize": 17,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "bHb4v",
+              "name": "Four stages of craftsmanship",
+              "width": "fill_container",
+              "gap": 32,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "IhKsp",
+                  "name": "Discover stage",
+                  "width": "fill_container",
+                  "stroke": "#B5BEC2",
+                  "strokeWidth": {
+                    "top": 1
+                  },
+                  "layout": "vertical",
+                  "gap": 22,
+                  "padding": [
+                    24,
+                    0,
+                    0,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "GtgYE",
+                      "name": "Discover stage number",
+                      "fill": "$muted",
+                      "content": "01",
+                      "fontFamily": "$mono",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "WWBob",
+                      "name": "Discover stage title",
+                      "fill": "$ink",
+                      "content": "Discover",
+                      "fontFamily": "$sans",
+                      "fontSize": 26,
+                      "letterSpacing": -0.8
+                    },
+                    {
+                      "type": "text",
+                      "id": "YGMBt",
+                      "name": "Discover stage explanation",
+                      "fill": "$muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Understand your business, your audience, and what success needs to look like.",
+                      "lineHeight": 1.7,
+                      "fontFamily": "$sans",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "A4JyQ",
+                      "name": "Discover stage outcome",
+                      "fill": "$muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "A SHARED DIRECTION",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$mono",
+                      "fontSize": 9,
+                      "fontWeight": "normal",
+                      "letterSpacing": 0.7
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "aBI7A",
+                  "name": "Design stage",
+                  "width": "fill_container",
+                  "stroke": "#B5BEC2",
+                  "strokeWidth": {
+                    "top": 1
+                  },
+                  "layout": "vertical",
+                  "gap": 22,
+                  "padding": [
+                    24,
+                    0,
+                    0,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "PNt6v",
+                      "name": "Design stage number",
+                      "fill": "$muted",
+                      "content": "02",
+                      "fontFamily": "$mono",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "y5wmC",
+                      "name": "Design stage title",
+                      "fill": "$ink",
+                      "content": "Design",
+                      "fontFamily": "$sans",
+                      "fontSize": 26,
+                      "letterSpacing": -0.8
+                    },
+                    {
+                      "type": "text",
+                      "id": "HnHDU",
+                      "name": "Design stage explanation",
+                      "fill": "$muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Shape the structure, visual language, and interactions around real needs.",
+                      "lineHeight": 1.7,
+                      "fontFamily": "$sans",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "d8TLG4",
+                      "name": "Design stage outcome",
+                      "fill": "$muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "A CONSIDERED EXPERIENCE",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$mono",
+                      "fontSize": 9,
+                      "fontWeight": "normal",
+                      "letterSpacing": 0.7
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "btuaU",
+                  "name": "Engineer stage",
+                  "width": "fill_container",
+                  "stroke": "#B5BEC2",
+                  "strokeWidth": {
+                    "top": 1
+                  },
+                  "layout": "vertical",
+                  "gap": 22,
+                  "padding": [
+                    24,
+                    0,
+                    0,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "X9UNnz",
+                      "name": "Engineer stage number",
+                      "fill": "$muted",
+                      "content": "03",
+                      "fontFamily": "$mono",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "d1e7t",
+                      "name": "Engineer stage title",
+                      "fill": "$ink",
+                      "content": "Engineer",
+                      "fontFamily": "$sans",
+                      "fontSize": 26,
+                      "letterSpacing": -0.8
+                    },
+                    {
+                      "type": "text",
+                      "id": "oGimI",
+                      "name": "Engineer stage explanation",
+                      "fill": "$muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Bring the design to life with precision, performance, and scale in mind.",
+                      "lineHeight": 1.7,
+                      "fontFamily": "$sans",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "qAerw",
+                      "name": "Engineer stage outcome",
+                      "fill": "$muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "A DEPENDABLE FOUNDATION",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$mono",
+                      "fontSize": 9,
+                      "fontWeight": "normal",
+                      "letterSpacing": 0.7
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "zAIG9",
+                  "name": "Refine stage",
+                  "width": "fill_container",
+                  "stroke": "#B5BEC2",
+                  "strokeWidth": {
+                    "top": 1
+                  },
+                  "layout": "vertical",
+                  "gap": 22,
+                  "padding": [
+                    24,
+                    0,
+                    0,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "KGoCL",
+                      "name": "Refine stage number",
+                      "fill": "$muted",
+                      "content": "04",
+                      "fontFamily": "$mono",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "aCK96",
+                      "name": "Refine stage title",
+                      "fill": "$ink",
+                      "content": "Refine",
+                      "fontFamily": "$sans",
+                      "fontSize": 26,
+                      "letterSpacing": -0.8
+                    },
+                    {
+                      "type": "text",
+                      "id": "Mdlvn",
+                      "name": "Refine stage explanation",
+                      "fill": "$muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Test the details, resolve the friction, and prepare for a confident launch.",
+                      "lineHeight": 1.7,
+                      "fontFamily": "$sans",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "qwahG",
+                      "name": "Refine stage outcome",
+                      "fill": "$muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "A CAREFULLY FINISHED PRODUCT",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$mono",
+                      "fontSize": 9,
+                      "fontWeight": "normal",
+                      "letterSpacing": 0.7
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "gBHW2",
+          "name": "06 · Start a project / Enquiry",
+          "context": "Start a project destination. Enquiry form design with name, work email, project type and project brief. On implementation: validate required fields, show submitting, success and retry states, and preserve input after errors.",
+          "width": "fill_container",
+          "fill": "$navy",
+          "gap": 112,
+          "padding": [
+            96,
+            72
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "n4is7J",
+              "name": "Project invitation",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 28,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "YxnDU",
+                  "name": "Contact section label",
+                  "fill": "$blue",
+                  "content": "04 / WHAT COMES NEXT",
+                  "fontFamily": "$mono",
+                  "fontSize": 10,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1.8
+                },
+                {
+                  "type": "text",
+                  "id": "O885Pr",
+                  "name": "Contact headline",
+                  "fill": "$ivory",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Let’s make\nsomething\nthat matters.",
+                  "lineHeight": 1.12,
+                  "fontFamily": "$sans",
+                  "fontSize": 64,
+                  "fontWeight": "300",
+                  "letterSpacing": -2.8
+                },
+                {
+                  "type": "text",
+                  "id": "sE3PZ",
+                  "name": "Contact invitation",
+                  "fill": "$silver",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "A distinctive website. A dependable platform.\nA complex idea, thoughtfully brought to life.\nIt starts with a conversation.",
+                  "lineHeight": 1.8,
+                  "fontFamily": "$sans",
+                  "fontSize": 17,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "P0KkFK",
+              "name": "Project enquiry form",
+              "width": 576,
+              "layout": "vertical",
+              "gap": 28,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "T8Joa",
+                  "name": "Form title",
+                  "fill": "$ivory",
+                  "content": "Tell us what you have in mind.",
+                  "fontFamily": "$sans",
+                  "fontSize": 24,
+                  "letterSpacing": -0.6
+                },
+                {
+                  "type": "frame",
+                  "id": "BEjhj",
+                  "name": "Your details",
+                  "width": "fill_container",
+                  "gap": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "wHl0I",
+                      "name": "Name field",
+                      "width": "fill_container",
+                      "stroke": "#ACBECE66",
+                      "strokeWidth": {
+                        "bottom": 1
+                      },
+                      "layout": "vertical",
+                      "gap": 16,
+                      "padding": [
+                        0,
+                        0,
+                        14,
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "DIW7V",
+                          "name": "Name label",
+                          "fill": "$ivory",
+                          "content": "Name",
+                          "fontFamily": "$sans",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "hXDoC",
+                          "name": "Name placeholder",
+                          "fill": "#8CA0B0",
+                          "content": "Your name",
+                          "fontFamily": "$sans",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "wZXmy",
+                      "name": "Work email field",
+                      "width": "fill_container",
+                      "stroke": "#ACBECE66",
+                      "strokeWidth": {
+                        "bottom": 1
+                      },
+                      "layout": "vertical",
+                      "gap": 16,
+                      "padding": [
+                        0,
+                        0,
+                        14,
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "g88q2",
+                          "name": "Work email label",
+                          "fill": "$ivory",
+                          "content": "Work email",
+                          "fontFamily": "$sans",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "H8QWDS",
+                          "name": "Work email placeholder",
+                          "fill": "#8CA0B0",
+                          "content": "you@company.com",
+                          "fontFamily": "$sans",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Z82p9x",
+                  "name": "Project type",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "AjdPT",
+                      "name": "Project type label",
+                      "fill": "$ivory",
+                      "content": "I’m interested in",
+                      "fontFamily": "$sans",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "GxpYV",
+                      "name": "Project options",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "S0YeJ",
+                          "name": "Website option",
+                          "fill": "#BDDFFF13",
+                          "cornerRadius": 2,
+                          "stroke": "$blue",
+                          "strokeWidth": 1,
+                          "padding": [
+                            12,
+                            18
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Hqloh",
+                              "name": "Website choice",
+                              "fill": "$blue",
+                              "content": "Website",
+                              "fontFamily": "$sans",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "UlmuF",
+                          "name": "Software option",
+                          "fill": "#061828",
+                          "cornerRadius": 2,
+                          "stroke": "#667E905C",
+                          "strokeWidth": 1,
+                          "padding": [
+                            12,
+                            18
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "k5yHfs",
+                              "name": "Software choice",
+                              "fill": "$silver",
+                              "content": "Software",
+                              "fontFamily": "$sans",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "iAGfI",
+                          "name": "Let’s discuss option",
+                          "fill": "#061828",
+                          "cornerRadius": 2,
+                          "stroke": "#667E905C",
+                          "strokeWidth": 1,
+                          "padding": [
+                            12,
+                            18
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Ap47n",
+                              "name": "Let’s discuss choice",
+                              "fill": "$silver",
+                              "content": "Let’s discuss",
+                              "fontFamily": "$sans",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "M8DvR",
+                  "name": "Project message",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "y2Cmwx",
+                      "name": "Message label",
+                      "fill": "$ivory",
+                      "content": "A little about your project",
+                      "fontFamily": "$sans",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "N3fU4Z",
+                      "name": "Project brief input",
+                      "width": "fill_container",
+                      "height": 116,
+                      "fill": "#FFFFFF05",
+                      "cornerRadius": 2,
+                      "stroke": "#ACBECE66",
+                      "strokeWidth": 1,
+                      "padding": 18,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "XDWcG",
+                          "name": "Project brief prompt",
+                          "fill": "#8CA0B0",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Your goals, scope, and any timing you have in mind…",
+                          "lineHeight": 1.65,
+                          "fontFamily": "$sans",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "i4QL53",
+                  "type": "ref",
+                  "ref": "DtZB3",
+                  "name": "Send project enquiry",
+                  "context": "Submit project enquiry. Static design: requires form handling and delivery integration during implementation.",
+                  "descendants": {
+                    "aI10y": {
+                      "content": "Send project enquiry"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "gZmye",
+          "name": "07 · Footer",
+          "width": "fill_container",
+          "fill": "$navy",
+          "stroke": "#A3B8C42E",
+          "strokeWidth": {
+            "top": 1
+          },
+          "layout": "vertical",
+          "gap": 52,
+          "padding": [
+            48,
+            72,
+            32,
+            72
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "gn0h7",
+              "name": "Footer identity and navigation",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "J28fAd",
+                  "name": "Footer brand",
+                  "layout": "vertical",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "m51gCl",
+                      "name": "Footer TexCra",
+                      "fill": "$ivory",
+                      "content": "TexCra",
+                      "fontFamily": "$sans",
+                      "fontSize": 40,
+                      "letterSpacing": -1.8
+                    },
+                    {
+                      "type": "text",
+                      "id": "DLC1h",
+                      "name": "Brand sign off",
+                      "fill": "$silver",
+                      "content": "Technology, crafted with intention.",
+                      "fontFamily": "$sans",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "PNJv5",
+                  "name": "Footer navigation",
+                  "gap": 32,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "bUAM0",
+                      "name": "Footer Expertise",
+                      "fill": "$silver",
+                      "content": "Expertise",
+                      "fontFamily": "$sans",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "cFjJh",
+                      "name": "Footer Our approach",
+                      "fill": "$silver",
+                      "content": "Our approach",
+                      "fontFamily": "$sans",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "i4Lp9L",
+                      "name": "Footer The process",
+                      "fill": "$silver",
+                      "content": "The process",
+                      "fontFamily": "$sans",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "YrcNP",
+                      "name": "Footer Back to top ↑",
+                      "fill": "$silver",
+                      "content": "Back to top ↑",
+                      "fontFamily": "$sans",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "nKA4t",
+              "name": "Footer legal and philosophy",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "qV1QE",
+                  "name": "© 2026 TexCra. All rights reserved.",
+                  "fill": "#8CA0B0",
+                  "content": "© 2026 TexCra. All rights reserved.",
+                  "fontFamily": "$mono",
+                  "fontSize": 10,
+                  "fontWeight": "normal",
+                  "letterSpacing": 0.5
+                },
+                {
+                  "type": "text",
+                  "id": "S3tCM",
+                  "name": "PRECISION IN EVERY DETAIL.",
+                  "fill": "#8CA0B0",
+                  "content": "PRECISION IN EVERY DETAIL.",
+                  "fontFamily": "$mono",
+                  "fontSize": 10,
+                  "fontWeight": "normal",
+                  "letterSpacing": 0.5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "n1Yr2U",
+      "x": 1520,
+      "y": 680,
+      "name": "Home · Mobile / 390",
+      "clip": true,
+      "width": 390,
+      "fill": "$ivory",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "d1VKH7",
+          "name": "01 · Mobile hero",
+          "clip": true,
+          "width": "fill_container",
+          "height": 860,
+          "fill": "$navy",
+          "layout": "none",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "O9BM1",
+              "x": -350,
+              "y": 280,
+              "name": "Mobile continuum artwork",
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "../texcra-canvas-design/texcra_continuum_craft_modern_chrome.png",
+                "mode": "fill"
+              },
+              "width": 900,
+              "height": 563
+            },
+            {
+              "type": "rectangle",
+              "id": "kVAog",
+              "x": 0,
+              "y": 295,
+              "name": "Mobile atmosphere",
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "enabled": true,
+                "rotation": 180,
+                "size": {
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "#061828",
+                    "position": 0
+                  },
+                  {
+                    "color": "#061828F5",
+                    "position": 0.18
+                  },
+                  {
+                    "color": "#06182800",
+                    "position": 0.4
+                  },
+                  {
+                    "color": "#06182800",
+                    "position": 0.6
+                  },
+                  {
+                    "color": "#061828",
+                    "position": 0.75
+                  },
+                  {
+                    "color": "#061828",
+                    "position": 1
+                  }
+                ]
+              },
+              "width": 390,
+              "height": 565
+            },
+            {
+              "type": "frame",
+              "id": "bh76T",
+              "x": 0,
+              "y": 0,
+              "name": "Mobile navigation",
+              "width": 390,
+              "height": 88,
+              "fill": "$navy",
+              "stroke": "#FFFFFF20",
+              "strokeWidth": {
+                "bottom": 1
+              },
+              "padding": [
+                20,
+                24
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "jV3tV",
+                  "name": "Mobile wordmark",
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "uew14",
+                      "name": "TexCra",
+                      "fill": "$ivory",
+                      "content": "TexCra",
+                      "fontFamily": "$sans",
+                      "fontSize": 27,
+                      "fontWeight": "500",
+                      "letterSpacing": -1
+                    },
+                    {
+                      "type": "text",
+                      "id": "e4hebG",
+                      "name": "Technology craftsmanship",
+                      "fill": "$silver",
+                      "content": "TECHNOLOGY CRAFTSMANSHIP",
+                      "fontFamily": "$mono",
+                      "fontSize": 7,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1.2
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "r9kqy",
+                  "name": "Open navigation menu",
+                  "context": "44 × 44 px menu control. Opens navigation to Expertise, Our approach, The process, and Start a project.",
+                  "width": 44,
+                  "height": 44,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "L9szuJ",
+                      "name": "Menu icon",
+                      "width": 24,
+                      "height": 24,
+                      "icon": "menu",
+                      "library": "lucide",
+                      "fill": "$ivory"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "K4wVay",
+              "x": 24,
+              "y": 133,
+              "name": "Mobile hero narrative",
+              "width": 342,
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "plpmV",
+                  "name": "Mobile studio positioning",
+                  "fill": "$blue",
+                  "content": "DIGITAL CRAFTSMANSHIP",
+                  "fontFamily": "$mono",
+                  "fontSize": 9,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1.7
+                },
+                {
+                  "type": "text",
+                  "id": "e96NSr",
+                  "name": "Mobile hero headline",
+                  "fill": "$ivory",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Distinct by design.\nBuilt to endure.",
+                  "lineHeight": 1.17,
+                  "fontFamily": "$sans",
+                  "fontSize": 41,
+                  "fontWeight": "300",
+                  "letterSpacing": -1.9
+                },
+                {
+                  "type": "text",
+                  "id": "vUJwI",
+                  "name": "Mobile hero proposition",
+                  "fill": "#C6D1D9",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Immersive websites and dependable software, crafted with care from first impression to lasting scale.",
+                  "lineHeight": 1.7,
+                  "fontFamily": "$sans",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                },
+                {
+                  "id": "rLzcS",
+                  "type": "ref",
+                  "ref": "DtZB3",
+                  "name": "Mobile hero · Start a project"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "swf9n",
+              "x": 24,
+              "y": 789,
+              "name": "Mobile hero scroll cue",
+              "width": 342,
+              "stroke": "#B8CCD23D",
+              "strokeWidth": {
+                "top": 1
+              },
+              "padding": [
+                20,
+                0,
+                0,
+                0
+              ],
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "E41q9",
+                  "name": "DESIGN / DEVELOP / ENGINEER",
+                  "fill": "$silver",
+                  "content": "DESIGN / DEVELOP / ENGINEER",
+                  "fontFamily": "$mono",
+                  "fontSize": 8,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "HWsE7",
+                  "name": "EXPLORE ↓",
+                  "fill": "$silver",
+                  "content": "EXPLORE ↓",
+                  "fontFamily": "$mono",
+                  "fontSize": 8,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "V5bnD",
+          "name": "02 · Mobile positioning",
+          "width": "fill_container",
+          "fill": "$ivory",
+          "layout": "vertical",
+          "gap": 28,
+          "padding": [
+            64,
+            24
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "jQDLS",
+              "name": "Section 01 label",
+              "fill": "$muted",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "01 / THE TEXCRA STANDARD",
+              "fontFamily": "$mono",
+              "fontSize": 9,
+              "fontWeight": "normal",
+              "letterSpacing": 1.6
+            },
+            {
+              "type": "frame",
+              "id": "e6ziXn",
+              "name": "Brand point of view",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 22,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "GeAyw",
+                  "name": "Positioning headline",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "The difference is\nin the details.",
+                  "lineHeight": 1.16,
+                  "fontFamily": "$sans",
+                  "fontSize": 36,
+                  "letterSpacing": -1.5
+                },
+                {
+                  "type": "text",
+                  "id": "ViZjv",
+                  "name": "Positioning statement",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "A website should feel as considered as the business behind it. Software should stay dependable as that business grows. At TexCra, we bring design sensitivity and engineering discipline to every detail.",
+                  "lineHeight": 1.75,
+                  "fontFamily": "$sans",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "RTGxw",
+          "name": "03 · Mobile expertise",
+          "width": "fill_container",
+          "fill": "$ivory",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            0,
+            24,
+            64,
+            24
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "DdUOi",
+              "name": "Expertise introduction",
+              "width": "fill_container",
+              "stroke": "$line",
+              "strokeWidth": {
+                "top": 1
+              },
+              "layout": "vertical",
+              "gap": 24,
+              "padding": [
+                32,
+                0,
+                0,
+                0
+              ],
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "haO0E",
+                  "name": "Expertise headline",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Your ambition.\nOur expertise.",
+                  "lineHeight": 1.16,
+                  "fontFamily": "$sans",
+                  "fontSize": 36,
+                  "letterSpacing": -1.5
+                },
+                {
+                  "type": "text",
+                  "id": "XQDfG",
+                  "name": "Expertise summary",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "From a distinctive first impression to the systems working behind it.",
+                  "lineHeight": 1.65,
+                  "fontFamily": "$sans",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "FAVIj",
+              "name": "Three connected capabilities",
+              "width": "fill_container",
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "CheAm",
+                  "name": "Website design · Service row",
+                  "width": "fill_container",
+                  "stroke": "$line",
+                  "strokeWidth": {
+                    "top": 1
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": [
+                    28,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "SatFb",
+                      "name": "Website design index",
+                      "fill": "$muted",
+                      "textGrowth": "fixed-width",
+                      "width": 64,
+                      "content": "01",
+                      "fontFamily": "$mono",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "mBrvj",
+                      "name": "Website design title",
+                      "fill": "$ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Website design",
+                      "fontFamily": "$sans",
+                      "fontSize": 27,
+                      "letterSpacing": -1
+                    },
+                    {
+                      "type": "frame",
+                      "id": "lEfRH",
+                      "name": "Website design narrative",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 20,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "occsM",
+                          "name": "Website design benefit",
+                          "fill": "$muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Turn your brand into a digital experience people feel, understand, and remember.",
+                          "lineHeight": 1.65,
+                          "fontFamily": "$sans",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "csjja",
+                          "name": "Website design scope",
+                          "fill": "$muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "VISUAL DIRECTION / UX & UI / INTERACTION",
+                          "lineHeight": 1.6,
+                          "fontFamily": "$mono",
+                          "fontSize": 10,
+                          "fontWeight": "normal",
+                          "letterSpacing": 0.7
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "krbXF",
+                  "name": "Web development · Service row",
+                  "width": "fill_container",
+                  "stroke": "$line",
+                  "strokeWidth": {
+                    "top": 1
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": [
+                    28,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "IWMMs",
+                      "name": "Web development index",
+                      "fill": "$muted",
+                      "textGrowth": "fixed-width",
+                      "width": 64,
+                      "content": "02",
+                      "fontFamily": "$mono",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "RRyIE",
+                      "name": "Web development title",
+                      "fill": "$ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Web development",
+                      "fontFamily": "$sans",
+                      "fontSize": 27,
+                      "letterSpacing": -1
+                    },
+                    {
+                      "type": "frame",
+                      "id": "r43UB",
+                      "name": "Web development narrative",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 20,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Rez2t",
+                          "name": "Web development benefit",
+                          "fill": "$muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Bring every detail to life with responsive, thoughtfully engineered websites.",
+                          "lineHeight": 1.65,
+                          "fontFamily": "$sans",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "U7UPXY",
+                          "name": "Web development scope",
+                          "fill": "$muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "RESPONSIVE WEBSITES / PERFORMANCE / PRECISION",
+                          "lineHeight": 1.6,
+                          "fontFamily": "$mono",
+                          "fontSize": 10,
+                          "fontWeight": "normal",
+                          "letterSpacing": 0.7
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "O5t5a",
+                  "name": "Software engineering · Service row",
+                  "width": "fill_container",
+                  "stroke": "$line",
+                  "strokeWidth": {
+                    "top": 1
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": [
+                    28,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "kqp2D",
+                      "name": "Software engineering index",
+                      "fill": "$muted",
+                      "textGrowth": "fixed-width",
+                      "width": 64,
+                      "content": "03",
+                      "fontFamily": "$mono",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Jnylp",
+                      "name": "Software engineering title",
+                      "fill": "$ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Software engineering",
+                      "fontFamily": "$sans",
+                      "fontSize": 27,
+                      "letterSpacing": -1
+                    },
+                    {
+                      "type": "frame",
+                      "id": "J1V10U",
+                      "name": "Software engineering narrative",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 20,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "i0vNRq",
+                          "name": "Software engineering benefit",
+                          "fill": "$muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Build dependable foundations for complex ideas, evolving needs, and lasting scale.",
+                          "lineHeight": 1.65,
+                          "fontFamily": "$sans",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Fltsz",
+                          "name": "Software engineering scope",
+                          "fill": "$muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "CUSTOM SOFTWARE / SYSTEM ARCHITECTURE / SCALABILITY",
+                          "lineHeight": 1.6,
+                          "fontFamily": "$mono",
+                          "fontSize": 10,
+                          "fontWeight": "normal",
+                          "letterSpacing": 0.7
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "VLXuR",
+          "name": "04 · Mobile approach",
+          "width": "fill_container",
+          "fill": "$navy",
+          "layout": "vertical",
+          "gap": 40,
+          "padding": [
+            64,
+            24
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "RNaw3",
+              "name": "What craftsmanship means",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "igq4A",
+                  "name": "Approach section label",
+                  "fill": "$blue",
+                  "content": "02 / OUR APPROACH",
+                  "fontFamily": "$mono",
+                  "fontSize": 9,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1.8
+                },
+                {
+                  "type": "text",
+                  "id": "fUnaF",
+                  "name": "Approach headline",
+                  "fill": "$ivory",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Beauty on the surface.\nRigor underneath.",
+                  "lineHeight": 1.2,
+                  "fontFamily": "$sans",
+                  "fontSize": 32,
+                  "fontWeight": "300",
+                  "letterSpacing": -1.2
+                },
+                {
+                  "type": "text",
+                  "id": "Odeek",
+                  "name": "Approach introduction",
+                  "fill": "$silver",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "The strongest digital experiences connect what people see with what they can rely on.",
+                  "lineHeight": 1.7,
+                  "fontFamily": "$sans",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "emDLM",
+                  "name": "Depth you can feel",
+                  "width": "fill_container",
+                  "stroke": "#A5B9C52E",
+                  "strokeWidth": {
+                    "top": 1
+                  },
+                  "gap": 22,
+                  "padding": [
+                    20,
+                    0,
+                    0,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "FXNFE",
+                      "name": "Depth you can feel index",
+                      "fill": "$blue",
+                      "content": "01",
+                      "fontFamily": "$mono",
+                      "fontSize": 10,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "msYQv",
+                      "name": "Depth you can feel content",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 7,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "e963r",
+                          "name": "Depth you can feel heading",
+                          "fill": "$ivory",
+                          "content": "Depth you can feel",
+                          "fontFamily": "$sans",
+                          "fontSize": 18,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "V6bpz",
+                          "name": "Depth you can feel explanation",
+                          "fill": "$silver",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Layered visuals and thoughtful motion bring a distinctive sense of presence.",
+                          "lineHeight": 1.65,
+                          "fontFamily": "$sans",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "hOvTz",
+                  "name": "Precision you can trust",
+                  "width": "fill_container",
+                  "stroke": "#A5B9C52E",
+                  "strokeWidth": {
+                    "top": 1
+                  },
+                  "gap": 22,
+                  "padding": [
+                    20,
+                    0,
+                    0,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "j5M0Z",
+                      "name": "Precision you can trust index",
+                      "fill": "$blue",
+                      "content": "02",
+                      "fontFamily": "$mono",
+                      "fontSize": 10,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "W6aKt",
+                      "name": "Precision you can trust content",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 7,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "jRrhr",
+                          "name": "Precision you can trust heading",
+                          "fill": "$ivory",
+                          "content": "Precision you can trust",
+                          "fontFamily": "$sans",
+                          "fontSize": 18,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "AWqUo",
+                          "name": "Precision you can trust explanation",
+                          "fill": "$silver",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Considered interactions and careful engineering make complexity feel simple.",
+                          "lineHeight": 1.65,
+                          "fontFamily": "$sans",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "M0rPk",
+                  "name": "Foundations that endure",
+                  "width": "fill_container",
+                  "stroke": "#A5B9C52E",
+                  "strokeWidth": {
+                    "top": 1
+                  },
+                  "gap": 22,
+                  "padding": [
+                    20,
+                    0,
+                    0,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "E23Xn",
+                      "name": "Foundations that endure index",
+                      "fill": "$blue",
+                      "content": "03",
+                      "fontFamily": "$mono",
+                      "fontSize": 10,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "YR0KF",
+                      "name": "Foundations that endure content",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 7,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "sQRP7",
+                          "name": "Foundations that endure heading",
+                          "fill": "$ivory",
+                          "content": "Foundations that endure",
+                          "fontFamily": "$sans",
+                          "fontSize": 18,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "CovKn",
+                          "name": "Foundations that endure explanation",
+                          "fill": "$silver",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Scalable systems and persistent data support what comes next.",
+                          "lineHeight": 1.65,
+                          "fontFamily": "$sans",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "k2Z3MS",
+              "name": "Continuum detail / Reflective aperture",
+              "clip": true,
+              "width": "fill_container",
+              "height": 342,
+              "fill": "$navy",
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "id": "z0reJr",
+                  "x": -355,
+                  "y": -84,
+                  "name": "Chrome detail from original canvas",
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "../texcra-canvas-design/texcra_continuum_craft_modern_chrome.png",
+                    "mode": "fill"
+                  },
+                  "width": 816,
+                  "height": 511
+                },
+                {
+                  "type": "rectangle",
+                  "id": "g0NGm",
+                  "x": 0,
+                  "y": 220,
+                  "name": "Detail lower fade",
+                  "fill": {
+                    "type": "gradient",
+                    "gradientType": "linear",
+                    "enabled": true,
+                    "rotation": 180,
+                    "size": {
+                      "height": 1
+                    },
+                    "colors": [
+                      {
+                        "color": "#06182800",
+                        "position": 0
+                      },
+                      {
+                        "color": "#061828",
+                        "position": 0.6
+                      }
+                    ]
+                  },
+                  "width": 342,
+                  "height": 122
+                },
+                {
+                  "type": "frame",
+                  "id": "D2BOTi",
+                  "x": 0,
+                  "y": 299,
+                  "name": "Aperture caption",
+                  "width": 342,
+                  "stroke": "#AEC2D050",
+                  "strokeWidth": {
+                    "top": 1
+                  },
+                  "padding": [
+                    18,
+                    0,
+                    0,
+                    0
+                  ],
+                  "justifyContent": "space_between",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "JL1rc",
+                      "name": "FORM / FLOW / FUNCTION",
+                      "fill": "$silver",
+                      "content": "FORM / FLOW / FUNCTION",
+                      "fontFamily": "$mono",
+                      "fontSize": 7,
+                      "fontWeight": "normal",
+                      "letterSpacing": 0.8
+                    },
+                    {
+                      "type": "text",
+                      "id": "iD46n",
+                      "name": "THE CONTINUUM STUDY",
+                      "fill": "$silver",
+                      "content": "THE CONTINUUM STUDY",
+                      "fontFamily": "$mono",
+                      "fontSize": 7,
+                      "fontWeight": "normal",
+                      "letterSpacing": 0.8
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "etxLt",
+          "name": "05 · Mobile process",
+          "width": "fill_container",
+          "fill": "$ivory",
+          "layout": "vertical",
+          "gap": 36,
+          "padding": [
+            64,
+            24
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "IxDTw",
+              "name": "Process introduction",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 28,
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "OU6RK",
+                  "name": "Process section label",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "03 / HOW WE WORK",
+                  "fontFamily": "$mono",
+                  "fontSize": 9,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1.8
+                },
+                {
+                  "type": "frame",
+                  "id": "oAnsj",
+                  "name": "Process narrative",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 20,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "OK7RY",
+                      "name": "Process headline",
+                      "fill": "$ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Clarity at every step.\nCare all the way\nthrough.",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$sans",
+                      "fontSize": 34,
+                      "letterSpacing": -1.4
+                    },
+                    {
+                      "type": "text",
+                      "id": "W7I1pi",
+                      "name": "Process description",
+                      "fill": "$muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "A considered path from the first conversation to the final refinement.",
+                      "lineHeight": 1.7,
+                      "fontFamily": "$sans",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "L5w9U",
+              "name": "Four stages of craftsmanship",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 28,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "K4EhqX",
+                  "name": "Discover stage",
+                  "width": "fill_container",
+                  "stroke": "#B5BEC2",
+                  "strokeWidth": {
+                    "top": 1
+                  },
+                  "layout": "vertical",
+                  "gap": 15,
+                  "padding": [
+                    24,
+                    0,
+                    0,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "nX3EO",
+                      "name": "Discover stage number",
+                      "fill": "$muted",
+                      "content": "01",
+                      "fontFamily": "$mono",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "S6a3n",
+                      "name": "Discover stage title",
+                      "fill": "$ink",
+                      "content": "Discover",
+                      "fontFamily": "$sans",
+                      "fontSize": 26,
+                      "letterSpacing": -0.8
+                    },
+                    {
+                      "type": "text",
+                      "id": "d59rYc",
+                      "name": "Discover stage explanation",
+                      "fill": "$muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Understand your business, your audience, and what success needs to look like.",
+                      "lineHeight": 1.7,
+                      "fontFamily": "$sans",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "UJp1P",
+                      "name": "Discover stage outcome",
+                      "fill": "$muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "A SHARED DIRECTION",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$mono",
+                      "fontSize": 9,
+                      "fontWeight": "normal",
+                      "letterSpacing": 0.7
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "yFnNp",
+                  "name": "Design stage",
+                  "width": "fill_container",
+                  "stroke": "#B5BEC2",
+                  "strokeWidth": {
+                    "top": 1
+                  },
+                  "layout": "vertical",
+                  "gap": 15,
+                  "padding": [
+                    24,
+                    0,
+                    0,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "fX4PV",
+                      "name": "Design stage number",
+                      "fill": "$muted",
+                      "content": "02",
+                      "fontFamily": "$mono",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "O5af2r",
+                      "name": "Design stage title",
+                      "fill": "$ink",
+                      "content": "Design",
+                      "fontFamily": "$sans",
+                      "fontSize": 26,
+                      "letterSpacing": -0.8
+                    },
+                    {
+                      "type": "text",
+                      "id": "gjOl6",
+                      "name": "Design stage explanation",
+                      "fill": "$muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Shape the structure, visual language, and interactions around real needs.",
+                      "lineHeight": 1.7,
+                      "fontFamily": "$sans",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "mIteF",
+                      "name": "Design stage outcome",
+                      "fill": "$muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "A CONSIDERED EXPERIENCE",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$mono",
+                      "fontSize": 9,
+                      "fontWeight": "normal",
+                      "letterSpacing": 0.7
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Wlasv",
+                  "name": "Engineer stage",
+                  "width": "fill_container",
+                  "stroke": "#B5BEC2",
+                  "strokeWidth": {
+                    "top": 1
+                  },
+                  "layout": "vertical",
+                  "gap": 15,
+                  "padding": [
+                    24,
+                    0,
+                    0,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "GbS2A",
+                      "name": "Engineer stage number",
+                      "fill": "$muted",
+                      "content": "03",
+                      "fontFamily": "$mono",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "q9Au6",
+                      "name": "Engineer stage title",
+                      "fill": "$ink",
+                      "content": "Engineer",
+                      "fontFamily": "$sans",
+                      "fontSize": 26,
+                      "letterSpacing": -0.8
+                    },
+                    {
+                      "type": "text",
+                      "id": "atd2X",
+                      "name": "Engineer stage explanation",
+                      "fill": "$muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Bring the design to life with precision, performance, and scale in mind.",
+                      "lineHeight": 1.7,
+                      "fontFamily": "$sans",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "lYh7r",
+                      "name": "Engineer stage outcome",
+                      "fill": "$muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "A DEPENDABLE FOUNDATION",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$mono",
+                      "fontSize": 9,
+                      "fontWeight": "normal",
+                      "letterSpacing": 0.7
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "vV8nv",
+                  "name": "Refine stage",
+                  "width": "fill_container",
+                  "stroke": "#B5BEC2",
+                  "strokeWidth": {
+                    "top": 1
+                  },
+                  "layout": "vertical",
+                  "gap": 15,
+                  "padding": [
+                    24,
+                    0,
+                    0,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "r7Zu6Z",
+                      "name": "Refine stage number",
+                      "fill": "$muted",
+                      "content": "04",
+                      "fontFamily": "$mono",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "jwcjf",
+                      "name": "Refine stage title",
+                      "fill": "$ink",
+                      "content": "Refine",
+                      "fontFamily": "$sans",
+                      "fontSize": 26,
+                      "letterSpacing": -0.8
+                    },
+                    {
+                      "type": "text",
+                      "id": "nENaQ",
+                      "name": "Refine stage explanation",
+                      "fill": "$muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Test the details, resolve the friction, and prepare for a confident launch.",
+                      "lineHeight": 1.7,
+                      "fontFamily": "$sans",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "jagF4",
+                      "name": "Refine stage outcome",
+                      "fill": "$muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "A CAREFULLY FINISHED PRODUCT",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$mono",
+                      "fontSize": 9,
+                      "fontWeight": "normal",
+                      "letterSpacing": 0.7
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "TUQUU",
+          "name": "06 · Mobile project enquiry",
+          "width": "fill_container",
+          "fill": "$navy",
+          "layout": "vertical",
+          "gap": 44,
+          "padding": [
+            64,
+            24
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "n46Ga8",
+              "name": "Project invitation",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "g3zM4",
+                  "name": "Contact section label",
+                  "fill": "$blue",
+                  "content": "04 / WHAT COMES NEXT",
+                  "fontFamily": "$mono",
+                  "fontSize": 9,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1.8
+                },
+                {
+                  "type": "text",
+                  "id": "qRpun",
+                  "name": "Contact headline",
+                  "fill": "$ivory",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Let’s make\nsomething\nthat matters.",
+                  "lineHeight": 1.12,
+                  "fontFamily": "$sans",
+                  "fontSize": 46,
+                  "fontWeight": "300",
+                  "letterSpacing": -1.8
+                },
+                {
+                  "type": "text",
+                  "id": "j8Ua4d",
+                  "name": "Contact invitation",
+                  "fill": "$silver",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "A distinctive website. A dependable platform. A complex idea, thoughtfully brought to life.\nIt starts with a conversation.",
+                  "lineHeight": 1.8,
+                  "fontFamily": "$sans",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "j589q",
+              "name": "Project enquiry form",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 26,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "RXEdt",
+                  "name": "Form title",
+                  "fill": "$ivory",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Tell us what you have in mind.",
+                  "fontFamily": "$sans",
+                  "fontSize": 23,
+                  "letterSpacing": -0.6
+                },
+                {
+                  "type": "frame",
+                  "id": "zCGQp",
+                  "name": "Your details",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "ZFI5H",
+                      "name": "Name field",
+                      "width": "fill_container",
+                      "stroke": "#ACBECE66",
+                      "strokeWidth": {
+                        "bottom": 1
+                      },
+                      "layout": "vertical",
+                      "gap": 16,
+                      "padding": [
+                        0,
+                        0,
+                        14,
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "dxtIC",
+                          "name": "Name label",
+                          "fill": "$ivory",
+                          "content": "Name",
+                          "fontFamily": "$sans",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "QSkKb",
+                          "name": "Name placeholder",
+                          "fill": "#8CA0B0",
+                          "content": "Your name",
+                          "fontFamily": "$sans",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "OnCwe",
+                      "name": "Work email field",
+                      "width": "fill_container",
+                      "stroke": "#ACBECE66",
+                      "strokeWidth": {
+                        "bottom": 1
+                      },
+                      "layout": "vertical",
+                      "gap": 16,
+                      "padding": [
+                        0,
+                        0,
+                        14,
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "XZVS4",
+                          "name": "Work email label",
+                          "fill": "$ivory",
+                          "content": "Work email",
+                          "fontFamily": "$sans",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "TJx4H",
+                          "name": "Work email placeholder",
+                          "fill": "#8CA0B0",
+                          "content": "you@company.com",
+                          "fontFamily": "$sans",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "h8HehR",
+                  "name": "Project type",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Jvw51",
+                      "name": "Project type label",
+                      "fill": "$ivory",
+                      "content": "I’m interested in",
+                      "fontFamily": "$sans",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Ys2C5",
+                      "name": "Project options",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "tNn6d",
+                          "name": "Website option",
+                          "fill": "#BDDFFF13",
+                          "cornerRadius": 2,
+                          "stroke": "$blue",
+                          "strokeWidth": 1,
+                          "padding": [
+                            12,
+                            14
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "I4htO",
+                              "name": "Website choice",
+                              "fill": "$blue",
+                              "content": "Website",
+                              "fontFamily": "$sans",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "IQ8Vv",
+                          "name": "Software option",
+                          "fill": "#061828",
+                          "cornerRadius": 2,
+                          "stroke": "#667E905C",
+                          "strokeWidth": 1,
+                          "padding": [
+                            12,
+                            14
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "blCMi",
+                              "name": "Software choice",
+                              "fill": "$silver",
+                              "content": "Software",
+                              "fontFamily": "$sans",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "j47isE",
+                          "name": "Let’s discuss option",
+                          "fill": "#061828",
+                          "cornerRadius": 2,
+                          "stroke": "#667E905C",
+                          "strokeWidth": 1,
+                          "padding": [
+                            12,
+                            14
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "AVLry",
+                              "name": "Let’s discuss choice",
+                              "fill": "$silver",
+                              "content": "Let’s discuss",
+                              "fontFamily": "$sans",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "WbK8U",
+                  "name": "Project message",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "xWOzp",
+                      "name": "Message label",
+                      "fill": "$ivory",
+                      "content": "A little about your project",
+                      "fontFamily": "$sans",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "l15vFQ",
+                      "name": "Project brief input",
+                      "width": "fill_container",
+                      "height": 134,
+                      "fill": "#FFFFFF05",
+                      "cornerRadius": 2,
+                      "stroke": "#ACBECE66",
+                      "strokeWidth": 1,
+                      "padding": 18,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "pnBwY",
+                          "name": "Project brief prompt",
+                          "fill": "#8CA0B0",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Your goals, scope, and any timing you have in mind…",
+                          "lineHeight": 1.65,
+                          "fontFamily": "$sans",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "udbmD",
+                  "type": "ref",
+                  "ref": "DtZB3",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "name": "Send project enquiry",
+                  "descendants": {
+                    "aI10y": {
+                      "content": "Send project enquiry"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "GDGeR",
+          "name": "07 · Mobile footer",
+          "width": "fill_container",
+          "fill": "$navy",
+          "stroke": "#A3B8C42E",
+          "strokeWidth": {
+            "top": 1
+          },
+          "layout": "vertical",
+          "gap": 40,
+          "padding": [
+            40,
+            24,
+            28,
+            24
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "rMQz3",
+              "name": "Footer identity and navigation",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 32,
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "n9N0Ih",
+                  "name": "Footer brand",
+                  "layout": "vertical",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "L9WAD",
+                      "name": "Footer TexCra",
+                      "fill": "$ivory",
+                      "content": "TexCra",
+                      "fontFamily": "$sans",
+                      "fontSize": 40,
+                      "letterSpacing": -1.8
+                    },
+                    {
+                      "type": "text",
+                      "id": "PcP9w",
+                      "name": "Brand sign off",
+                      "fill": "$silver",
+                      "content": "Technology, crafted with intention.",
+                      "fontFamily": "$sans",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "GlXSE",
+                  "name": "Footer navigation",
+                  "layout": "vertical",
+                  "gap": 18,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "uMkZv",
+                      "name": "Footer Expertise",
+                      "fill": "$silver",
+                      "content": "Expertise",
+                      "fontFamily": "$sans",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "SICeK",
+                      "name": "Footer Our approach",
+                      "fill": "$silver",
+                      "content": "Our approach",
+                      "fontFamily": "$sans",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "mCdOt",
+                      "name": "Footer The process",
+                      "fill": "$silver",
+                      "content": "The process",
+                      "fontFamily": "$sans",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "S4Ekvf",
+                      "name": "Footer Back to top ↑",
+                      "fill": "$silver",
+                      "content": "Back to top ↑",
+                      "fontFamily": "$sans",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ShsZO",
+              "name": "Footer legal and philosophy",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "tIaRX",
+                  "name": "© 2026 TexCra. All rights reserved.",
+                  "fill": "#8CA0B0",
+                  "content": "© 2026 TexCra. All rights reserved.",
+                  "fontFamily": "$mono",
+                  "fontSize": 10,
+                  "fontWeight": "normal",
+                  "letterSpacing": 0.5
+                },
+                {
+                  "type": "text",
+                  "id": "gmGwp",
+                  "name": "PRECISION IN EVERY DETAIL.",
+                  "fill": "#8CA0B0",
+                  "content": "PRECISION IN EVERY DETAIL.",
+                  "fontFamily": "$mono",
+                  "fontSize": 9,
+                  "fontWeight": "normal",
+                  "letterSpacing": 0.5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": {
+    "navy": {
+      "type": "color",
+      "value": "#061828"
+    },
+    "ivory": {
+      "type": "color",
+      "value": "#F3F2ED"
+    },
+    "ink": {
+      "type": "color",
+      "value": "#102333"
+    },
+    "muted": {
+      "type": "color",
+      "value": "#5F6A72"
+    },
+    "silver": {
+      "type": "color",
+      "value": "#BAC9D5"
+    },
+    "blue": {
+      "type": "color",
+      "value": "#BDDFFF"
+    },
+    "line": {
+      "type": "color",
+      "value": "#CFD3D2"
+    },
+    "sans": {
+      "type": "string",
+      "value": "Manrope"
+    },
+    "mono": {
+      "type": "string",
+      "value": "IBM Plex Mono"
+    }
+  },
+  "fileToken": "ac73ada1-05c5-48ff-89f5-df2bf4e7c5de"
+}

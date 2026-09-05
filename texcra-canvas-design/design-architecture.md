@@ -1,10 +1,3 @@
-Brand name: "TexCra"
-stand for: Technology Craftsmanship
-
-emphasize in: Meticulouness and refinement in software craftsmanship.
-create a sense of visual depth in web,
-scalable, persistence, precision in software system.
-
 # Visual Philosophy
 
 Technology as a Seamless, Intelligent Flow
