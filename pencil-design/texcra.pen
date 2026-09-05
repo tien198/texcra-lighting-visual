@@ -143,20 +143,20 @@
                 },
                 "colors": [
                   {
-                    "color": "#06182800",
-                    "position": 0
-                  },
-                  {
                     "color": "#06182825",
-                    "position": 0.35
+                    "position": 0.22
                   },
                   {
                     "color": "#061828F5",
-                    "position": 0.62
+                    "position": 0
                   },
                   {
                     "color": "#061828",
                     "position": 1
+                  },
+                  {
+                    "color": "#061828e5",
+                    "position": 0.76
                   }
                 ]
               },
@@ -167,7 +167,7 @@
               "type": "rectangle",
               "id": "gdYq5",
               "x": 0,
-              "y": 655,
+              "y": 726,
               "name": "Lower atmospheric fade",
               "fill": {
                 "type": "gradient",
@@ -184,7 +184,7 @@
                   },
                   {
                     "color": "#061828",
-                    "position": 0.5
+                    "position": 0.97
                   },
                   {
                     "color": "#061828",
@@ -193,7 +193,7 @@
                 ]
               },
               "width": 1440,
-              "height": 245
+              "height": 174
             },
             {
               "type": "frame",
@@ -226,12 +226,13 @@
                       "type": "text",
                       "id": "Htvg0",
                       "name": "TexCra",
-                      "fill": "$ivory",
-                      "content": "TexCra",
-                      "fontFamily": "$sans",
-                      "fontSize": 30,
-                      "fontWeight": "500",
-                      "letterSpacing": -1
+                      "opacity": 0.94,
+                      "fill": "#D7E0E1",
+                      "content": "TEXCRA",
+                      "fontFamily": "IBM Plex Sans Condensed",
+                      "fontSize": 26,
+                      "fontWeight": "200",
+                      "letterSpacing": 5.2
                     },
                     {
                       "type": "text",
@@ -239,10 +240,10 @@
                       "name": "Technology craftsmanship",
                       "fill": "$silver",
                       "content": "TECHNOLOGY CRAFTSMANSHIP",
-                      "fontFamily": "$mono",
-                      "fontSize": 8,
-                      "fontWeight": "normal",
-                      "letterSpacing": 1.5
+                      "fontFamily": "IBM Plex Sans Condensed",
+                      "fontSize": 9,
+                      "fontWeight": "200",
+                      "letterSpacing": 2.2
                     }
                   ]
                 },
@@ -260,8 +261,9 @@
                       "fill": "#D3DCE2",
                       "content": "Expertise",
                       "fontFamily": "$sans",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
+                      "fontSize": 12,
+                      "fontWeight": "normal",
+                      "letterSpacing": 0.2
                     },
                     {
                       "type": "text",
@@ -270,8 +272,9 @@
                       "fill": "#D3DCE2",
                       "content": "Our approach",
                       "fontFamily": "$sans",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
+                      "fontSize": 12,
+                      "fontWeight": "normal",
+                      "letterSpacing": 0.2
                     },
                     {
                       "type": "text",
@@ -280,8 +283,9 @@
                       "fill": "#D3DCE2",
                       "content": "The process",
                       "fontFamily": "$sans",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
+                      "fontSize": 12,
+                      "fontWeight": "normal",
+                      "letterSpacing": 0.2
                     },
                     {
                       "id": "Rz0IU",
@@ -291,7 +295,15 @@
                       "padding": [
                         14,
                         20
-                      ]
+                      ],
+                      "descendants": {
+                        "aI10y": {
+                          "fontFamily": "IBM Plex Sans",
+                          "fontWeight": "300",
+                          "letterSpacing": 1.2,
+                          "fontSize": 13
+                        }
+                      }
                     }
                   ]
                 }
@@ -304,19 +316,21 @@
               "y": 212,
               "name": "Hero narrative",
               "width": 744,
+              "height": 385,
               "layout": "vertical",
               "gap": 30,
+              "justifyContent": "space_between",
               "children": [
                 {
                   "type": "text",
                   "id": "n2SsF",
                   "name": "Studio positioning",
                   "fill": "$blue",
-                  "content": "WEBSITE DESIGN & SOFTWARE ENGINEERING",
-                  "fontFamily": "$mono",
-                  "fontSize": 11,
-                  "fontWeight": "normal",
-                  "letterSpacing": 2.1
+                  "content": "DESIGN & ENGINEERING",
+                  "fontFamily": "IBM Plex Sans Condensed",
+                  "fontSize": 10,
+                  "fontWeight": "200",
+                  "letterSpacing": 2.4
                 },
                 {
                   "type": "text",
@@ -325,12 +339,12 @@
                   "fill": "$ivory",
                   "textGrowth": "fixed-width",
                   "width": "fill_container",
-                  "content": "Distinct by design.\nBuilt to endure.",
-                  "lineHeight": 1.13,
-                  "fontFamily": "$sans",
-                  "fontSize": 76,
-                  "fontWeight": "300",
-                  "letterSpacing": -3.4
+                  "content": "DISTINCT DESIGN.\nBUILT TO LAST.",
+                  "lineHeight": 1.28,
+                  "fontFamily": "IBM Plex Sans Condensed",
+                  "fontSize": 44,
+                  "fontWeight": "200",
+                  "letterSpacing": 4.2
                 },
                 {
                   "type": "text",
@@ -339,10 +353,10 @@
                   "fill": "#C6D1D9",
                   "textGrowth": "fixed-width",
                   "width": 560,
-                  "content": "Immersive websites and dependable software,\ncrafted with care from first impression to lasting scale.",
+                  "content": "Immersive websites. Dependable software.",
                   "lineHeight": 1.7,
                   "fontFamily": "$sans",
-                  "fontSize": 18,
+                  "fontSize": 14,
                   "fontWeight": "normal"
                 },
                 {
@@ -362,17 +376,128 @@
                       "id": "kpmtV",
                       "type": "ref",
                       "ref": "DtZB3",
-                      "name": "Hero · Start a project"
+                      "name": "Hero · Start a project",
+                      "fill": {
+                        "type": "gradient",
+                        "gradientType": "linear",
+                        "enabled": true,
+                        "rotation": 145,
+                        "size": {
+                          "height": 1
+                        },
+                        "colors": [
+                          {
+                            "color": "#EDF8FF30",
+                            "position": 0
+                          },
+                          {
+                            "color": "#B5D9FF0C",
+                            "position": 0.48
+                          },
+                          {
+                            "color": "#D7EDFF1C",
+                            "position": 1
+                          }
+                        ]
+                      },
+                      "stroke": {
+                        "type": "gradient",
+                        "gradientType": "linear",
+                        "enabled": true,
+                        "rotation": 150,
+                        "size": {
+                          "height": 1
+                        },
+                        "colors": [
+                          {
+                            "color": "#F5FCFF99",
+                            "position": 0
+                          },
+                          {
+                            "color": "#BCDFFF26",
+                            "position": 0.5
+                          },
+                          {
+                            "color": "#DCEFFF59",
+                            "position": 1
+                          }
+                        ]
+                      },
+                      "strokeWidth": 1,
+                      "strokeAlignment": "inner",
+                      "cornerRadius": 8,
+                      "effect": [
+                        {
+                          "type": "background_blur",
+                          "radius": 18
+                        },
+                        {
+                          "type": "shadow",
+                          "shadowType": "outer",
+                          "color": "#FFFFFF38",
+                          "offset": {
+                            "x": 0,
+                            "y": 1
+                          },
+                          "blur": 1
+                        },
+                        {
+                          "type": "shadow",
+                          "shadowType": "outer",
+                          "color": "#B6DFFF1F",
+                          "offset": {
+                            "x": 0,
+                            "y": -1
+                          },
+                          "blur": 2
+                        },
+                        {
+                          "type": "shadow",
+                          "shadowType": "outer",
+                          "color": "#020E1B66",
+                          "offset": {
+                            "x": 0,
+                            "y": 8
+                          },
+                          "blur": 24,
+                          "spread": -6
+                        }
+                      ],
+                      "descendants": {
+                        "aI10y": {
+                          "fontFamily": "IBM Plex Sans",
+                          "fontWeight": "300",
+                          "letterSpacing": 1.2,
+                          "fontSize": 13,
+                          "fill": "#EDF7FF",
+                          "effect": {
+                            "type": "shadow",
+                            "shadowType": "outer",
+                            "color": "#C3E6FF2B",
+                            "blur": 5
+                          }
+                        },
+                        "n8Col": {
+                          "fill": "#E1F2FF"
+                        }
+                      }
                     },
                     {
                       "type": "text",
                       "id": "PFJnU",
                       "name": "Explore our expertise",
-                      "fill": "$ivory",
-                      "content": "Explore our expertise  ↓",
+                      "fill": "#DBEEFFF0",
+                      "effect": {
+                        "type": "shadow",
+                        "shadowType": "outer",
+                        "color": "#B7DEFF21",
+                        "blur": 5
+                      },
+                      "content": "Our expertise  ↓",
                       "fontFamily": "$sans",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
+                      "fontSize": 13,
+                      "fontWeight": "normal",
+                      "letterSpacing": 0.2
                     }
                   ]
                 }
@@ -401,10 +526,10 @@
                   "name": "01 / WEBSITE DESIGN & DEVELOPMENT",
                   "fill": "$silver",
                   "content": "01 / WEBSITE DESIGN & DEVELOPMENT",
-                  "fontFamily": "$mono",
+                  "fontFamily": "IBM Plex Sans Condensed",
                   "fontSize": 10,
-                  "fontWeight": "normal",
-                  "letterSpacing": 1.4
+                  "fontWeight": "200",
+                  "letterSpacing": 2.4
                 },
                 {
                   "type": "text",
@@ -412,10 +537,10 @@
                   "name": "02 / SOFTWARE ENGINEERING",
                   "fill": "$silver",
                   "content": "02 / SOFTWARE ENGINEERING",
-                  "fontFamily": "$mono",
+                  "fontFamily": "IBM Plex Sans Condensed",
                   "fontSize": 10,
-                  "fontWeight": "normal",
-                  "letterSpacing": 1.4
+                  "fontWeight": "200",
+                  "letterSpacing": 2.4
                 },
                 {
                   "type": "text",
@@ -423,10 +548,10 @@
                   "name": "SCROLL TO EXPLORE ↓",
                   "fill": "$silver",
                   "content": "SCROLL TO EXPLORE ↓",
-                  "fontFamily": "$mono",
+                  "fontFamily": "IBM Plex Sans Condensed",
                   "fontSize": 10,
-                  "fontWeight": "normal",
-                  "letterSpacing": 1.4
+                  "fontWeight": "200",
+                  "letterSpacing": 2.4
                 }
               ]
             }
@@ -437,7 +562,38 @@
           "id": "im85O",
           "name": "02 · Positioning / Technology, with care",
           "width": "fill_container",
-          "fill": "$ivory",
+          "height": 1379,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "radial",
+            "enabled": true,
+            "rotation": 0,
+            "size": {
+              "width": 3.0954320390464294,
+              "height": 1.0833701932600386
+            },
+            "colors": [
+              {
+                "color": "#061828",
+                "position": 0.3
+              },
+              {
+                "color": "#F3F2ED",
+                "position": 0.84
+              },
+              {
+                "color": "#F6F1E8",
+                "position": 1
+              },
+              {
+                "color": "#1a2b39",
+                "position": 0.44
+              }
+            ],
+            "center": {
+              "y": 0
+            }
+          },
           "gap": 96,
           "padding": [
             96,
@@ -445,25 +601,27 @@
             80,
             72
           ],
+          "justifyContent": "center",
+          "alignItems": "center",
           "children": [
             {
               "type": "text",
               "id": "bdKo0",
               "name": "Section 01 label",
-              "fill": "$muted",
+              "fill": "#4B555A",
               "textGrowth": "fixed-width",
               "width": 312,
               "content": "01 / THE TEXCRA STANDARD",
-              "fontFamily": "$mono",
+              "fontFamily": "IBM Plex Sans Condensed",
               "fontSize": 10,
-              "fontWeight": "normal",
-              "letterSpacing": 1.6
+              "fontWeight": "200",
+              "letterSpacing": 2.4
             },
             {
               "type": "frame",
               "id": "m0zl7U",
               "name": "Brand point of view",
-              "width": "fill_container",
+              "width": 693,
               "layout": "vertical",
               "gap": 24,
               "children": [
@@ -471,22 +629,23 @@
                   "type": "text",
                   "id": "PwTrc",
                   "name": "Positioning headline",
-                  "fill": "$ink",
+                  "fill": "#17242B",
                   "textGrowth": "fixed-width",
                   "width": "fill_container",
                   "content": "The difference is\nin the details.",
                   "lineHeight": 1.16,
-                  "fontFamily": "$sans",
+                  "fontFamily": "IBM Plex Sans Condensed",
                   "fontSize": 54,
-                  "letterSpacing": -2.3
+                  "fontWeight": "200",
+                  "letterSpacing": 3.2
                 },
                 {
                   "type": "text",
                   "id": "I1DW6K",
                   "name": "Positioning statement",
-                  "fill": "$muted",
+                  "fill": "#465157",
                   "textGrowth": "fixed-width",
-                  "width": 745,
+                  "width": "fill_container",
                   "content": "A website should feel as considered as the business behind it. Software should stay dependable as that business grows. At TexCra, we bring design sensitivity and engineering discipline to every detail.",
                   "lineHeight": 1.75,
                   "fontFamily": "$sans",
@@ -503,7 +662,38 @@
           "name": "03 · Expertise / What we create",
           "context": "Expertise section. Navigation and the secondary hero action scroll here.",
           "width": "fill_container",
-          "fill": "$ivory",
+          "height": 1241,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "radial",
+            "enabled": true,
+            "rotation": 0,
+            "size": {
+              "width": 3.0954320390464294,
+              "height": 1.0833701932600386
+            },
+            "colors": [
+              {
+                "color": "#061828",
+                "position": 0.3
+              },
+              {
+                "color": "#1A2B39",
+                "position": 0.44
+              },
+              {
+                "color": "#F3F2ED",
+                "position": 0.84
+              },
+              {
+                "color": "#F6F1E8",
+                "position": 1
+              }
+            ],
+            "center": {
+              "y": 1
+            }
+          },
           "layout": "vertical",
           "gap": 44,
           "padding": [
@@ -512,13 +702,15 @@
             96,
             72
           ],
+          "justifyContent": "center",
+          "alignItems": "center",
           "children": [
             {
               "type": "frame",
               "id": "yFLQy",
               "name": "Expertise introduction",
               "width": "fill_container",
-              "stroke": "$line",
+              "stroke": "#BAC9D566",
               "strokeWidth": {
                 "top": 1
               },
@@ -535,20 +727,21 @@
                   "type": "text",
                   "id": "xfSR4",
                   "name": "Expertise headline",
-                  "fill": "$ink",
+                  "fill": "#17242B",
                   "textGrowth": "fixed-width",
                   "width": 680,
                   "content": "Your ambition.\nOur expertise.",
                   "lineHeight": 1.16,
-                  "fontFamily": "$sans",
+                  "fontFamily": "IBM Plex Sans Condensed",
                   "fontSize": 54,
-                  "letterSpacing": -2.3
+                  "fontWeight": "200",
+                  "letterSpacing": 3.2
                 },
                 {
                   "type": "text",
                   "id": "T6xZY",
                   "name": "Expertise summary",
-                  "fill": "$muted",
+                  "fill": "#465157",
                   "textGrowth": "fixed-width",
                   "width": 376,
                   "content": "From a distinctive first impression\nto the systems working behind it.",
@@ -564,14 +757,16 @@
               "id": "yRIXr",
               "name": "Three connected capabilities",
               "width": "fill_container",
+              "height": 688,
               "layout": "vertical",
+              "justifyContent": "space_between",
               "children": [
                 {
                   "type": "frame",
                   "id": "ssww4",
                   "name": "Website design · Service row",
                   "width": "fill_container",
-                  "stroke": "$line",
+                  "stroke": "#59666B66",
                   "strokeWidth": {
                     "top": 1
                   },
@@ -585,25 +780,27 @@
                       "type": "text",
                       "id": "T40OD",
                       "name": "Website design index",
-                      "fill": "$muted",
+                      "fill": "#4B555A",
                       "textGrowth": "fixed-width",
                       "width": 64,
                       "content": "01",
-                      "fontFamily": "$mono",
+                      "fontFamily": "IBM Plex Sans Condensed",
                       "fontSize": 12,
-                      "fontWeight": "normal"
+                      "fontWeight": "200",
+                      "letterSpacing": 1.8
                     },
                     {
                       "type": "text",
                       "id": "f9z0k",
                       "name": "Website design title",
-                      "fill": "$ink",
+                      "fill": "#17242B",
                       "textGrowth": "fixed-width",
                       "width": 410,
                       "content": "Website design",
-                      "fontFamily": "$sans",
+                      "fontFamily": "IBM Plex Sans Condensed",
                       "fontSize": 30,
-                      "letterSpacing": -1
+                      "fontWeight": "200",
+                      "letterSpacing": 2.8
                     },
                     {
                       "type": "frame",
@@ -617,7 +814,7 @@
                           "type": "text",
                           "id": "N0BC7",
                           "name": "Website design benefit",
-                          "fill": "$muted",
+                          "fill": "#465157",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
                           "content": "Turn your brand into a digital experience people feel, understand, and remember.",
@@ -630,15 +827,15 @@
                           "type": "text",
                           "id": "PaWrX",
                           "name": "Website design scope",
-                          "fill": "$muted",
+                          "fill": "#4B555A",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
                           "content": "VISUAL DIRECTION / UX & UI / INTERACTION",
                           "lineHeight": 1.6,
-                          "fontFamily": "$mono",
+                          "fontFamily": "IBM Plex Sans Condensed",
                           "fontSize": 10,
-                          "fontWeight": "normal",
-                          "letterSpacing": 0.7
+                          "fontWeight": "200",
+                          "letterSpacing": 2.4
                         }
                       ]
                     },
@@ -650,7 +847,7 @@
                       "height": 28,
                       "icon": "arrow-up-right",
                       "library": "lucide",
-                      "fill": "$ink"
+                      "fill": "#17242B"
                     }
                   ]
                 },
@@ -659,7 +856,7 @@
                   "id": "Nfixq",
                   "name": "Web development · Service row",
                   "width": "fill_container",
-                  "stroke": "$line",
+                  "stroke": "#59666B66",
                   "strokeWidth": {
                     "top": 1
                   },
@@ -673,25 +870,27 @@
                       "type": "text",
                       "id": "TuGTL",
                       "name": "Web development index",
-                      "fill": "$muted",
+                      "fill": "#4B555A",
                       "textGrowth": "fixed-width",
                       "width": 64,
                       "content": "02",
-                      "fontFamily": "$mono",
+                      "fontFamily": "IBM Plex Sans Condensed",
                       "fontSize": 12,
-                      "fontWeight": "normal"
+                      "fontWeight": "200",
+                      "letterSpacing": 1.8
                     },
                     {
                       "type": "text",
                       "id": "n4AlM",
                       "name": "Web development title",
-                      "fill": "$ink",
+                      "fill": "#17242B",
                       "textGrowth": "fixed-width",
                       "width": 410,
                       "content": "Web development",
-                      "fontFamily": "$sans",
+                      "fontFamily": "IBM Plex Sans Condensed",
                       "fontSize": 30,
-                      "letterSpacing": -1
+                      "fontWeight": "200",
+                      "letterSpacing": 2.8
                     },
                     {
                       "type": "frame",
@@ -705,7 +904,7 @@
                           "type": "text",
                           "id": "kqa1S",
                           "name": "Web development benefit",
-                          "fill": "$muted",
+                          "fill": "#465157",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
                           "content": "Bring every detail to life with responsive, thoughtfully engineered websites.",
@@ -718,15 +917,15 @@
                           "type": "text",
                           "id": "hewFR",
                           "name": "Web development scope",
-                          "fill": "$muted",
+                          "fill": "#4B555A",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
                           "content": "RESPONSIVE WEBSITES / PERFORMANCE / PRECISION",
                           "lineHeight": 1.6,
-                          "fontFamily": "$mono",
+                          "fontFamily": "IBM Plex Sans Condensed",
                           "fontSize": 10,
-                          "fontWeight": "normal",
-                          "letterSpacing": 0.7
+                          "fontWeight": "200",
+                          "letterSpacing": 2.4
                         }
                       ]
                     },
@@ -738,7 +937,7 @@
                       "height": 28,
                       "icon": "arrow-up-right",
                       "library": "lucide",
-                      "fill": "$ink"
+                      "fill": "#17242B"
                     }
                   ]
                 },
@@ -747,7 +946,7 @@
                   "id": "p81Lr",
                   "name": "Software engineering · Service row",
                   "width": "fill_container",
-                  "stroke": "$line",
+                  "stroke": "#E6E6DF66",
                   "strokeWidth": {
                     "top": 1
                   },
@@ -761,25 +960,27 @@
                       "type": "text",
                       "id": "ezMKx",
                       "name": "Software engineering index",
-                      "fill": "$muted",
+                      "fill": "#DCE0DD",
                       "textGrowth": "fixed-width",
                       "width": 64,
                       "content": "03",
-                      "fontFamily": "$mono",
+                      "fontFamily": "IBM Plex Sans Condensed",
                       "fontSize": 12,
-                      "fontWeight": "normal"
+                      "fontWeight": "200",
+                      "letterSpacing": 1.8
                     },
                     {
                       "type": "text",
                       "id": "D8E5QJ",
                       "name": "Software engineering title",
-                      "fill": "$ink",
+                      "fill": "#F5F2EB",
                       "textGrowth": "fixed-width",
                       "width": 410,
                       "content": "Software engineering",
-                      "fontFamily": "$sans",
+                      "fontFamily": "IBM Plex Sans Condensed",
                       "fontSize": 30,
-                      "letterSpacing": -1
+                      "fontWeight": "200",
+                      "letterSpacing": 2.8
                     },
                     {
                       "type": "frame",
@@ -793,7 +994,7 @@
                           "type": "text",
                           "id": "Gyths",
                           "name": "Software engineering benefit",
-                          "fill": "$muted",
+                          "fill": "#DCE0DD",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
                           "content": "Build dependable foundations for complex ideas, evolving needs, and lasting scale.",
@@ -806,15 +1007,15 @@
                           "type": "text",
                           "id": "Jkw8C",
                           "name": "Software engineering scope",
-                          "fill": "$muted",
+                          "fill": "#DCE0DD",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
                           "content": "CUSTOM SOFTWARE / SYSTEM ARCHITECTURE / SCALABILITY",
                           "lineHeight": 1.6,
-                          "fontFamily": "$mono",
+                          "fontFamily": "IBM Plex Sans Condensed",
                           "fontSize": 10,
-                          "fontWeight": "normal",
-                          "letterSpacing": 0.7
+                          "fontWeight": "200",
+                          "letterSpacing": 2.4
                         }
                       ]
                     },
@@ -826,7 +1027,7 @@
                       "height": 28,
                       "icon": "arrow-up-right",
                       "library": "lucide",
-                      "fill": "$ink"
+                      "fill": "#F5F2EB"
                     }
                   ]
                 }
@@ -839,13 +1040,12 @@
           "id": "H2QGw",
           "name": "04 · Our approach / The craft beneath",
           "context": "Our approach section. Explains visual depth, engineering precision, scalability, and persistence.",
+          "clip": true,
           "width": "fill_container",
+          "height": 1357,
           "fill": "$navy",
-          "gap": 88,
-          "padding": [
-            88,
-            72
-          ],
+          "gap": 72,
+          "padding": 72,
           "alignItems": "center",
           "children": [
             {
@@ -853,8 +1053,8 @@
               "id": "W7QjI",
               "name": "Continuum detail / Reflective aperture",
               "clip": true,
-              "width": 544,
-              "height": 558,
+              "width": 620,
+              "height": 620,
               "fill": "$navy",
               "layout": "none",
               "children": [
@@ -877,7 +1077,7 @@
                   "type": "rectangle",
                   "id": "ig2BQ",
                   "x": 0,
-                  "y": 350,
+                  "y": 390,
                   "name": "Detail lower fade",
                   "fill": {
                     "type": "gradient",
@@ -898,16 +1098,16 @@
                       }
                     ]
                   },
-                  "width": 544,
-                  "height": 208
+                  "width": 620,
+                  "height": 230
                 },
                 {
                   "type": "frame",
                   "id": "J093ml",
                   "x": 0,
-                  "y": 502,
+                  "y": 558,
                   "name": "Aperture caption",
-                  "width": 544,
+                  "width": 620,
                   "stroke": "#AEC2D050",
                   "strokeWidth": {
                     "top": 1
@@ -926,10 +1126,10 @@
                       "name": "FORM / FLOW / FUNCTION",
                       "fill": "$silver",
                       "content": "FORM / FLOW / FUNCTION",
-                      "fontFamily": "$mono",
+                      "fontFamily": "IBM Plex Sans Condensed",
                       "fontSize": 9,
-                      "fontWeight": "normal",
-                      "letterSpacing": 1.5
+                      "fontWeight": "200",
+                      "letterSpacing": 2.2
                     },
                     {
                       "type": "text",
@@ -937,10 +1137,10 @@
                       "name": "THE CONTINUUM STUDY",
                       "fill": "$silver",
                       "content": "THE CONTINUUM STUDY",
-                      "fontFamily": "$mono",
+                      "fontFamily": "IBM Plex Sans Condensed",
                       "fontSize": 9,
-                      "fontWeight": "normal",
-                      "letterSpacing": 1.5
+                      "fontWeight": "200",
+                      "letterSpacing": 2.2
                     }
                   ]
                 }
@@ -951,8 +1151,11 @@
               "id": "DHOhV",
               "name": "What craftsmanship means",
               "width": "fill_container",
+              "height": 752,
               "layout": "vertical",
               "gap": 28,
+              "justifyContent": "space_between",
+              "alignItems": "end",
               "children": [
                 {
                   "type": "text",
@@ -960,10 +1163,11 @@
                   "name": "Approach section label",
                   "fill": "$blue",
                   "content": "02 / OUR APPROACH",
-                  "fontFamily": "$mono",
+                  "textAlign": "right",
+                  "fontFamily": "IBM Plex Sans Condensed",
                   "fontSize": 10,
-                  "fontWeight": "normal",
-                  "letterSpacing": 1.8
+                  "fontWeight": "200",
+                  "letterSpacing": 2.4
                 },
                 {
                   "type": "text",
@@ -972,12 +1176,13 @@
                   "fill": "$ivory",
                   "textGrowth": "fixed-width",
                   "width": "fill_container",
-                  "content": "Beauty on the surface.\nRigor underneath.",
+                  "content": "Surface beauty.\nRigor beneath.",
                   "lineHeight": 1.2,
-                  "fontFamily": "$sans",
-                  "fontSize": 45,
-                  "fontWeight": "300",
-                  "letterSpacing": -1.8
+                  "textAlign": "right",
+                  "fontFamily": "IBM Plex Sans Condensed",
+                  "fontSize": 48,
+                  "fontWeight": "200",
+                  "letterSpacing": 3.2
                 },
                 {
                   "type": "text",
@@ -986,8 +1191,9 @@
                   "fill": "$silver",
                   "textGrowth": "fixed-width",
                   "width": "fill_container",
-                  "content": "The strongest digital experiences connect what people see with what they can rely on.",
+                  "content": "Visual depth, engineered to endure.",
                   "lineHeight": 1.7,
+                  "textAlign": "right",
                   "fontFamily": "$sans",
                   "fontSize": 17,
                   "fontWeight": "normal"
@@ -1008,6 +1214,7 @@
                     0,
                     0
                   ],
+                  "justifyContent": "end",
                   "children": [
                     {
                       "type": "text",
@@ -1015,9 +1222,11 @@
                       "name": "Depth you can feel index",
                       "fill": "$blue",
                       "content": "01",
-                      "fontFamily": "$mono",
+                      "textAlign": "right",
+                      "fontFamily": "IBM Plex Sans Condensed",
                       "fontSize": 10,
-                      "fontWeight": "normal"
+                      "fontWeight": "200",
+                      "letterSpacing": 2.4
                     },
                     {
                       "type": "frame",
@@ -1026,6 +1235,7 @@
                       "width": "fill_container",
                       "layout": "vertical",
                       "gap": 7,
+                      "alignItems": "end",
                       "children": [
                         {
                           "type": "text",
@@ -1033,9 +1243,11 @@
                           "name": "Depth you can feel heading",
                           "fill": "$ivory",
                           "content": "Depth you can feel",
-                          "fontFamily": "$sans",
+                          "textAlign": "right",
+                          "fontFamily": "IBM Plex Sans Condensed",
                           "fontSize": 19,
-                          "fontWeight": "500"
+                          "fontWeight": "200",
+                          "letterSpacing": 1.6
                         },
                         {
                           "type": "text",
@@ -1044,8 +1256,9 @@
                           "fill": "$silver",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
-                          "content": "Layered visuals and thoughtful motion bring a distinctive sense of presence.",
+                          "content": "Layered motion. Lasting presence.",
                           "lineHeight": 1.65,
+                          "textAlign": "right",
                           "fontFamily": "$sans",
                           "fontSize": 15,
                           "fontWeight": "normal"
@@ -1070,6 +1283,7 @@
                     0,
                     0
                   ],
+                  "justifyContent": "end",
                   "children": [
                     {
                       "type": "text",
@@ -1077,9 +1291,11 @@
                       "name": "Precision you can trust index",
                       "fill": "$blue",
                       "content": "02",
-                      "fontFamily": "$mono",
+                      "textAlign": "right",
+                      "fontFamily": "IBM Plex Sans Condensed",
                       "fontSize": 10,
-                      "fontWeight": "normal"
+                      "fontWeight": "200",
+                      "letterSpacing": 2.4
                     },
                     {
                       "type": "frame",
@@ -1088,6 +1304,7 @@
                       "width": "fill_container",
                       "layout": "vertical",
                       "gap": 7,
+                      "alignItems": "end",
                       "children": [
                         {
                           "type": "text",
@@ -1095,9 +1312,11 @@
                           "name": "Precision you can trust heading",
                           "fill": "$ivory",
                           "content": "Precision you can trust",
-                          "fontFamily": "$sans",
+                          "textAlign": "right",
+                          "fontFamily": "IBM Plex Sans Condensed",
                           "fontSize": 19,
-                          "fontWeight": "500"
+                          "fontWeight": "200",
+                          "letterSpacing": 1.6
                         },
                         {
                           "type": "text",
@@ -1106,8 +1325,9 @@
                           "fill": "$silver",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
-                          "content": "Considered interactions and careful engineering make complexity feel simple.",
+                          "content": "Precise interactions. Simple outcomes.",
                           "lineHeight": 1.65,
+                          "textAlign": "right",
                           "fontFamily": "$sans",
                           "fontSize": 15,
                           "fontWeight": "normal"
@@ -1132,6 +1352,7 @@
                     0,
                     0
                   ],
+                  "justifyContent": "end",
                   "children": [
                     {
                       "type": "text",
@@ -1139,9 +1360,11 @@
                       "name": "Foundations that endure index",
                       "fill": "$blue",
                       "content": "03",
-                      "fontFamily": "$mono",
+                      "textAlign": "right",
+                      "fontFamily": "IBM Plex Sans Condensed",
                       "fontSize": 10,
-                      "fontWeight": "normal"
+                      "fontWeight": "200",
+                      "letterSpacing": 2.4
                     },
                     {
                       "type": "frame",
@@ -1150,6 +1373,7 @@
                       "width": "fill_container",
                       "layout": "vertical",
                       "gap": 7,
+                      "alignItems": "end",
                       "children": [
                         {
                           "type": "text",
@@ -1157,9 +1381,11 @@
                           "name": "Foundations that endure heading",
                           "fill": "$ivory",
                           "content": "Foundations that endure",
-                          "fontFamily": "$sans",
+                          "textAlign": "right",
+                          "fontFamily": "IBM Plex Sans Condensed",
                           "fontSize": 19,
-                          "fontWeight": "500"
+                          "fontWeight": "200",
+                          "letterSpacing": 1.6
                         },
                         {
                           "type": "text",
@@ -1168,8 +1394,9 @@
                           "fill": "$silver",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
-                          "content": "Scalable systems and persistent data support what comes next.",
+                          "content": "Scalable systems. Built forward.",
                           "lineHeight": 1.65,
+                          "textAlign": "right",
                           "fontFamily": "$sans",
                           "fontSize": 15,
                           "fontWeight": "normal"
@@ -1188,13 +1415,46 @@
           "name": "05 · Process / From intent to impact",
           "context": "Process section. Four proposed stages; no delivery timeline is implied.",
           "width": "fill_container",
-          "fill": "$ivory",
+          "height": 1264,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "radial",
+            "enabled": true,
+            "rotation": 0,
+            "size": {
+              "width": 3.0954320390464294,
+              "height": 1.0833701932600386
+            },
+            "colors": [
+              {
+                "color": "#061828",
+                "position": 0.3
+              },
+              {
+                "color": "#1A2B39",
+                "position": 0.44
+              },
+              {
+                "color": "#F3F2ED",
+                "position": 0.84
+              },
+              {
+                "color": "#F6F1E8",
+                "position": 1
+              }
+            ],
+            "center": {
+              "y": 0
+            }
+          },
           "layout": "vertical",
           "gap": 56,
           "padding": [
             96,
             72
           ],
+          "justifyContent": "center",
+          "alignItems": "center",
           "children": [
             {
               "type": "frame",
@@ -1203,46 +1463,50 @@
               "width": "fill_container",
               "gap": 80,
               "justifyContent": "space_between",
+              "alignItems": "center",
               "children": [
                 {
                   "type": "text",
                   "id": "xHQl7",
                   "name": "Process section label",
-                  "fill": "$muted",
+                  "fill": "#DCE0DD",
                   "textGrowth": "fixed-width",
                   "width": 328,
                   "content": "03 / HOW WE WORK",
-                  "fontFamily": "$mono",
+                  "fontFamily": "IBM Plex Sans Condensed",
                   "fontSize": 10,
-                  "fontWeight": "normal",
-                  "letterSpacing": 1.8
+                  "fontWeight": "200",
+                  "letterSpacing": 2.4
                 },
                 {
                   "type": "frame",
                   "id": "hjXle",
                   "name": "Process narrative",
-                  "width": "fill_container",
+                  "width": 569,
                   "layout": "vertical",
                   "gap": 20,
+                  "justifyContent": "center",
+                  "alignItems": "end",
                   "children": [
                     {
                       "type": "text",
                       "id": "Xht9J",
                       "name": "Process headline",
-                      "fill": "$ink",
+                      "fill": "#17242B",
                       "textGrowth": "fixed-width",
                       "width": "fill_container",
                       "content": "Clarity at every step.\nCare all the way through.",
                       "lineHeight": 1.2,
-                      "fontFamily": "$sans",
+                      "fontFamily": "IBM Plex Sans Condensed",
                       "fontSize": 48,
-                      "letterSpacing": -2
+                      "fontWeight": "200",
+                      "letterSpacing": 3.2
                     },
                     {
                       "type": "text",
                       "id": "m75Y0Q",
                       "name": "Process description",
-                      "fill": "$muted",
+                      "fill": "#465157",
                       "textGrowth": "fixed-width",
                       "width": "fill_container",
                       "content": "A considered path from the first conversation to the final refinement.",
@@ -1286,9 +1550,10 @@
                       "name": "Discover stage number",
                       "fill": "$muted",
                       "content": "01",
-                      "fontFamily": "$mono",
+                      "fontFamily": "IBM Plex Sans Condensed",
                       "fontSize": 12,
-                      "fontWeight": "normal"
+                      "fontWeight": "200",
+                      "letterSpacing": 1.8
                     },
                     {
                       "type": "text",
@@ -1296,9 +1561,10 @@
                       "name": "Discover stage title",
                       "fill": "$ink",
                       "content": "Discover",
-                      "fontFamily": "$sans",
+                      "fontFamily": "IBM Plex Sans Condensed",
                       "fontSize": 26,
-                      "letterSpacing": -0.8
+                      "fontWeight": "200",
+                      "letterSpacing": 2.2
                     },
                     {
                       "type": "text",
@@ -1322,10 +1588,10 @@
                       "width": "fill_container",
                       "content": "A SHARED DIRECTION",
                       "lineHeight": 1.5,
-                      "fontFamily": "$mono",
+                      "fontFamily": "IBM Plex Sans Condensed",
                       "fontSize": 9,
-                      "fontWeight": "normal",
-                      "letterSpacing": 0.7
+                      "fontWeight": "200",
+                      "letterSpacing": 2.2
                     }
                   ]
                 },
@@ -1353,9 +1619,10 @@
                       "name": "Design stage number",
                       "fill": "$muted",
                       "content": "02",
-                      "fontFamily": "$mono",
+                      "fontFamily": "IBM Plex Sans Condensed",
                       "fontSize": 12,
-                      "fontWeight": "normal"
+                      "fontWeight": "200",
+                      "letterSpacing": 1.8
                     },
                     {
                       "type": "text",
@@ -1363,9 +1630,10 @@
                       "name": "Design stage title",
                       "fill": "$ink",
                       "content": "Design",
-                      "fontFamily": "$sans",
+                      "fontFamily": "IBM Plex Sans Condensed",
                       "fontSize": 26,
-                      "letterSpacing": -0.8
+                      "fontWeight": "200",
+                      "letterSpacing": 2.2
                     },
                     {
                       "type": "text",
@@ -1389,10 +1657,10 @@
                       "width": "fill_container",
                       "content": "A CONSIDERED EXPERIENCE",
                       "lineHeight": 1.5,
-                      "fontFamily": "$mono",
+                      "fontFamily": "IBM Plex Sans Condensed",
                       "fontSize": 9,
-                      "fontWeight": "normal",
-                      "letterSpacing": 0.7
+                      "fontWeight": "200",
+                      "letterSpacing": 2.2
                     }
                   ]
                 },
@@ -1420,9 +1688,10 @@
                       "name": "Engineer stage number",
                       "fill": "$muted",
                       "content": "03",
-                      "fontFamily": "$mono",
+                      "fontFamily": "IBM Plex Sans Condensed",
                       "fontSize": 12,
-                      "fontWeight": "normal"
+                      "fontWeight": "200",
+                      "letterSpacing": 1.8
                     },
                     {
                       "type": "text",
@@ -1430,9 +1699,10 @@
                       "name": "Engineer stage title",
                       "fill": "$ink",
                       "content": "Engineer",
-                      "fontFamily": "$sans",
+                      "fontFamily": "IBM Plex Sans Condensed",
                       "fontSize": 26,
-                      "letterSpacing": -0.8
+                      "fontWeight": "200",
+                      "letterSpacing": 2.2
                     },
                     {
                       "type": "text",
@@ -1456,10 +1726,10 @@
                       "width": "fill_container",
                       "content": "A DEPENDABLE FOUNDATION",
                       "lineHeight": 1.5,
-                      "fontFamily": "$mono",
+                      "fontFamily": "IBM Plex Sans Condensed",
                       "fontSize": 9,
-                      "fontWeight": "normal",
-                      "letterSpacing": 0.7
+                      "fontWeight": "200",
+                      "letterSpacing": 2.2
                     }
                   ]
                 },
@@ -1487,9 +1757,10 @@
                       "name": "Refine stage number",
                       "fill": "$muted",
                       "content": "04",
-                      "fontFamily": "$mono",
+                      "fontFamily": "IBM Plex Sans Condensed",
                       "fontSize": 12,
-                      "fontWeight": "normal"
+                      "fontWeight": "200",
+                      "letterSpacing": 1.8
                     },
                     {
                       "type": "text",
@@ -1497,9 +1768,10 @@
                       "name": "Refine stage title",
                       "fill": "$ink",
                       "content": "Refine",
-                      "fontFamily": "$sans",
+                      "fontFamily": "IBM Plex Sans Condensed",
                       "fontSize": 26,
-                      "letterSpacing": -0.8
+                      "fontWeight": "200",
+                      "letterSpacing": 2.2
                     },
                     {
                       "type": "text",
@@ -1523,10 +1795,10 @@
                       "width": "fill_container",
                       "content": "A CAREFULLY FINISHED PRODUCT",
                       "lineHeight": 1.5,
-                      "fontFamily": "$mono",
+                      "fontFamily": "IBM Plex Sans Condensed",
                       "fontSize": 9,
-                      "fontWeight": "normal",
-                      "letterSpacing": 0.7
+                      "fontWeight": "200",
+                      "letterSpacing": 2.2
                     }
                   ]
                 }
@@ -1540,12 +1812,42 @@
           "name": "06 · Start a project / Enquiry",
           "context": "Start a project destination. Enquiry form design with name, work email, project type and project brief. On implementation: validate required fields, show submitting, success and retry states, and preserve input after errors.",
           "width": "fill_container",
-          "fill": "$navy",
-          "gap": 112,
-          "padding": [
-            96,
-            72
-          ],
+          "height": 780,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "radial",
+            "enabled": true,
+            "rotation": 0,
+            "size": {
+              "width": 1.15,
+              "height": 1.35
+            },
+            "colors": [
+              {
+                "color": "#173849",
+                "position": 0
+              },
+              {
+                "color": "#0B2535",
+                "position": 0.32
+              },
+              {
+                "color": "#061828",
+                "position": 0.72
+              },
+              {
+                "color": "#061828",
+                "position": 1
+              }
+            ],
+            "center": {
+              "x": 0.82,
+              "y": 0.46
+            }
+          },
+          "gap": 96,
+          "padding": 72,
+          "alignItems": "center",
           "children": [
             {
               "type": "frame",
@@ -1561,10 +1863,10 @@
                   "name": "Contact section label",
                   "fill": "$blue",
                   "content": "04 / WHAT COMES NEXT",
-                  "fontFamily": "$mono",
+                  "fontFamily": "IBM Plex Sans Condensed",
                   "fontSize": 10,
-                  "fontWeight": "normal",
-                  "letterSpacing": 1.8
+                  "fontWeight": "200",
+                  "letterSpacing": 2.4
                 },
                 {
                   "type": "text",
@@ -1573,12 +1875,12 @@
                   "fill": "$ivory",
                   "textGrowth": "fixed-width",
                   "width": "fill_container",
-                  "content": "Let’s make\nsomething\nthat matters.",
+                  "content": "Make it\nmatter.",
                   "lineHeight": 1.12,
-                  "fontFamily": "$sans",
-                  "fontSize": 64,
-                  "fontWeight": "300",
-                  "letterSpacing": -2.8
+                  "fontFamily": "IBM Plex Sans Condensed",
+                  "fontSize": 60,
+                  "fontWeight": "200",
+                  "letterSpacing": 3.2
                 },
                 {
                   "type": "text",
@@ -1587,8 +1889,8 @@
                   "fill": "$silver",
                   "textGrowth": "fixed-width",
                   "width": "fill_container",
-                  "content": "A distinctive website. A dependable platform.\nA complex idea, thoughtfully brought to life.\nIt starts with a conversation.",
-                  "lineHeight": 1.8,
+                  "content": "Distinctive design. Dependable engineering.\nStart with a conversation.",
+                  "lineHeight": 1.65,
                   "fontFamily": "$sans",
                   "fontSize": 17,
                   "fontWeight": "normal"
@@ -1600,18 +1902,89 @@
               "id": "P0KkFK",
               "name": "Project enquiry form",
               "width": 576,
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "enabled": true,
+                "rotation": 135,
+                "size": {
+                  "height": 1.2
+                },
+                "colors": [
+                  {
+                    "color": "#FFFFFF1F",
+                    "position": 0
+                  },
+                  {
+                    "color": "#BDE7F20D",
+                    "position": 0.34
+                  },
+                  {
+                    "color": "#FFFFFF08",
+                    "position": 0.68
+                  },
+                  {
+                    "color": "#8EB7C814",
+                    "position": 1
+                  }
+                ]
+              },
+              "cornerRadius": 6,
+              "stroke": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "enabled": true,
+                "rotation": 135,
+                "size": {
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "#F1F7F680",
+                    "position": 0
+                  },
+                  {
+                    "color": "#7893A33D",
+                    "position": 0.42
+                  },
+                  {
+                    "color": "#DDEBEC66",
+                    "position": 1
+                  }
+                ]
+              },
+              "strokeWidth": 1,
+              "effect": [
+                {
+                  "type": "background_blur",
+                  "radius": 24
+                },
+                {
+                  "type": "shadow",
+                  "shadowType": "outer",
+                  "color": "#000B1266",
+                  "offset": {
+                    "x": 0,
+                    "y": 18
+                  },
+                  "blur": 48,
+                  "spread": -12
+                }
+              ],
               "layout": "vertical",
-              "gap": 28,
+              "gap": 22,
+              "padding": 32,
               "children": [
                 {
                   "type": "text",
                   "id": "T8Joa",
                   "name": "Form title",
                   "fill": "$ivory",
-                  "content": "Tell us what you have in mind.",
-                  "fontFamily": "$sans",
+                  "content": "What are you building?",
+                  "fontFamily": "IBM Plex Sans Condensed",
                   "fontSize": 24,
-                  "letterSpacing": -0.6
+                  "fontWeight": "200",
+                  "letterSpacing": 2.2
                 },
                 {
                   "type": "frame",
@@ -1715,7 +2088,7 @@
                       "id": "AjdPT",
                       "name": "Project type label",
                       "fill": "$ivory",
-                      "content": "I’m interested in",
+                      "content": "Project type",
                       "fontFamily": "$sans",
                       "fontSize": 13,
                       "fontWeight": "normal"
@@ -1730,9 +2103,27 @@
                           "type": "frame",
                           "id": "S0YeJ",
                           "name": "Website option",
-                          "fill": "#BDDFFF13",
+                          "fill": {
+                            "type": "gradient",
+                            "gradientType": "linear",
+                            "enabled": true,
+                            "rotation": 135,
+                            "size": {
+                              "height": 1
+                            },
+                            "colors": [
+                              {
+                                "color": "#EAF7F426",
+                                "position": 0
+                              },
+                              {
+                                "color": "#8FC8DE12",
+                                "position": 1
+                              }
+                            ]
+                          },
                           "cornerRadius": 2,
-                          "stroke": "$blue",
+                          "stroke": "#CBE8EE99",
                           "strokeWidth": 1,
                           "padding": [
                             12,
@@ -1755,9 +2146,9 @@
                           "type": "frame",
                           "id": "UlmuF",
                           "name": "Software option",
-                          "fill": "#061828",
+                          "fill": "#FFFFFF08",
                           "cornerRadius": 2,
-                          "stroke": "#667E905C",
+                          "stroke": "#AFC5CF4D",
                           "strokeWidth": 1,
                           "padding": [
                             12,
@@ -1780,9 +2171,9 @@
                           "type": "frame",
                           "id": "iAGfI",
                           "name": "Let’s discuss option",
-                          "fill": "#061828",
+                          "fill": "#FFFFFF08",
                           "cornerRadius": 2,
-                          "stroke": "#667E905C",
+                          "stroke": "#AFC5CF4D",
                           "strokeWidth": 1,
                           "padding": [
                             12,
@@ -1818,7 +2209,7 @@
                       "id": "y2Cmwx",
                       "name": "Message label",
                       "fill": "$ivory",
-                      "content": "A little about your project",
+                      "content": "Project brief",
                       "fontFamily": "$sans",
                       "fontSize": 13,
                       "fontWeight": "normal"
@@ -1828,10 +2219,10 @@
                       "id": "N3fU4Z",
                       "name": "Project brief input",
                       "width": "fill_container",
-                      "height": 116,
-                      "fill": "#FFFFFF05",
+                      "height": 96,
+                      "fill": "#FFFFFF0A",
                       "cornerRadius": 2,
-                      "stroke": "#ACBECE66",
+                      "stroke": "#C7D9DF52",
                       "strokeWidth": 1,
                       "padding": 18,
                       "children": [
@@ -1842,7 +2233,7 @@
                           "fill": "#8CA0B0",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
-                          "content": "Your goals, scope, and any timing you have in mind…",
+                          "content": "Goals, scope, timing…",
                           "lineHeight": 1.65,
                           "fontFamily": "$sans",
                           "fontSize": 15,
@@ -1860,7 +2251,7 @@
                   "context": "Submit project enquiry. Static design: requires form handling and delivery integration during implementation.",
                   "descendants": {
                     "aI10y": {
-                      "content": "Send project enquiry"
+                      "content": "Send enquiry"
                     }
                   }
                 }
@@ -1872,18 +2263,20 @@
           "type": "frame",
           "id": "gZmye",
           "name": "07 · Footer",
+          "clip": true,
           "width": "fill_container",
+          "height": 328,
           "fill": "$navy",
           "stroke": "#A3B8C42E",
           "strokeWidth": {
             "top": 1
           },
           "layout": "vertical",
-          "gap": 52,
+          "gap": 28,
           "padding": [
-            48,
+            40,
             72,
-            32,
+            0,
             72
           ],
           "children": [
@@ -1901,16 +2294,6 @@
                   "layout": "vertical",
                   "gap": 14,
                   "children": [
-                    {
-                      "type": "text",
-                      "id": "m51gCl",
-                      "name": "Footer TexCra",
-                      "fill": "$ivory",
-                      "content": "TexCra",
-                      "fontFamily": "$sans",
-                      "fontSize": 40,
-                      "letterSpacing": -1.8
-                    },
                     {
                       "type": "text",
                       "id": "DLC1h",
@@ -1986,10 +2369,10 @@
                   "name": "© 2026 TexCra. All rights reserved.",
                   "fill": "#8CA0B0",
                   "content": "© 2026 TexCra. All rights reserved.",
-                  "fontFamily": "$mono",
+                  "fontFamily": "IBM Plex Sans Condensed",
                   "fontSize": 10,
-                  "fontWeight": "normal",
-                  "letterSpacing": 0.5
+                  "fontWeight": "200",
+                  "letterSpacing": 2.4
                 },
                 {
                   "type": "text",
@@ -1997,12 +2380,560 @@
                   "name": "PRECISION IN EVERY DETAIL.",
                   "fill": "#8CA0B0",
                   "content": "PRECISION IN EVERY DETAIL.",
-                  "fontFamily": "$mono",
+                  "fontFamily": "IBM Plex Sans Condensed",
                   "fontSize": 10,
-                  "fontWeight": "normal",
-                  "letterSpacing": 0.5
+                  "fontWeight": "200",
+                  "letterSpacing": 2.4
                 }
               ]
+            },
+            {
+              "type": "text",
+              "id": "lLWx1",
+              "name": "Footer TexCra",
+              "opacity": 0.94,
+              "fill": "#D7E0E1",
+              "content": "TEXCRA",
+              "lineHeight": 0.76,
+              "fontFamily": "IBM Plex Sans Condensed",
+              "fontSize": 320,
+              "fontWeight": "200",
+              "letterSpacing": 22
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "vHiQV",
+          "layoutPosition": "absolute",
+          "x": 47,
+          "y": 3196,
+          "name": "Chaotic geometry grid · Background",
+          "opacity": 0.28,
+          "clip": true,
+          "width": 1393,
+          "height": 1049,
+          "layout": "none",
+          "children": [
+            {
+              "type": "path",
+              "id": "g3d43d",
+              "x": 310,
+              "y": 0,
+              "opacity": 0.7,
+              "geometry": "M0.51251 0l818.97504 0m-818.97504 53.8125l818.97504 0m-818.97504 41.51251l457.14997 0m-457.14997 38.95l818.97504 0m-818.97504 23.0625l413.07501 0m-413.07501 39.46249l818.97504 0m-818.97504 33.3125l47.15 0m-47.15 35.87502l818.97504 0m-818.97504 24.59997l809.74994 0m-809.74994 25.11249l818.97504 0m-818.97504 39.46253l818.97504 0m-818.97504 56.375l818.97504 0m-818.97504 54.32501l818.97504 0m-819.48755 36.38748l410 0m-409.48749 33.3125l89.6875 0m-89.6875 38.95001l818.97504 0m-818.97504 38.94995l818.97504 0m-818.97504 42.53754l711.35004 0m-711.35004 13.83746l786.68744 0m-786.68744 46.125l818.97504 0m-818.97504 53.30005l740.56244 0m-740.56244 50.73749l672.39997-820",
+              "width": 819.4875,
+              "height": 820,
+              "stroke": "#6A7C85",
+              "strokeWidth": 0.5125000000000001
+            },
+            {
+              "type": "path",
+              "id": "U5jDk",
+              "x": 358.175,
+              "y": 0,
+              "opacity": 0.7,
+              "geometry": "M724.16248 0l0 820m-50.22498-820l0 820m-41.51257-820l0 820m-37.41248-820l0 820m-36.90002-820l0 820m-38.4375-820l0 51.25m-37.41245-51.25l0 820m-36.38745-820l0 820m-34.85004-820l0 92.25m-49.20001-92.25l0 820m-49.19995-820l0 52.7875m-34.85004-52.7875l0 820m-35.875-820l0 818.97504m-40.48748-818.97504l0 820m-75.33753-820l0 820m-37.41247-820l0 769.26251m-38.4375-769.26251l0 769.26251m-50.22501-769.26251l0 820m49.71249-719.55c28.1875-26.65001 59.96253-36.3875 93.78748-36.3875 4.61255 0 5.125-0.5125 14.86255 0.5125",
+              "width": 724.1625,
+              "height": 820,
+              "stroke": "#6A7C85",
+              "strokeWidth": 0.5125000000000001
+            },
+            {
+              "type": "path",
+              "id": "kh6tG",
+              "x": 314.1,
+              "y": 0,
+              "geometry": "M0 0l405.89999 254.2 264.44999-254.2",
+              "width": 670.35,
+              "height": 254.2,
+              "stroke": "#6A7C85",
+              "strokeWidth": 0.5125000000000001
+            },
+            {
+              "type": "path",
+              "id": "mYh4f",
+              "x": 523.2,
+              "y": 64.0625,
+              "geometry": "M0 0l196.79999 190.1375 183.98755-175.7875",
+              "width": 380.7875,
+              "height": 190.1375,
+              "stroke": "#6A7C85",
+              "strokeWidth": 0.5125000000000001
+            },
+            {
+              "type": "path",
+              "id": "g1pNea",
+              "x": 373.55,
+              "y": 100.45,
+              "geometry": "M199.87503 11.27499c-12.81256-7.6875-25.11255-11.27499-40.48755-11.27499-27.16247 0-45.61249 10.7625-66.625 30.74999l-92.76248 90.20001",
+              "width": 199.875,
+              "height": 120.95,
+              "stroke": "#6A7C85",
+              "strokeWidth": 0.5125000000000001
+            },
+            {
+              "type": "path",
+              "id": "Ayw6j",
+              "x": 358.175,
+              "y": 195.775,
+              "geometry": "M0 0c1.53751 26.13748 22.03751 67.1375 66.625 93.27501 11.27499 6.14996 32.28751 16.39996 59.44998 16.39996",
+              "width": 126.075,
+              "height": 109.675,
+              "stroke": "#6A7C85",
+              "strokeWidth": 0.5125000000000001
+            },
+            {
+              "type": "path",
+              "id": "Ggym8",
+              "x": 438.6375,
+              "y": 298.275,
+              "geometry": "M0 0l148.11249 152.72501c15.88751 15.88748 58.42505 54.83749 58.42505 54.83749 0 0 56.375 57.39999 77.89996 78.41251l103.01251 103.52496",
+              "width": 387.45,
+              "height": 389.5,
+              "stroke": "#6A7C85",
+              "strokeWidth": 0.5125000000000001
+            },
+            {
+              "type": "path",
+              "id": "pwKU0",
+              "x": 310.5125,
+              "y": 290.5875,
+              "geometry": "M0 529.41248l399.75-378.73749 129.66254-150.67499",
+              "width": 529.4125,
+              "height": 529.4125,
+              "stroke": "#6A7C85",
+              "strokeWidth": 0.5125000000000001
+            },
+            {
+              "type": "path",
+              "id": "xPhPd",
+              "x": 447.8625,
+              "y": 178.8625,
+              "geometry": "M0 71.23749c16.91254-11.78749 54.83752-59.96249 85.07501-71.23749",
+              "width": 85.075,
+              "height": 71.2375,
+              "stroke": "#6A7C85",
+              "strokeWidth": 0.5125000000000001
+            },
+            {
+              "type": "path",
+              "id": "ynEZM",
+              "x": 447.35,
+              "y": 172.7125,
+              "geometry": "M0 92.7625c27.67499-14.35001 82.51245-77.90001 105.0625-92.7625",
+              "width": 105.0625,
+              "height": 92.7625,
+              "stroke": "#6A7C85",
+              "strokeWidth": 0.5125000000000001
+            },
+            {
+              "type": "path",
+              "id": "HKIr7",
+              "x": 363.7455,
+              "y": 264.45,
+              "geometry": "M87.19196 0c-17.9375 8.71252-89.6875 38.95001-87.125 135.30002 5.125 49.71249 46.125 111.725 119.41253 131.20001 13.32495 3.07495 25.11249 4.61249 38.4375 4.61249",
+              "width": 157.917,
+              "height": 271.1125,
+              "stroke": "#6A7C85",
+              "strokeWidth": 0.5125000000000001
+            },
+            {
+              "type": "path",
+              "id": "RitC5",
+              "x": 435.5625,
+              "y": 295.2,
+              "geometry": "M0 0c23.0625 27.67502 54.32501 57.91254 77.90002 59.45001 55.86249 0 89.6875 32.28751 116.33753 74.3125 14.34997 26.13751 15.375 50.22501 15.375 66.11249 1.53747 65.08755-68.16254 147.60001-141.96253 148.11252-24.08752 0-55.35004-12.8125-56.375-13.83747",
+              "width": 209.6375,
+              "height": 347.9875,
+              "stroke": "#6A7C85",
+              "strokeWidth": 0.5125000000000001
+            },
+            {
+              "type": "path",
+              "id": "mX3Hw",
+              "x": 334.0875,
+              "y": 505.8375,
+              "geometry": "M187.0625 0c-36.90002 10.24997-78.92499 51.24997-75.85004 104.03751 0.51252 10.25 2.5625 22.03753 7.6875 25.11248l125.56256 123.51252m-244.46252-244.97504l131.71246 136.32507c45.10004 44.07495 77.38752 82.51245 97.375 99.9375 17.42499 11.27497 34.85004 19.47498 60.47504 18.96247 30.23749-2.04999 91.22498-25.625 92.25-114.79999",
+              "width": 381.8125,
+              "height": 262.9353,
+              "stroke": "#6A7C85",
+              "strokeWidth": 0.5125000000000001
+            },
+            {
+              "type": "path",
+              "id": "sGgNV",
+              "x": 339.725,
+              "y": 334.6625,
+              "geometry": "M0 0l109.67502 106.08749 4.09997 3.07499 0 0 7.6875 6.15002 8.20002 5.125 12.29998 7.17499 11.27503 4.61249 9.22497 3.07501 13.32502 3.07501 13.32501 1.02499 13.32501-1.02499 13.83746-2.5625 10.25-3.07501 11.78748-5.125 13.83752-8.20001 13.83753-10.25 9.73749-8.71247 11.78753-12.30002 6.66248-7.6875 9.73749-13.32498 5.125-9.22503 5.63751-10.25 4.61249-9.73749 6.66253-19.47498",
+              "width": 325.95,
+              "height": 139.4,
+              "stroke": "#6A7C85",
+              "strokeWidth": 0.5125000000000001
+            },
+            {
+              "type": "path",
+              "id": "dHqYj",
+              "x": 358.175,
+              "y": 361.3125,
+              "geometry": "M0 140.9375c7.17499-73.80002 59.44998-120.4375 117.36252-140.9375",
+              "width": 117.3625,
+              "height": 140.9375,
+              "stroke": "#6A7C85",
+              "strokeWidth": 0.5125000000000001
+            },
+            {
+              "type": "path",
+              "id": "D8cpDS",
+              "x": 461.1875,
+              "y": 173.7375,
+              "geometry": "M0 61.5c10.25-27.675 50.73749-58.9375 90.20001-61.5",
+              "width": 90.2,
+              "height": 61.5,
+              "stroke": "#6A7C85",
+              "strokeWidth": 0.5125000000000001
+            },
+            {
+              "type": "path",
+              "id": "N5uQfs",
+              "x": 454.8553,
+              "y": 263.9375,
+              "geometry": "M0.18228 0c-1.53754 29.21249 5.63745 78.41251 60.98749 90.71249",
+              "width": 61.1698,
+              "height": 90.7125,
+              "stroke": "#6A7C85",
+              "strokeWidth": 0.5125000000000001
+            },
+            {
+              "type": "path",
+              "id": "s7ED8",
+              "x": 400.2,
+              "y": 169.125,
+              "geometry": "M128.125 0c48.17499 2.05 69.1875 4.6125 95.83746 18.45 18.45008 9.22501 24.08753 37.41251 22.55005 61.5-1.53747 25.1125-11.27502 50.22502-28.70001 73.8l-217.8125 212.6875",
+              "width": 246.7531,
+              "height": 366.4375,
+              "stroke": "#6A7C85",
+              "strokeWidth": 0.5125000000000001
+            },
+            {
+              "type": "path",
+              "id": "RfVHY",
+              "x": 569.325,
+              "y": 171.6586,
+              "geometry": "M0 0.02885c51.25-1.53749 149.13751 58.425 149.13751 164.51249 0 20.5-7.17505 47.66253-8.20001 47.66253",
+              "width": 149.1375,
+              "height": 212.2039,
+              "stroke": "#6A7C85",
+              "strokeWidth": 0.5125000000000001
+            },
+            {
+              "type": "path",
+              "id": "kdW1g",
+              "x": 544.725,
+              "y": 172.8176,
+              "geometry": "M0 2.45738c34.33746-8.71251 101.98749 4.09999 100.96246 65.0875",
+              "width": 100.974,
+              "height": 67.5449,
+              "stroke": "#6A7C85",
+              "strokeWidth": 0.5125000000000001
+            },
+            {
+              "type": "path",
+              "id": "hoJNZ",
+              "x": 333.575,
+              "y": 529.4125,
+              "geometry": "M0 0l130.17499 129.66248 85.07501 82 9.73749 7.6875",
+              "width": 224.9875,
+              "height": 219.35,
+              "stroke": "#6A7C85",
+              "strokeWidth": 0.5125000000000001
+            },
+            {
+              "type": "path",
+              "id": "PvQ6C",
+              "x": 548.825,
+              "y": 605.775,
+              "geometry": "M0 108.13757l111.21246-108.13757-2.5625 0",
+              "width": 111.2125,
+              "height": 108.1376,
+              "stroke": "#6A7C85",
+              "strokeWidth": 0.5125000000000001
+            },
+            {
+              "type": "path",
+              "id": "x8QvU",
+              "x": 717.95,
+              "y": 654.4625,
+              "geometry": "M0 0l170.66254 165.53754",
+              "width": 170.6625,
+              "height": 165.5375,
+              "stroke": "#6A7C85",
+              "strokeWidth": 0.5125000000000001
+            },
+            {
+              "type": "path",
+              "id": "Z6qNv",
+              "x": 946.0125,
+              "y": 669.8375,
+              "geometry": "M0 0l104.54999 99.9375-2.05005-3.07495",
+              "width": 104.55,
+              "height": 99.9375,
+              "stroke": "#6A7C85",
+              "strokeWidth": 0.5125000000000001
+            },
+            {
+              "type": "path",
+              "id": "BDC59",
+              "x": 668.2375,
+              "y": 354.65,
+              "geometry": "M0 0l15.88745 17.9375 0.51251-1.53748",
+              "width": 16.4,
+              "height": 17.9375,
+              "stroke": "#6A7C85",
+              "strokeWidth": 0.5125000000000001
+            },
+            {
+              "type": "path",
+              "id": "cwi1g",
+              "x": 517.05,
+              "y": 62.0125,
+              "geometry": "M8.71252 2.5625l-8.71252 0 0.51251-2.5625 8.20001 2.5625z",
+              "width": 8.7125,
+              "height": 2.5625,
+              "stroke": "#6A7C85",
+              "strokeWidth": 0.5125000000000001
+            },
+            {
+              "type": "path",
+              "id": "GvKEr",
+              "x": 723.5875,
+              "y": 90.7125,
+              "geometry": "M44.07495 0l-44.07495 44.07499 0.51245 0.51251",
+              "width": 44.075,
+              "height": 44.5875,
+              "stroke": "#6A7C85",
+              "strokeWidth": 0.5125000000000001
+            },
+            {
+              "type": "path",
+              "id": "b5r7MH",
+              "x": 522.175,
+              "y": 52.275,
+              "geometry": "M147.08752 0l-138.375 128.12502-2.5625 0-0.51251-91.73752-5.63751 0",
+              "width": 147.0875,
+              "height": 128.125,
+              "stroke": "#6A7C85",
+              "strokeWidth": 0.5125000000000001
+            },
+            {
+              "type": "path",
+              "id": "EW9nq",
+              "x": 525.7625,
+              "y": 52.275,
+              "geometry": "M351.57501 1.025l1.02503-1.025 1.53747 0.5125-0.51251 2.05-1.53754 0-0.51245-1.5375z m131.71253 125.56251l-1.02503 2.04999-2.05005-0.51248 1.02503-2.05002 2.05005 0.51251z m-107.625-102.50001l107.625 102.50001-0.51258 0.5125-107.11242-102.50001 0-0.5125z m-371.56256 737.99996l-4.09998 0 4.09998 2.05005 0-2.05005z",
+              "fill": "#6A7C85",
+              "width": 483.2875,
+              "height": 764.1375
+            },
+            {
+              "type": "path",
+              "id": "wkpaf",
+              "x": 310.5125,
+              "y": 90.7125,
+              "geometry": "M1.02499 2.05l-1.02499 0 0-2.05 1.02499 0 0 2.05z m47.66251 100.96249l-2.5625 2.05002 1.02499 1.02499 1.53751-1.02499 0-2.05002z m-47.66251 35.36251l-1.02499 2.04999 1.02499 1.02499 1.025-1.02499-1.025-2.04999z m1.53751 62.52502l3.07501-1.53753 0 0.51251-3.07501 1.02502z m0 25.11249l-2.5625-1.02502 1.02499-1.02497 1.53751 1.02497 0 1.02502z",
+              "fill": "#6A7C85",
+              "width": 48.6875,
+              "height": 226.0125
+            },
+            {
+              "type": "path",
+              "id": "z93xn",
+              "x": 714.875,
+              "y": 653.95,
+              "geometry": "M4.61255 0l-4.61255 2.04999 0 0.51251 4.61255-2.5625z m357.2124 18.44995l0-3.07495-1.0249 0-1.02503 2.5625 2.04993 0.51245z",
+              "fill": "#6A7C85",
+              "width": 361.825,
+              "height": 18.45
+            },
+            {
+              "type": "path",
+              "id": "KGMGy",
+              "x": 664.65,
+              "y": 51.25,
+              "geometry": "M5.63745 0l1.02503 1.025-0.51246 2.5625-2.05004-1.5375 1.53747-2.05z m53.8125 82.5125l1.02503 1.02499-1.02503 2.05002-2.04993-1.53751 2.04993-1.5375z m-59.44995 218.32499l1.53748 1.02503 1.02502 1.53747-2.05005 1.02503-0.51245-3.58753z m55.34998 148.625l-1.53748 2.5625-1.02502-1.02499 1.02502-1.53751 1.53748 0z",
+              "fill": "#6A7C85",
+              "width": 60.475,
+              "height": 452.025
+            },
+            {
+              "type": "path",
+              "id": "HzGgk",
+              "x": 547.8,
+              "y": 604.2375,
+              "geometry": "M29.72504 154.77502l2.5625-2.05004 0 1.53753-2.5625 0.51251z m-29.72504-46.63751l1.02502 2.04999 1.53748-0.51245-1.02496-1.53754-1.53754 0z m110.18756-107.11249l3.58746-1.02502 0 3.07501-3.07501 0-0.51245-2.04999z",
+              "fill": "#6A7C85",
+              "width": 113.775,
+              "height": 154.775
+            },
+            {
+              "type": "path",
+              "id": "VqHGf",
+              "x": 823.525,
+              "y": 686.2375,
+              "geometry": "M1.02502 3.07501l2.5625-0.51251-1.02502-2.5625-2.5625 1.02502 1.02502 2.04999z",
+              "fill": "#6A7C85",
+              "width": 3.5875,
+              "height": 3.075
+            },
+            {
+              "type": "path",
+              "id": "Ox2lh",
+              "x": 944.9875,
+              "y": 668.8125,
+              "geometry": "M0 1.02496l1.02496-1.02496 1.53754 1.53754-1.53754 1.53747-1.02496-2.05005z",
+              "fill": "#6A7C85",
+              "width": 2.5625,
+              "height": 3.075
+            },
+            {
+              "type": "path",
+              "id": "dnIcC",
+              "x": 599.05,
+              "y": 531.4625,
+              "geometry": "M3.07495 0l-3.07495 0.51257 3.07495 3.58747 0-4.10004z",
+              "fill": "#6A7C85",
+              "width": 3.075,
+              "height": 4.1
+            },
+            {
+              "type": "path",
+              "id": "f7kg9",
+              "x": 371.5,
+              "y": 220.8875,
+              "geometry": "M0 1.02499l2.05002-1.02499 2.5625 1.02499-2.05002 0.51252-2.5625-0.51252z",
+              "fill": "#6A7C85",
+              "width": 4.6125,
+              "height": 1.5375
+            },
+            {
+              "type": "path",
+              "id": "DeY0d",
+              "x": 338.7,
+              "y": 263.9375,
+              "geometry": "M3.07501 69.1875l-3.07501 3.07498 0.51251 0.51251 2.5625-2.04998 0-1.53751z m109.16248-69.1875l-3.07501 1.53751 1.53753 0.51251 1.53748-1.53754 0-0.51248z",
+              "fill": "#6A7C85",
+              "width": 112.2375,
+              "height": 72.775
+            },
+            {
+              "type": "path",
+              "id": "zwGKO",
+              "x": 445.8125,
+              "y": 248.05,
+              "geometry": "M0 1.02499l2.04999-1.02499 0.51251 1.02499-1.53748 1.53751-1.02502-1.53751z",
+              "fill": "#6A7C85",
+              "width": 2.5625,
+              "height": 2.5625
+            },
+            {
+              "type": "path",
+              "id": "gnj9C",
+              "x": 310.5125,
+              "y": 668.8125,
+              "geometry": "M1.02499 2.04999l3.07502-2.04999-4.10001 1.02496 1.02499 1.02503z",
+              "fill": "#6A7C85",
+              "width": 4.1,
+              "height": 2.05
+            },
+            {
+              "type": "path",
+              "id": "X3T1Tt",
+              "x": 557.5375,
+              "y": 500.2,
+              "geometry": "M3.58746 0.51251l-2.04998 1.53751-1.53748-0.51248 2.04999-1.53754 1.53747 0.51251z",
+              "fill": "#6A7C85",
+              "width": 3.5875,
+              "height": 2.05
+            },
+            {
+              "type": "path",
+              "id": "Nf0eh",
+              "x": 482.7125,
+              "y": 302.8875,
+              "geometry": "M1.53748 0l-1.53748 3.58752 1.53748 0.51252 1.02502-2.5625-1.02502-1.53754z",
+              "fill": "#6A7C85",
+              "width": 2.5625,
+              "height": 4.1
+            },
+            {
+              "type": "path",
+              "id": "rxGrh",
+              "x": 519.6125,
+              "y": 353.1125,
+              "geometry": "M3.58752 0l-3.58752 1.02496 0 0.51252 3.58752 1.02502 0-2.5625z",
+              "fill": "#6A7C85",
+              "width": 3.5875,
+              "height": 2.5625
+            },
+            {
+              "type": "path",
+              "id": "iHaZ0",
+              "x": 527.8125,
+              "y": 168.6125,
+              "geometry": "M0 0l0 1.53751 3.07501-0.51252-2.5625-0.51249-0.51251-0.5125z",
+              "fill": "#6A7C85",
+              "width": 3.075,
+              "height": 1.5375
+            },
+            {
+              "type": "path",
+              "id": "dYZIE",
+              "x": 838.9,
+              "y": 289.5625,
+              "geometry": "M2.5625 0.51248l-2.5625-0.51248 0 1.02499 1.02502 1.02503 1.53748-1.53754z",
+              "fill": "#6A7C85",
+              "width": 2.5625,
+              "height": 2.05
+            },
+            {
+              "type": "path",
+              "id": "AGH0l",
+              "x": 519.1,
+              "y": 533.5125,
+              "geometry": "M96.34998 235.23749l2.04998-1.53754 0.51252 1.53754-1.53754 1.02496-1.02496-1.02496z m-96.34998-232.67499l3.58746-2.5625 0 2.5625-3.58746 0z",
+              "fill": "#6A7C85",
+              "width": 98.9125,
+              "height": 236.2625
+            },
+            {
+              "type": "path",
+              "id": "meAs0",
+              "x": 474,
+              "y": 360.2875,
+              "geometry": "M0.51251 2.04999l2.04999 1.02502 0-3.07501-2.5625 1.02499 0.51251 1.025z",
+              "fill": "#6A7C85",
+              "width": 2.5625,
+              "height": 3.075
+            },
+            {
+              "type": "path",
+              "id": "DfDpd",
+              "x": 709.2375,
+              "y": 382.325,
+              "geometry": "M0 0.51251l3.58746 1.02503 0-0.51252-1.02496-1.02502-2.5625 0.51251z",
+              "fill": "#6A7C85",
+              "width": 3.5875,
+              "height": 1.5375
+            },
+            {
+              "type": "path",
+              "id": "v21gJ",
+              "x": 310,
+              "y": 90.2,
+              "geometry": "M457.15002 0l2.04999 1.02499 0.51251 1.02501-2.5625 1.025 0-2.05001 0-1.02499z m-451.51251 565.79999l2.5625 2.04999-0.51251 0.51251-2.04999-0.51251 0-2.04999z m-4.61249 58.9375l1.53748 1.02496-2.04999 1.53754 0.51251-2.5625z m0.51249 52.27496l-1.025 1.53754 1.025 1.02496 1.5375-1.02496-1.5375-1.53754z m1.5375-156.82495l-2.5625 2.04999 0-2.04999 2.5625 0z m-3.07501-37.41248l2.5625 2.04993-1.02499 0.51257-1.53751-1.53753 0-1.02497z m2.5625-38.95007l-2.04999 1.53754 0.51251 0.51251 2.04999-1.02502-0.51251-1.02503z m0.51251-33.31247l-2.5625 1.53751 1.025 1.02499 1.5375-1.02499 0-1.53751z",
+              "fill": "#6A7C85",
+              "width": 459.7125,
+              "height": 679.575
             }
           ]
         }
@@ -2025,15 +2956,15 @@
           "name": "01 · Mobile hero",
           "clip": true,
           "width": "fill_container",
-          "height": 860,
+          "height": 751,
           "fill": "$navy",
           "layout": "none",
           "children": [
             {
               "type": "rectangle",
               "id": "O9BM1",
-              "x": -350,
-              "y": 280,
+              "x": -255,
+              "y": 78,
               "name": "Mobile continuum artwork",
               "fill": {
                 "type": "image",
@@ -2043,50 +2974,6 @@
               },
               "width": 900,
               "height": 563
-            },
-            {
-              "type": "rectangle",
-              "id": "kVAog",
-              "x": 0,
-              "y": 295,
-              "name": "Mobile atmosphere",
-              "fill": {
-                "type": "gradient",
-                "gradientType": "linear",
-                "enabled": true,
-                "rotation": 180,
-                "size": {
-                  "height": 1
-                },
-                "colors": [
-                  {
-                    "color": "#061828",
-                    "position": 0
-                  },
-                  {
-                    "color": "#061828F5",
-                    "position": 0.18
-                  },
-                  {
-                    "color": "#06182800",
-                    "position": 0.4
-                  },
-                  {
-                    "color": "#06182800",
-                    "position": 0.6
-                  },
-                  {
-                    "color": "#061828",
-                    "position": 0.75
-                  },
-                  {
-                    "color": "#061828",
-                    "position": 1
-                  }
-                ]
-              },
-              "width": 390,
-              "height": 565
             },
             {
               "type": "frame",
@@ -2119,12 +3006,12 @@
                       "type": "text",
                       "id": "uew14",
                       "name": "TexCra",
-                      "fill": "$ivory",
-                      "content": "TexCra",
-                      "fontFamily": "$sans",
-                      "fontSize": 27,
-                      "fontWeight": "500",
-                      "letterSpacing": -1
+                      "fill": "#D7E0E1",
+                      "content": "TEXCRA",
+                      "fontFamily": "IBM Plex Sans Condensed",
+                      "fontSize": 20,
+                      "fontWeight": "200",
+                      "letterSpacing": 4.6
                     },
                     {
                       "type": "text",
@@ -2132,10 +3019,10 @@
                       "name": "Technology craftsmanship",
                       "fill": "$silver",
                       "content": "TECHNOLOGY CRAFTSMANSHIP",
-                      "fontFamily": "$mono",
+                      "fontFamily": "IBM Plex Sans Condensed",
                       "fontSize": 7,
-                      "fontWeight": "normal",
-                      "letterSpacing": 1.2
+                      "fontWeight": "200",
+                      "letterSpacing": 2.2
                     }
                   ]
                 },
@@ -2165,65 +3052,9 @@
             },
             {
               "type": "frame",
-              "id": "K4wVay",
-              "x": 24,
-              "y": 133,
-              "name": "Mobile hero narrative",
-              "width": 342,
-              "layout": "vertical",
-              "gap": 24,
-              "children": [
-                {
-                  "type": "text",
-                  "id": "plpmV",
-                  "name": "Mobile studio positioning",
-                  "fill": "$blue",
-                  "content": "DIGITAL CRAFTSMANSHIP",
-                  "fontFamily": "$mono",
-                  "fontSize": 9,
-                  "fontWeight": "normal",
-                  "letterSpacing": 1.7
-                },
-                {
-                  "type": "text",
-                  "id": "e96NSr",
-                  "name": "Mobile hero headline",
-                  "fill": "$ivory",
-                  "textGrowth": "fixed-width",
-                  "width": "fill_container",
-                  "content": "Distinct by design.\nBuilt to endure.",
-                  "lineHeight": 1.17,
-                  "fontFamily": "$sans",
-                  "fontSize": 41,
-                  "fontWeight": "300",
-                  "letterSpacing": -1.9
-                },
-                {
-                  "type": "text",
-                  "id": "vUJwI",
-                  "name": "Mobile hero proposition",
-                  "fill": "#C6D1D9",
-                  "textGrowth": "fixed-width",
-                  "width": "fill_container",
-                  "content": "Immersive websites and dependable software, crafted with care from first impression to lasting scale.",
-                  "lineHeight": 1.7,
-                  "fontFamily": "$sans",
-                  "fontSize": 16,
-                  "fontWeight": "normal"
-                },
-                {
-                  "id": "rLzcS",
-                  "type": "ref",
-                  "ref": "DtZB3",
-                  "name": "Mobile hero · Start a project"
-                }
-              ]
-            },
-            {
-              "type": "frame",
               "id": "swf9n",
               "x": 24,
-              "y": 789,
+              "y": 680,
               "name": "Mobile hero scroll cue",
               "width": 342,
               "stroke": "#B8CCD23D",
@@ -2244,10 +3075,10 @@
                   "name": "DESIGN / DEVELOP / ENGINEER",
                   "fill": "$silver",
                   "content": "DESIGN / DEVELOP / ENGINEER",
-                  "fontFamily": "$mono",
+                  "fontFamily": "IBM Plex Sans Condensed",
                   "fontSize": 8,
-                  "fontWeight": "normal",
-                  "letterSpacing": 1
+                  "fontWeight": "200",
+                  "letterSpacing": 2.2
                 },
                 {
                   "type": "text",
@@ -2255,10 +3086,112 @@
                   "name": "EXPLORE ↓",
                   "fill": "$silver",
                   "content": "EXPLORE ↓",
-                  "fontFamily": "$mono",
+                  "fontFamily": "IBM Plex Sans Condensed",
                   "fontSize": 8,
-                  "fontWeight": "normal",
-                  "letterSpacing": 1
+                  "fontWeight": "200",
+                  "letterSpacing": 2.2
+                }
+              ]
+            },
+            {
+              "type": "rectangle",
+              "id": "kVAog",
+              "x": 0,
+              "y": 101,
+              "name": "Mobile atmosphere",
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "enabled": true,
+                "rotation": 180,
+                "size": {
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "#061828",
+                    "position": 0
+                  },
+                  {
+                    "color": "#061828F5",
+                    "position": 0.11
+                  },
+                  {
+                    "color": "#06182800",
+                    "position": 0.4
+                  },
+                  {
+                    "color": "#06182800",
+                    "position": 0.6
+                  },
+                  {
+                    "color": "#061828",
+                    "position": 0.83
+                  },
+                  {
+                    "color": "#061828",
+                    "position": 1
+                  }
+                ]
+              },
+              "width": 390,
+              "height": 650
+            },
+            {
+              "type": "frame",
+              "id": "K4wVay",
+              "x": 24,
+              "y": 120,
+              "name": "Mobile hero narrative",
+              "width": 342,
+              "height": 450,
+              "layout": "vertical",
+              "gap": 20,
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "plpmV",
+                  "name": "Mobile studio positioning",
+                  "fill": "$blue",
+                  "content": "DIGITAL CRAFTSMANSHIP",
+                  "fontFamily": "IBM Plex Sans Condensed",
+                  "fontSize": 9,
+                  "fontWeight": "200",
+                  "letterSpacing": 2.2
+                },
+                {
+                  "type": "text",
+                  "id": "e96NSr",
+                  "name": "Mobile hero headline",
+                  "fill": "$ivory",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "DISTINCT\nDESIGN.\nBUILT TO\nLAST.",
+                  "lineHeight": 1.06,
+                  "fontFamily": "IBM Plex Sans Condensed",
+                  "fontSize": 42,
+                  "fontWeight": "200",
+                  "letterSpacing": 2.8
+                },
+                {
+                  "type": "text",
+                  "id": "vUJwI",
+                  "name": "Mobile hero proposition",
+                  "fill": "#C6D1D9",
+                  "textGrowth": "fixed-width",
+                  "width": 280,
+                  "content": "Immersive websites.\nDependable software.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "$sans",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                },
+                {
+                  "id": "rLzcS",
+                  "type": "ref",
+                  "ref": "DtZB3",
+                  "name": "Mobile hero · Start a project"
                 }
               ]
             }
@@ -2269,26 +3202,58 @@
           "id": "V5bnD",
           "name": "02 · Mobile positioning",
           "width": "fill_container",
-          "fill": "$ivory",
+          "height": 637,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "radial",
+            "enabled": true,
+            "rotation": 0,
+            "size": {
+              "width": 2.8036682816284775,
+              "height": 1.5696592861896286
+            },
+            "colors": [
+              {
+                "color": "#061828",
+                "position": 0.3
+              },
+              {
+                "color": "#1A2B39",
+                "position": 0.44
+              },
+              {
+                "color": "#F3F2ED",
+                "position": 0.84
+              },
+              {
+                "color": "#F6F1E8",
+                "position": 1
+              }
+            ],
+            "center": {
+              "y": 0
+            }
+          },
           "layout": "vertical",
           "gap": 28,
           "padding": [
             64,
             24
           ],
+          "justifyContent": "center",
           "children": [
             {
               "type": "text",
               "id": "jQDLS",
               "name": "Section 01 label",
-              "fill": "$muted",
+              "fill": "#DCE0DD",
               "textGrowth": "fixed-width",
               "width": "fill_container",
               "content": "01 / THE TEXCRA STANDARD",
-              "fontFamily": "$mono",
+              "fontFamily": "IBM Plex Sans Condensed",
               "fontSize": 9,
-              "fontWeight": "normal",
-              "letterSpacing": 1.6
+              "fontWeight": "200",
+              "letterSpacing": 2.2
             },
             {
               "type": "frame",
@@ -2302,23 +3267,24 @@
                   "type": "text",
                   "id": "GeAyw",
                   "name": "Positioning headline",
-                  "fill": "$ink",
+                  "fill": "#17242B",
                   "textGrowth": "fixed-width",
                   "width": "fill_container",
                   "content": "The difference is\nin the details.",
                   "lineHeight": 1.16,
-                  "fontFamily": "$sans",
+                  "fontFamily": "IBM Plex Sans Condensed",
                   "fontSize": 36,
-                  "letterSpacing": -1.5
+                  "fontWeight": "200",
+                  "letterSpacing": 2.2
                 },
                 {
                   "type": "text",
                   "id": "ViZjv",
                   "name": "Positioning statement",
-                  "fill": "$muted",
+                  "fill": "#465157",
                   "textGrowth": "fixed-width",
                   "width": "fill_container",
-                  "content": "A website should feel as considered as the business behind it. Software should stay dependable as that business grows. At TexCra, we bring design sensitivity and engineering discipline to every detail.",
+                  "content": "Considered design. Dependable software.\nCrafted with equal care.",
                   "lineHeight": 1.75,
                   "fontFamily": "$sans",
                   "fontSize": 16,
@@ -2333,7 +3299,38 @@
           "id": "RTGxw",
           "name": "03 · Mobile expertise",
           "width": "fill_container",
-          "fill": "$ivory",
+          "height": 1204,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "radial",
+            "enabled": true,
+            "rotation": 0,
+            "size": {
+              "width": 3.3938703393557472,
+              "height": 1.0644192768739393
+            },
+            "colors": [
+              {
+                "color": "#061828",
+                "position": 0.3
+              },
+              {
+                "color": "#1A2B39",
+                "position": 0.44
+              },
+              {
+                "color": "#F3F2ED",
+                "position": 0.84
+              },
+              {
+                "color": "#F6F1E8",
+                "position": 1
+              }
+            ],
+            "center": {
+              "y": 1
+            }
+          },
           "layout": "vertical",
           "gap": 32,
           "padding": [
@@ -2342,6 +3339,8 @@
             64,
             24
           ],
+          "justifyContent": "center",
+          "alignItems": "center",
           "children": [
             {
               "type": "frame",
@@ -2366,23 +3365,24 @@
                   "type": "text",
                   "id": "haO0E",
                   "name": "Expertise headline",
-                  "fill": "$ink",
+                  "fill": "#17242B",
                   "textGrowth": "fixed-width",
                   "width": "fill_container",
                   "content": "Your ambition.\nOur expertise.",
                   "lineHeight": 1.16,
-                  "fontFamily": "$sans",
+                  "fontFamily": "IBM Plex Sans Condensed",
                   "fontSize": 36,
-                  "letterSpacing": -1.5
+                  "fontWeight": "200",
+                  "letterSpacing": 2.2
                 },
                 {
                   "type": "text",
                   "id": "XQDfG",
                   "name": "Expertise summary",
-                  "fill": "$muted",
+                  "fill": "#465157",
                   "textGrowth": "fixed-width",
                   "width": "fill_container",
-                  "content": "From a distinctive first impression to the systems working behind it.",
+                  "content": "From first impression to the systems beneath.",
                   "lineHeight": 1.65,
                   "fontFamily": "$sans",
                   "fontSize": 16,
@@ -2417,25 +3417,27 @@
                       "type": "text",
                       "id": "SatFb",
                       "name": "Website design index",
-                      "fill": "$muted",
+                      "fill": "#4B555A",
                       "textGrowth": "fixed-width",
                       "width": 64,
                       "content": "01",
-                      "fontFamily": "$mono",
+                      "fontFamily": "IBM Plex Sans Condensed",
                       "fontSize": 12,
-                      "fontWeight": "normal"
+                      "fontWeight": "200",
+                      "letterSpacing": 1.8
                     },
                     {
                       "type": "text",
                       "id": "mBrvj",
                       "name": "Website design title",
-                      "fill": "$ink",
+                      "fill": "#17242B",
                       "textGrowth": "fixed-width",
                       "width": "fill_container",
                       "content": "Website design",
-                      "fontFamily": "$sans",
+                      "fontFamily": "IBM Plex Sans Condensed",
                       "fontSize": 27,
-                      "letterSpacing": -1
+                      "fontWeight": "200",
+                      "letterSpacing": 1.8
                     },
                     {
                       "type": "frame",
@@ -2449,7 +3451,7 @@
                           "type": "text",
                           "id": "occsM",
                           "name": "Website design benefit",
-                          "fill": "$muted",
+                          "fill": "#465157",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
                           "content": "Turn your brand into a digital experience people feel, understand, and remember.",
@@ -2462,15 +3464,15 @@
                           "type": "text",
                           "id": "csjja",
                           "name": "Website design scope",
-                          "fill": "$muted",
+                          "fill": "#4B555A",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
                           "content": "VISUAL DIRECTION / UX & UI / INTERACTION",
                           "lineHeight": 1.6,
-                          "fontFamily": "$mono",
+                          "fontFamily": "IBM Plex Sans Condensed",
                           "fontSize": 10,
-                          "fontWeight": "normal",
-                          "letterSpacing": 0.7
+                          "fontWeight": "200",
+                          "letterSpacing": 2.4
                         }
                       ]
                     }
@@ -2496,25 +3498,27 @@
                       "type": "text",
                       "id": "IWMMs",
                       "name": "Web development index",
-                      "fill": "$muted",
+                      "fill": "#4B555A",
                       "textGrowth": "fixed-width",
                       "width": 64,
                       "content": "02",
-                      "fontFamily": "$mono",
+                      "fontFamily": "IBM Plex Sans Condensed",
                       "fontSize": 12,
-                      "fontWeight": "normal"
+                      "fontWeight": "200",
+                      "letterSpacing": 1.8
                     },
                     {
                       "type": "text",
                       "id": "RRyIE",
                       "name": "Web development title",
-                      "fill": "$ink",
+                      "fill": "#17242B",
                       "textGrowth": "fixed-width",
                       "width": "fill_container",
                       "content": "Web development",
-                      "fontFamily": "$sans",
+                      "fontFamily": "IBM Plex Sans Condensed",
                       "fontSize": 27,
-                      "letterSpacing": -1
+                      "fontWeight": "200",
+                      "letterSpacing": 1.8
                     },
                     {
                       "type": "frame",
@@ -2528,7 +3532,7 @@
                           "type": "text",
                           "id": "Rez2t",
                           "name": "Web development benefit",
-                          "fill": "$muted",
+                          "fill": "#465157",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
                           "content": "Bring every detail to life with responsive, thoughtfully engineered websites.",
@@ -2541,15 +3545,15 @@
                           "type": "text",
                           "id": "U7UPXY",
                           "name": "Web development scope",
-                          "fill": "$muted",
+                          "fill": "#4B555A",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
                           "content": "RESPONSIVE WEBSITES / PERFORMANCE / PRECISION",
                           "lineHeight": 1.6,
-                          "fontFamily": "$mono",
+                          "fontFamily": "IBM Plex Sans Condensed",
                           "fontSize": 10,
-                          "fontWeight": "normal",
-                          "letterSpacing": 0.7
+                          "fontWeight": "200",
+                          "letterSpacing": 2.4
                         }
                       ]
                     }
@@ -2575,25 +3579,27 @@
                       "type": "text",
                       "id": "kqp2D",
                       "name": "Software engineering index",
-                      "fill": "$muted",
+                      "fill": "#DCE0DD",
                       "textGrowth": "fixed-width",
                       "width": 64,
                       "content": "03",
-                      "fontFamily": "$mono",
+                      "fontFamily": "IBM Plex Sans Condensed",
                       "fontSize": 12,
-                      "fontWeight": "normal"
+                      "fontWeight": "200",
+                      "letterSpacing": 1.8
                     },
                     {
                       "type": "text",
                       "id": "Jnylp",
                       "name": "Software engineering title",
-                      "fill": "$ink",
+                      "fill": "#F5F2EB",
                       "textGrowth": "fixed-width",
                       "width": "fill_container",
                       "content": "Software engineering",
-                      "fontFamily": "$sans",
+                      "fontFamily": "IBM Plex Sans Condensed",
                       "fontSize": 27,
-                      "letterSpacing": -1
+                      "fontWeight": "200",
+                      "letterSpacing": 1.8
                     },
                     {
                       "type": "frame",
@@ -2607,7 +3613,7 @@
                           "type": "text",
                           "id": "i0vNRq",
                           "name": "Software engineering benefit",
-                          "fill": "$muted",
+                          "fill": "#DCE0DD",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
                           "content": "Build dependable foundations for complex ideas, evolving needs, and lasting scale.",
@@ -2620,15 +3626,15 @@
                           "type": "text",
                           "id": "Fltsz",
                           "name": "Software engineering scope",
-                          "fill": "$muted",
+                          "fill": "#DCE0DD",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
                           "content": "CUSTOM SOFTWARE / SYSTEM ARCHITECTURE / SCALABILITY",
                           "lineHeight": 1.6,
-                          "fontFamily": "$mono",
+                          "fontFamily": "IBM Plex Sans Condensed",
                           "fontSize": 10,
-                          "fontWeight": "normal",
-                          "letterSpacing": 0.7
+                          "fontWeight": "200",
+                          "letterSpacing": 2.4
                         }
                       ]
                     }
@@ -2642,6 +3648,7 @@
           "type": "frame",
           "id": "VLXuR",
           "name": "04 · Mobile approach",
+          "clip": true,
           "width": "fill_container",
           "fill": "$navy",
           "layout": "vertical",
@@ -2652,6 +3659,541 @@
           ],
           "alignItems": "center",
           "children": [
+            {
+              "type": "frame",
+              "id": "N1GTHr",
+              "layoutPosition": "absolute",
+              "x": -525,
+              "y": 0,
+              "name": "Mobile chaotic geometry grid · Background",
+              "opacity": 0.14,
+              "clip": true,
+              "width": 1393,
+              "height": 1049,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "path",
+                  "id": "ANzGy",
+                  "x": 310,
+                  "y": 0,
+                  "opacity": 0.7,
+                  "geometry": "M0.51251 0l818.97504 0m-818.97504 53.8125l818.97504 0m-818.97504 41.51251l457.14997 0m-457.14997 38.95l818.97504 0m-818.97504 23.0625l413.07501 0m-413.07501 39.46249l818.97504 0m-818.97504 33.3125l47.15 0m-47.15 35.87502l818.97504 0m-818.97504 24.59997l809.74994 0m-809.74994 25.11249l818.97504 0m-818.97504 39.46253l818.97504 0m-818.97504 56.375l818.97504 0m-818.97504 54.32501l818.97504 0m-819.48755 36.38748l410 0m-409.48749 33.3125l89.6875 0m-89.6875 38.95001l818.97504 0m-818.97504 38.94995l818.97504 0m-818.97504 42.53754l711.35004 0m-711.35004 13.83746l786.68744 0m-786.68744 46.125l818.97504 0m-818.97504 53.30005l740.56244 0m-740.56244 50.73749l672.39997-820",
+                  "width": 819.4875,
+                  "height": 820,
+                  "stroke": "#6A7C85",
+                  "strokeWidth": 0.5125000000000001
+                },
+                {
+                  "type": "path",
+                  "id": "T1IiF4",
+                  "x": 358.175,
+                  "y": 0,
+                  "opacity": 0.7,
+                  "geometry": "M724.16248 0l0 820m-50.22498-820l0 820m-41.51257-820l0 820m-37.41248-820l0 820m-36.90002-820l0 820m-38.4375-820l0 51.25m-37.41245-51.25l0 820m-36.38745-820l0 820m-34.85004-820l0 92.25m-49.20001-92.25l0 820m-49.19995-820l0 52.7875m-34.85004-52.7875l0 820m-35.875-820l0 818.97504m-40.48748-818.97504l0 820m-75.33753-820l0 820m-37.41247-820l0 769.26251m-38.4375-769.26251l0 769.26251m-50.22501-769.26251l0 820m49.71249-719.55c28.1875-26.65001 59.96253-36.3875 93.78748-36.3875 4.61255 0 5.125-0.5125 14.86255 0.5125",
+                  "width": 724.1625,
+                  "height": 820,
+                  "stroke": "#6A7C85",
+                  "strokeWidth": 0.5125000000000001
+                },
+                {
+                  "type": "path",
+                  "id": "VoRuv",
+                  "x": 314.1,
+                  "y": 0,
+                  "geometry": "M0 0l405.89999 254.2 264.44999-254.2",
+                  "width": 670.35,
+                  "height": 254.2,
+                  "stroke": "#6A7C85",
+                  "strokeWidth": 0.5125000000000001
+                },
+                {
+                  "type": "path",
+                  "id": "leZ62",
+                  "x": 523.2,
+                  "y": 64.0625,
+                  "geometry": "M0 0l196.79999 190.1375 183.98755-175.7875",
+                  "width": 380.7875,
+                  "height": 190.1375,
+                  "stroke": "#6A7C85",
+                  "strokeWidth": 0.5125000000000001
+                },
+                {
+                  "type": "path",
+                  "id": "zK79j",
+                  "x": 373.55,
+                  "y": 100.45,
+                  "geometry": "M199.87503 11.27499c-12.81256-7.6875-25.11255-11.27499-40.48755-11.27499-27.16247 0-45.61249 10.7625-66.625 30.74999l-92.76248 90.20001",
+                  "width": 199.875,
+                  "height": 120.95,
+                  "stroke": "#6A7C85",
+                  "strokeWidth": 0.5125000000000001
+                },
+                {
+                  "type": "path",
+                  "id": "j2UJhk",
+                  "x": 358.175,
+                  "y": 195.775,
+                  "geometry": "M0 0c1.53751 26.13748 22.03751 67.1375 66.625 93.27501 11.27499 6.14996 32.28751 16.39996 59.44998 16.39996",
+                  "width": 126.075,
+                  "height": 109.675,
+                  "stroke": "#6A7C85",
+                  "strokeWidth": 0.5125000000000001
+                },
+                {
+                  "type": "path",
+                  "id": "RMTfn",
+                  "x": 438.6375,
+                  "y": 298.275,
+                  "geometry": "M0 0l148.11249 152.72501c15.88751 15.88748 58.42505 54.83749 58.42505 54.83749 0 0 56.375 57.39999 77.89996 78.41251l103.01251 103.52496",
+                  "width": 387.45,
+                  "height": 389.5,
+                  "stroke": "#6A7C85",
+                  "strokeWidth": 0.5125000000000001
+                },
+                {
+                  "type": "path",
+                  "id": "q6iaB",
+                  "x": 310.5125,
+                  "y": 290.5875,
+                  "geometry": "M0 529.41248l399.75-378.73749 129.66254-150.67499",
+                  "width": 529.4125,
+                  "height": 529.4125,
+                  "stroke": "#6A7C85",
+                  "strokeWidth": 0.5125000000000001
+                },
+                {
+                  "type": "path",
+                  "id": "b1aVtj",
+                  "x": 447.8625,
+                  "y": 178.8625,
+                  "geometry": "M0 71.23749c16.91254-11.78749 54.83752-59.96249 85.07501-71.23749",
+                  "width": 85.075,
+                  "height": 71.2375,
+                  "stroke": "#6A7C85",
+                  "strokeWidth": 0.5125000000000001
+                },
+                {
+                  "type": "path",
+                  "id": "VMtn5",
+                  "x": 447.35,
+                  "y": 172.7125,
+                  "geometry": "M0 92.7625c27.67499-14.35001 82.51245-77.90001 105.0625-92.7625",
+                  "width": 105.0625,
+                  "height": 92.7625,
+                  "stroke": "#6A7C85",
+                  "strokeWidth": 0.5125000000000001
+                },
+                {
+                  "type": "path",
+                  "id": "BzBDk",
+                  "x": 363.7455,
+                  "y": 264.45,
+                  "geometry": "M87.19196 0c-17.9375 8.71252-89.6875 38.95001-87.125 135.30002 5.125 49.71249 46.125 111.725 119.41253 131.20001 13.32495 3.07495 25.11249 4.61249 38.4375 4.61249",
+                  "width": 157.917,
+                  "height": 271.1125,
+                  "stroke": "#6A7C85",
+                  "strokeWidth": 0.5125000000000001
+                },
+                {
+                  "type": "path",
+                  "id": "tuP8R",
+                  "x": 435.5625,
+                  "y": 295.2,
+                  "geometry": "M0 0c23.0625 27.67502 54.32501 57.91254 77.90002 59.45001 55.86249 0 89.6875 32.28751 116.33753 74.3125 14.34997 26.13751 15.375 50.22501 15.375 66.11249 1.53747 65.08755-68.16254 147.60001-141.96253 148.11252-24.08752 0-55.35004-12.8125-56.375-13.83747",
+                  "width": 209.6375,
+                  "height": 347.9875,
+                  "stroke": "#6A7C85",
+                  "strokeWidth": 0.5125000000000001
+                },
+                {
+                  "type": "path",
+                  "id": "viovU",
+                  "x": 334.0875,
+                  "y": 505.8375,
+                  "geometry": "M187.0625 0c-36.90002 10.24997-78.92499 51.24997-75.85004 104.03751 0.51252 10.25 2.5625 22.03753 7.6875 25.11248l125.56256 123.51252m-244.46252-244.97504l131.71246 136.32507c45.10004 44.07495 77.38752 82.51245 97.375 99.9375 17.42499 11.27497 34.85004 19.47498 60.47504 18.96247 30.23749-2.04999 91.22498-25.625 92.25-114.79999",
+                  "width": 381.8125,
+                  "height": 262.9353,
+                  "stroke": "#6A7C85",
+                  "strokeWidth": 0.5125000000000001
+                },
+                {
+                  "type": "path",
+                  "id": "ezEfw",
+                  "x": 339.725,
+                  "y": 334.6625,
+                  "geometry": "M0 0l109.67502 106.08749 4.09997 3.07499 0 0 7.6875 6.15002 8.20002 5.125 12.29998 7.17499 11.27503 4.61249 9.22497 3.07501 13.32502 3.07501 13.32501 1.02499 13.32501-1.02499 13.83746-2.5625 10.25-3.07501 11.78748-5.125 13.83752-8.20001 13.83753-10.25 9.73749-8.71247 11.78753-12.30002 6.66248-7.6875 9.73749-13.32498 5.125-9.22503 5.63751-10.25 4.61249-9.73749 6.66253-19.47498",
+                  "width": 325.95,
+                  "height": 139.4,
+                  "stroke": "#6A7C85",
+                  "strokeWidth": 0.5125000000000001
+                },
+                {
+                  "type": "path",
+                  "id": "zvi3x",
+                  "x": 358.175,
+                  "y": 361.3125,
+                  "geometry": "M0 140.9375c7.17499-73.80002 59.44998-120.4375 117.36252-140.9375",
+                  "width": 117.3625,
+                  "height": 140.9375,
+                  "stroke": "#6A7C85",
+                  "strokeWidth": 0.5125000000000001
+                },
+                {
+                  "type": "path",
+                  "id": "zwgra",
+                  "x": 461.1875,
+                  "y": 173.7375,
+                  "geometry": "M0 61.5c10.25-27.675 50.73749-58.9375 90.20001-61.5",
+                  "width": 90.2,
+                  "height": 61.5,
+                  "stroke": "#6A7C85",
+                  "strokeWidth": 0.5125000000000001
+                },
+                {
+                  "type": "path",
+                  "id": "bionm",
+                  "x": 454.8553,
+                  "y": 263.9375,
+                  "geometry": "M0.18228 0c-1.53754 29.21249 5.63745 78.41251 60.98749 90.71249",
+                  "width": 61.1698,
+                  "height": 90.7125,
+                  "stroke": "#6A7C85",
+                  "strokeWidth": 0.5125000000000001
+                },
+                {
+                  "type": "path",
+                  "id": "YOAuX",
+                  "x": 400.2,
+                  "y": 169.125,
+                  "geometry": "M128.125 0c48.17499 2.05 69.1875 4.6125 95.83746 18.45 18.45008 9.22501 24.08753 37.41251 22.55005 61.5-1.53747 25.1125-11.27502 50.22502-28.70001 73.8l-217.8125 212.6875",
+                  "width": 246.7531,
+                  "height": 366.4375,
+                  "stroke": "#6A7C85",
+                  "strokeWidth": 0.5125000000000001
+                },
+                {
+                  "type": "path",
+                  "id": "LESeM",
+                  "x": 569.325,
+                  "y": 171.6586,
+                  "geometry": "M0 0.02885c51.25-1.53749 149.13751 58.425 149.13751 164.51249 0 20.5-7.17505 47.66253-8.20001 47.66253",
+                  "width": 149.1375,
+                  "height": 212.2039,
+                  "stroke": "#6A7C85",
+                  "strokeWidth": 0.5125000000000001
+                },
+                {
+                  "type": "path",
+                  "id": "Uvz02",
+                  "x": 544.725,
+                  "y": 172.8176,
+                  "geometry": "M0 2.45738c34.33746-8.71251 101.98749 4.09999 100.96246 65.0875",
+                  "width": 100.974,
+                  "height": 67.5449,
+                  "stroke": "#6A7C85",
+                  "strokeWidth": 0.5125000000000001
+                },
+                {
+                  "type": "path",
+                  "id": "Pp8hE",
+                  "x": 333.575,
+                  "y": 529.4125,
+                  "geometry": "M0 0l130.17499 129.66248 85.07501 82 9.73749 7.6875",
+                  "width": 224.9875,
+                  "height": 219.35,
+                  "stroke": "#6A7C85",
+                  "strokeWidth": 0.5125000000000001
+                },
+                {
+                  "type": "path",
+                  "id": "wWIjd",
+                  "x": 548.825,
+                  "y": 605.775,
+                  "geometry": "M0 108.13757l111.21246-108.13757-2.5625 0",
+                  "width": 111.2125,
+                  "height": 108.1376,
+                  "stroke": "#6A7C85",
+                  "strokeWidth": 0.5125000000000001
+                },
+                {
+                  "type": "path",
+                  "id": "HRwaC",
+                  "x": 717.95,
+                  "y": 654.4625,
+                  "geometry": "M0 0l170.66254 165.53754",
+                  "width": 170.6625,
+                  "height": 165.5375,
+                  "stroke": "#6A7C85",
+                  "strokeWidth": 0.5125000000000001
+                },
+                {
+                  "type": "path",
+                  "id": "l5hfK",
+                  "x": 946.0125,
+                  "y": 669.8375,
+                  "geometry": "M0 0l104.54999 99.9375-2.05005-3.07495",
+                  "width": 104.55,
+                  "height": 99.9375,
+                  "stroke": "#6A7C85",
+                  "strokeWidth": 0.5125000000000001
+                },
+                {
+                  "type": "path",
+                  "id": "HVkQY",
+                  "x": 668.2375,
+                  "y": 354.65,
+                  "geometry": "M0 0l15.88745 17.9375 0.51251-1.53748",
+                  "width": 16.4,
+                  "height": 17.9375,
+                  "stroke": "#6A7C85",
+                  "strokeWidth": 0.5125000000000001
+                },
+                {
+                  "type": "path",
+                  "id": "VTren",
+                  "x": 517.05,
+                  "y": 62.0125,
+                  "geometry": "M8.71252 2.5625l-8.71252 0 0.51251-2.5625 8.20001 2.5625z",
+                  "width": 8.7125,
+                  "height": 2.5625,
+                  "stroke": "#6A7C85",
+                  "strokeWidth": 0.5125000000000001
+                },
+                {
+                  "type": "path",
+                  "id": "AEgkU",
+                  "x": 723.5875,
+                  "y": 90.7125,
+                  "geometry": "M44.07495 0l-44.07495 44.07499 0.51245 0.51251",
+                  "width": 44.075,
+                  "height": 44.5875,
+                  "stroke": "#6A7C85",
+                  "strokeWidth": 0.5125000000000001
+                },
+                {
+                  "type": "path",
+                  "id": "giuvq",
+                  "x": 522.175,
+                  "y": 52.275,
+                  "geometry": "M147.08752 0l-138.375 128.12502-2.5625 0-0.51251-91.73752-5.63751 0",
+                  "width": 147.0875,
+                  "height": 128.125,
+                  "stroke": "#6A7C85",
+                  "strokeWidth": 0.5125000000000001
+                },
+                {
+                  "type": "path",
+                  "id": "d5fFKj",
+                  "x": 525.7625,
+                  "y": 52.275,
+                  "geometry": "M351.57501 1.025l1.02503-1.025 1.53747 0.5125-0.51251 2.05-1.53754 0-0.51245-1.5375z m131.71253 125.56251l-1.02503 2.04999-2.05005-0.51248 1.02503-2.05002 2.05005 0.51251z m-107.625-102.50001l107.625 102.50001-0.51258 0.5125-107.11242-102.50001 0-0.5125z m-371.56256 737.99996l-4.09998 0 4.09998 2.05005 0-2.05005z",
+                  "fill": "#6A7C85",
+                  "width": 483.2875,
+                  "height": 764.1375
+                },
+                {
+                  "type": "path",
+                  "id": "JFEIQ",
+                  "x": 310.5125,
+                  "y": 90.7125,
+                  "geometry": "M1.02499 2.05l-1.02499 0 0-2.05 1.02499 0 0 2.05z m47.66251 100.96249l-2.5625 2.05002 1.02499 1.02499 1.53751-1.02499 0-2.05002z m-47.66251 35.36251l-1.02499 2.04999 1.02499 1.02499 1.025-1.02499-1.025-2.04999z m1.53751 62.52502l3.07501-1.53753 0 0.51251-3.07501 1.02502z m0 25.11249l-2.5625-1.02502 1.02499-1.02497 1.53751 1.02497 0 1.02502z",
+                  "fill": "#6A7C85",
+                  "width": 48.6875,
+                  "height": 226.0125
+                },
+                {
+                  "type": "path",
+                  "id": "dfCvs",
+                  "x": 714.875,
+                  "y": 653.95,
+                  "geometry": "M4.61255 0l-4.61255 2.04999 0 0.51251 4.61255-2.5625z m357.2124 18.44995l0-3.07495-1.0249 0-1.02503 2.5625 2.04993 0.51245z",
+                  "fill": "#6A7C85",
+                  "width": 361.825,
+                  "height": 18.45
+                },
+                {
+                  "type": "path",
+                  "id": "EYSca",
+                  "x": 664.65,
+                  "y": 51.25,
+                  "geometry": "M5.63745 0l1.02503 1.025-0.51246 2.5625-2.05004-1.5375 1.53747-2.05z m53.8125 82.5125l1.02503 1.02499-1.02503 2.05002-2.04993-1.53751 2.04993-1.5375z m-59.44995 218.32499l1.53748 1.02503 1.02502 1.53747-2.05005 1.02503-0.51245-3.58753z m55.34998 148.625l-1.53748 2.5625-1.02502-1.02499 1.02502-1.53751 1.53748 0z",
+                  "fill": "#6A7C85",
+                  "width": 60.475,
+                  "height": 452.025
+                },
+                {
+                  "type": "path",
+                  "id": "KW875",
+                  "x": 547.8,
+                  "y": 604.2375,
+                  "geometry": "M29.72504 154.77502l2.5625-2.05004 0 1.53753-2.5625 0.51251z m-29.72504-46.63751l1.02502 2.04999 1.53748-0.51245-1.02496-1.53754-1.53754 0z m110.18756-107.11249l3.58746-1.02502 0 3.07501-3.07501 0-0.51245-2.04999z",
+                  "fill": "#6A7C85",
+                  "width": 113.775,
+                  "height": 154.775
+                },
+                {
+                  "type": "path",
+                  "id": "l6brF1",
+                  "x": 823.525,
+                  "y": 686.2375,
+                  "geometry": "M1.02502 3.07501l2.5625-0.51251-1.02502-2.5625-2.5625 1.02502 1.02502 2.04999z",
+                  "fill": "#6A7C85",
+                  "width": 3.5875,
+                  "height": 3.075
+                },
+                {
+                  "type": "path",
+                  "id": "z7l0mw",
+                  "x": 944.9875,
+                  "y": 668.8125,
+                  "geometry": "M0 1.02496l1.02496-1.02496 1.53754 1.53754-1.53754 1.53747-1.02496-2.05005z",
+                  "fill": "#6A7C85",
+                  "width": 2.5625,
+                  "height": 3.075
+                },
+                {
+                  "type": "path",
+                  "id": "Hw9VF",
+                  "x": 599.05,
+                  "y": 531.4625,
+                  "geometry": "M3.07495 0l-3.07495 0.51257 3.07495 3.58747 0-4.10004z",
+                  "fill": "#6A7C85",
+                  "width": 3.075,
+                  "height": 4.1
+                },
+                {
+                  "type": "path",
+                  "id": "N6ew8",
+                  "x": 371.5,
+                  "y": 220.8875,
+                  "geometry": "M0 1.02499l2.05002-1.02499 2.5625 1.02499-2.05002 0.51252-2.5625-0.51252z",
+                  "fill": "#6A7C85",
+                  "width": 4.6125,
+                  "height": 1.5375
+                },
+                {
+                  "type": "path",
+                  "id": "w1P97D",
+                  "x": 338.7,
+                  "y": 263.9375,
+                  "geometry": "M3.07501 69.1875l-3.07501 3.07498 0.51251 0.51251 2.5625-2.04998 0-1.53751z m109.16248-69.1875l-3.07501 1.53751 1.53753 0.51251 1.53748-1.53754 0-0.51248z",
+                  "fill": "#6A7C85",
+                  "width": 112.2375,
+                  "height": 72.775
+                },
+                {
+                  "type": "path",
+                  "id": "D5KhEb",
+                  "x": 445.8125,
+                  "y": 248.05,
+                  "geometry": "M0 1.02499l2.04999-1.02499 0.51251 1.02499-1.53748 1.53751-1.02502-1.53751z",
+                  "fill": "#6A7C85",
+                  "width": 2.5625,
+                  "height": 2.5625
+                },
+                {
+                  "type": "path",
+                  "id": "QClfa",
+                  "x": 310.5125,
+                  "y": 668.8125,
+                  "geometry": "M1.02499 2.04999l3.07502-2.04999-4.10001 1.02496 1.02499 1.02503z",
+                  "fill": "#6A7C85",
+                  "width": 4.1,
+                  "height": 2.05
+                },
+                {
+                  "type": "path",
+                  "id": "F99SU2",
+                  "x": 557.5375,
+                  "y": 500.2,
+                  "geometry": "M3.58746 0.51251l-2.04998 1.53751-1.53748-0.51248 2.04999-1.53754 1.53747 0.51251z",
+                  "fill": "#6A7C85",
+                  "width": 3.5875,
+                  "height": 2.05
+                },
+                {
+                  "type": "path",
+                  "id": "P4meE",
+                  "x": 482.7125,
+                  "y": 302.8875,
+                  "geometry": "M1.53748 0l-1.53748 3.58752 1.53748 0.51252 1.02502-2.5625-1.02502-1.53754z",
+                  "fill": "#6A7C85",
+                  "width": 2.5625,
+                  "height": 4.1
+                },
+                {
+                  "type": "path",
+                  "id": "a7wSS",
+                  "x": 519.6125,
+                  "y": 353.1125,
+                  "geometry": "M3.58752 0l-3.58752 1.02496 0 0.51252 3.58752 1.02502 0-2.5625z",
+                  "fill": "#6A7C85",
+                  "width": 3.5875,
+                  "height": 2.5625
+                },
+                {
+                  "type": "path",
+                  "id": "RjPUi",
+                  "x": 527.8125,
+                  "y": 168.6125,
+                  "geometry": "M0 0l0 1.53751 3.07501-0.51252-2.5625-0.51249-0.51251-0.5125z",
+                  "fill": "#6A7C85",
+                  "width": 3.075,
+                  "height": 1.5375
+                },
+                {
+                  "type": "path",
+                  "id": "EVj0L",
+                  "x": 838.9,
+                  "y": 289.5625,
+                  "geometry": "M2.5625 0.51248l-2.5625-0.51248 0 1.02499 1.02502 1.02503 1.53748-1.53754z",
+                  "fill": "#6A7C85",
+                  "width": 2.5625,
+                  "height": 2.05
+                },
+                {
+                  "type": "path",
+                  "id": "f5jsh",
+                  "x": 519.1,
+                  "y": 533.5125,
+                  "geometry": "M96.34998 235.23749l2.04998-1.53754 0.51252 1.53754-1.53754 1.02496-1.02496-1.02496z m-96.34998-232.67499l3.58746-2.5625 0 2.5625-3.58746 0z",
+                  "fill": "#6A7C85",
+                  "width": 98.9125,
+                  "height": 236.2625
+                },
+                {
+                  "type": "path",
+                  "id": "DRJSc",
+                  "x": 474,
+                  "y": 360.2875,
+                  "geometry": "M0.51251 2.04999l2.04999 1.02502 0-3.07501-2.5625 1.02499 0.51251 1.025z",
+                  "fill": "#6A7C85",
+                  "width": 2.5625,
+                  "height": 3.075
+                },
+                {
+                  "type": "path",
+                  "id": "E9y4k",
+                  "x": 709.2375,
+                  "y": 382.325,
+                  "geometry": "M0 0.51251l3.58746 1.02503 0-0.51252-1.02496-1.02502-2.5625 0.51251z",
+                  "fill": "#6A7C85",
+                  "width": 3.5875,
+                  "height": 1.5375
+                },
+                {
+                  "type": "path",
+                  "id": "F9Wel",
+                  "x": 310,
+                  "y": 90.2,
+                  "geometry": "M457.15002 0l2.04999 1.02499 0.51251 1.02501-2.5625 1.025 0-2.05001 0-1.02499z m-451.51251 565.79999l2.5625 2.04999-0.51251 0.51251-2.04999-0.51251 0-2.04999z m-4.61249 58.9375l1.53748 1.02496-2.04999 1.53754 0.51251-2.5625z m0.51249 52.27496l-1.025 1.53754 1.025 1.02496 1.5375-1.02496-1.5375-1.53754z m1.5375-156.82495l-2.5625 2.04999 0-2.04999 2.5625 0z m-3.07501-37.41248l2.5625 2.04993-1.02499 0.51257-1.53751-1.53753 0-1.02497z m2.5625-38.95007l-2.04999 1.53754 0.51251 0.51251 2.04999-1.02502-0.51251-1.02503z m0.51251-33.31247l-2.5625 1.53751 1.025 1.02499 1.5375-1.02499 0-1.53751z",
+                  "fill": "#6A7C85",
+                  "width": 459.7125,
+                  "height": 679.575
+                }
+              ]
+            },
             {
               "type": "frame",
               "id": "RNaw3",
@@ -2666,10 +4208,10 @@
                   "name": "Approach section label",
                   "fill": "$blue",
                   "content": "02 / OUR APPROACH",
-                  "fontFamily": "$mono",
+                  "fontFamily": "IBM Plex Sans Condensed",
                   "fontSize": 9,
-                  "fontWeight": "normal",
-                  "letterSpacing": 1.8
+                  "fontWeight": "200",
+                  "letterSpacing": 2.2
                 },
                 {
                   "type": "text",
@@ -2678,12 +4220,12 @@
                   "fill": "$ivory",
                   "textGrowth": "fixed-width",
                   "width": "fill_container",
-                  "content": "Beauty on the surface.\nRigor underneath.",
+                  "content": "Surface beauty.\nRigor beneath.",
                   "lineHeight": 1.2,
-                  "fontFamily": "$sans",
+                  "fontFamily": "IBM Plex Sans Condensed",
                   "fontSize": 32,
-                  "fontWeight": "300",
-                  "letterSpacing": -1.2
+                  "fontWeight": "200",
+                  "letterSpacing": 1.8
                 },
                 {
                   "type": "text",
@@ -2692,7 +4234,7 @@
                   "fill": "$silver",
                   "textGrowth": "fixed-width",
                   "width": "fill_container",
-                  "content": "The strongest digital experiences connect what people see with what they can rely on.",
+                  "content": "Visual depth, engineered to endure.",
                   "lineHeight": 1.7,
                   "fontFamily": "$sans",
                   "fontSize": 16,
@@ -2721,9 +4263,10 @@
                       "name": "Depth you can feel index",
                       "fill": "$blue",
                       "content": "01",
-                      "fontFamily": "$mono",
+                      "fontFamily": "IBM Plex Sans Condensed",
                       "fontSize": 10,
-                      "fontWeight": "normal"
+                      "fontWeight": "200",
+                      "letterSpacing": 2.4
                     },
                     {
                       "type": "frame",
@@ -2739,9 +4282,10 @@
                           "name": "Depth you can feel heading",
                           "fill": "$ivory",
                           "content": "Depth you can feel",
-                          "fontFamily": "$sans",
+                          "fontFamily": "IBM Plex Sans Condensed",
                           "fontSize": 18,
-                          "fontWeight": "500"
+                          "fontWeight": "200",
+                          "letterSpacing": 1.2
                         },
                         {
                           "type": "text",
@@ -2750,7 +4294,7 @@
                           "fill": "$silver",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
-                          "content": "Layered visuals and thoughtful motion bring a distinctive sense of presence.",
+                          "content": "Layered motion. Lasting presence.",
                           "lineHeight": 1.65,
                           "fontFamily": "$sans",
                           "fontSize": 15,
@@ -2783,9 +4327,10 @@
                       "name": "Precision you can trust index",
                       "fill": "$blue",
                       "content": "02",
-                      "fontFamily": "$mono",
+                      "fontFamily": "IBM Plex Sans Condensed",
                       "fontSize": 10,
-                      "fontWeight": "normal"
+                      "fontWeight": "200",
+                      "letterSpacing": 2.4
                     },
                     {
                       "type": "frame",
@@ -2801,9 +4346,10 @@
                           "name": "Precision you can trust heading",
                           "fill": "$ivory",
                           "content": "Precision you can trust",
-                          "fontFamily": "$sans",
+                          "fontFamily": "IBM Plex Sans Condensed",
                           "fontSize": 18,
-                          "fontWeight": "500"
+                          "fontWeight": "200",
+                          "letterSpacing": 1.2
                         },
                         {
                           "type": "text",
@@ -2812,7 +4358,7 @@
                           "fill": "$silver",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
-                          "content": "Considered interactions and careful engineering make complexity feel simple.",
+                          "content": "Precise interactions. Simple outcomes.",
                           "lineHeight": 1.65,
                           "fontFamily": "$sans",
                           "fontSize": 15,
@@ -2845,9 +4391,10 @@
                       "name": "Foundations that endure index",
                       "fill": "$blue",
                       "content": "03",
-                      "fontFamily": "$mono",
+                      "fontFamily": "IBM Plex Sans Condensed",
                       "fontSize": 10,
-                      "fontWeight": "normal"
+                      "fontWeight": "200",
+                      "letterSpacing": 2.4
                     },
                     {
                       "type": "frame",
@@ -2863,9 +4410,10 @@
                           "name": "Foundations that endure heading",
                           "fill": "$ivory",
                           "content": "Foundations that endure",
-                          "fontFamily": "$sans",
+                          "fontFamily": "IBM Plex Sans Condensed",
                           "fontSize": 18,
-                          "fontWeight": "500"
+                          "fontWeight": "200",
+                          "letterSpacing": 1.2
                         },
                         {
                           "type": "text",
@@ -2874,7 +4422,7 @@
                           "fill": "$silver",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
-                          "content": "Scalable systems and persistent data support what comes next.",
+                          "content": "Scalable systems. Built forward.",
                           "lineHeight": 1.65,
                           "fontFamily": "$sans",
                           "fontSize": 15,
@@ -2964,10 +4512,10 @@
                       "name": "FORM / FLOW / FUNCTION",
                       "fill": "$silver",
                       "content": "FORM / FLOW / FUNCTION",
-                      "fontFamily": "$mono",
+                      "fontFamily": "IBM Plex Sans Condensed",
                       "fontSize": 7,
-                      "fontWeight": "normal",
-                      "letterSpacing": 0.8
+                      "fontWeight": "200",
+                      "letterSpacing": 2.2
                     },
                     {
                       "type": "text",
@@ -2975,10 +4523,10 @@
                       "name": "THE CONTINUUM STUDY",
                       "fill": "$silver",
                       "content": "THE CONTINUUM STUDY",
-                      "fontFamily": "$mono",
+                      "fontFamily": "IBM Plex Sans Condensed",
                       "fontSize": 7,
-                      "fontWeight": "normal",
-                      "letterSpacing": 0.8
+                      "fontWeight": "200",
+                      "letterSpacing": 2.2
                     }
                   ]
                 }
@@ -2991,13 +4539,46 @@
           "id": "etxLt",
           "name": "05 · Mobile process",
           "width": "fill_container",
-          "fill": "$ivory",
+          "height": 1318,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "radial",
+            "enabled": true,
+            "rotation": 0,
+            "size": {
+              "width": 3.34245836591206,
+              "height": 1.08
+            },
+            "colors": [
+              {
+                "color": "#061828",
+                "position": 0.3
+              },
+              {
+                "color": "#1A2B39",
+                "position": 0.44
+              },
+              {
+                "color": "#F3F2ED",
+                "position": 0.84
+              },
+              {
+                "color": "#F6F1E8",
+                "position": 1
+              }
+            ],
+            "center": {
+              "y": 0
+            }
+          },
           "layout": "vertical",
           "gap": 36,
           "padding": [
             64,
             24
           ],
+          "justifyContent": "center",
+          "alignItems": "center",
           "children": [
             {
               "type": "frame",
@@ -3012,14 +4593,14 @@
                   "type": "text",
                   "id": "OU6RK",
                   "name": "Process section label",
-                  "fill": "$muted",
+                  "fill": "#DCE0DD",
                   "textGrowth": "fixed-width",
                   "width": "fill_container",
                   "content": "03 / HOW WE WORK",
-                  "fontFamily": "$mono",
+                  "fontFamily": "IBM Plex Sans Condensed",
                   "fontSize": 9,
-                  "fontWeight": "normal",
-                  "letterSpacing": 1.8
+                  "fontWeight": "200",
+                  "letterSpacing": 2.2
                 },
                 {
                   "type": "frame",
@@ -3033,23 +4614,24 @@
                       "type": "text",
                       "id": "OK7RY",
                       "name": "Process headline",
-                      "fill": "$ink",
+                      "fill": "#F3F2ED",
                       "textGrowth": "fixed-width",
                       "width": "fill_container",
-                      "content": "Clarity at every step.\nCare all the way\nthrough.",
+                      "content": "Clarity at every step.\nCare throughout.",
                       "lineHeight": 1.2,
-                      "fontFamily": "$sans",
+                      "fontFamily": "IBM Plex Sans Condensed",
                       "fontSize": 34,
-                      "letterSpacing": -1.4
+                      "fontWeight": "200",
+                      "letterSpacing": 2.2
                     },
                     {
                       "type": "text",
                       "id": "W7I1pi",
                       "name": "Process description",
-                      "fill": "$muted",
+                      "fill": "#BAC9D5",
                       "textGrowth": "fixed-width",
                       "width": "fill_container",
-                      "content": "A considered path from the first conversation to the final refinement.",
+                      "content": "A clear path from conversation to refinement.",
                       "lineHeight": 1.7,
                       "fontFamily": "$sans",
                       "fontSize": 16,
@@ -3064,8 +4646,10 @@
               "id": "L5w9U",
               "name": "Four stages of craftsmanship",
               "width": "fill_container",
+              "height": 917,
               "layout": "vertical",
               "gap": 28,
+              "justifyContent": "space_between",
               "children": [
                 {
                   "type": "frame",
@@ -3091,9 +4675,10 @@
                       "name": "Discover stage number",
                       "fill": "$muted",
                       "content": "01",
-                      "fontFamily": "$mono",
+                      "fontFamily": "IBM Plex Sans Condensed",
                       "fontSize": 12,
-                      "fontWeight": "normal"
+                      "fontWeight": "200",
+                      "letterSpacing": 1.8
                     },
                     {
                       "type": "text",
@@ -3101,9 +4686,10 @@
                       "name": "Discover stage title",
                       "fill": "$ink",
                       "content": "Discover",
-                      "fontFamily": "$sans",
+                      "fontFamily": "IBM Plex Sans Condensed",
                       "fontSize": 26,
-                      "letterSpacing": -0.8
+                      "fontWeight": "200",
+                      "letterSpacing": 1.8
                     },
                     {
                       "type": "text",
@@ -3112,7 +4698,7 @@
                       "fill": "$muted",
                       "textGrowth": "fixed-width",
                       "width": "fill_container",
-                      "content": "Understand your business, your audience, and what success needs to look like.",
+                      "content": "Align on goals, audience, and success.",
                       "lineHeight": 1.7,
                       "fontFamily": "$sans",
                       "fontSize": 16,
@@ -3127,10 +4713,10 @@
                       "width": "fill_container",
                       "content": "A SHARED DIRECTION",
                       "lineHeight": 1.5,
-                      "fontFamily": "$mono",
+                      "fontFamily": "IBM Plex Sans Condensed",
                       "fontSize": 9,
-                      "fontWeight": "normal",
-                      "letterSpacing": 0.7
+                      "fontWeight": "200",
+                      "letterSpacing": 2.2
                     }
                   ]
                 },
@@ -3158,9 +4744,10 @@
                       "name": "Design stage number",
                       "fill": "$muted",
                       "content": "02",
-                      "fontFamily": "$mono",
+                      "fontFamily": "IBM Plex Sans Condensed",
                       "fontSize": 12,
-                      "fontWeight": "normal"
+                      "fontWeight": "200",
+                      "letterSpacing": 1.8
                     },
                     {
                       "type": "text",
@@ -3168,9 +4755,10 @@
                       "name": "Design stage title",
                       "fill": "$ink",
                       "content": "Design",
-                      "fontFamily": "$sans",
+                      "fontFamily": "IBM Plex Sans Condensed",
                       "fontSize": 26,
-                      "letterSpacing": -0.8
+                      "fontWeight": "200",
+                      "letterSpacing": 1.8
                     },
                     {
                       "type": "text",
@@ -3179,7 +4767,7 @@
                       "fill": "$muted",
                       "textGrowth": "fixed-width",
                       "width": "fill_container",
-                      "content": "Shape the structure, visual language, and interactions around real needs.",
+                      "content": "Shape structure, language, and interaction.",
                       "lineHeight": 1.7,
                       "fontFamily": "$sans",
                       "fontSize": 16,
@@ -3194,10 +4782,10 @@
                       "width": "fill_container",
                       "content": "A CONSIDERED EXPERIENCE",
                       "lineHeight": 1.5,
-                      "fontFamily": "$mono",
+                      "fontFamily": "IBM Plex Sans Condensed",
                       "fontSize": 9,
-                      "fontWeight": "normal",
-                      "letterSpacing": 0.7
+                      "fontWeight": "200",
+                      "letterSpacing": 2.2
                     }
                   ]
                 },
@@ -3225,9 +4813,10 @@
                       "name": "Engineer stage number",
                       "fill": "$muted",
                       "content": "03",
-                      "fontFamily": "$mono",
+                      "fontFamily": "IBM Plex Sans Condensed",
                       "fontSize": 12,
-                      "fontWeight": "normal"
+                      "fontWeight": "200",
+                      "letterSpacing": 1.8
                     },
                     {
                       "type": "text",
@@ -3235,9 +4824,10 @@
                       "name": "Engineer stage title",
                       "fill": "$ink",
                       "content": "Engineer",
-                      "fontFamily": "$sans",
+                      "fontFamily": "IBM Plex Sans Condensed",
                       "fontSize": 26,
-                      "letterSpacing": -0.8
+                      "fontWeight": "200",
+                      "letterSpacing": 1.8
                     },
                     {
                       "type": "text",
@@ -3246,7 +4836,7 @@
                       "fill": "$muted",
                       "textGrowth": "fixed-width",
                       "width": "fill_container",
-                      "content": "Bring the design to life with precision, performance, and scale in mind.",
+                      "content": "Build for precision, performance, and scale.",
                       "lineHeight": 1.7,
                       "fontFamily": "$sans",
                       "fontSize": 16,
@@ -3261,10 +4851,10 @@
                       "width": "fill_container",
                       "content": "A DEPENDABLE FOUNDATION",
                       "lineHeight": 1.5,
-                      "fontFamily": "$mono",
+                      "fontFamily": "IBM Plex Sans Condensed",
                       "fontSize": 9,
-                      "fontWeight": "normal",
-                      "letterSpacing": 0.7
+                      "fontWeight": "200",
+                      "letterSpacing": 2.2
                     }
                   ]
                 },
@@ -3292,9 +4882,10 @@
                       "name": "Refine stage number",
                       "fill": "$muted",
                       "content": "04",
-                      "fontFamily": "$mono",
+                      "fontFamily": "IBM Plex Sans Condensed",
                       "fontSize": 12,
-                      "fontWeight": "normal"
+                      "fontWeight": "200",
+                      "letterSpacing": 1.8
                     },
                     {
                       "type": "text",
@@ -3302,9 +4893,10 @@
                       "name": "Refine stage title",
                       "fill": "$ink",
                       "content": "Refine",
-                      "fontFamily": "$sans",
+                      "fontFamily": "IBM Plex Sans Condensed",
                       "fontSize": 26,
-                      "letterSpacing": -0.8
+                      "fontWeight": "200",
+                      "letterSpacing": 1.8
                     },
                     {
                       "type": "text",
@@ -3313,7 +4905,7 @@
                       "fill": "$muted",
                       "textGrowth": "fixed-width",
                       "width": "fill_container",
-                      "content": "Test the details, resolve the friction, and prepare for a confident launch.",
+                      "content": "Resolve friction and prepare to launch.",
                       "lineHeight": 1.7,
                       "fontFamily": "$sans",
                       "fontSize": 16,
@@ -3328,10 +4920,10 @@
                       "width": "fill_container",
                       "content": "A CAREFULLY FINISHED PRODUCT",
                       "lineHeight": 1.5,
-                      "fontFamily": "$mono",
+                      "fontFamily": "IBM Plex Sans Condensed",
                       "fontSize": 9,
-                      "fontWeight": "normal",
-                      "letterSpacing": 0.7
+                      "fontWeight": "200",
+                      "letterSpacing": 2.2
                     }
                   ]
                 }
@@ -3344,11 +4936,42 @@
           "id": "TUQUU",
           "name": "06 · Mobile project enquiry",
           "width": "fill_container",
-          "fill": "$navy",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "radial",
+            "enabled": true,
+            "rotation": 0,
+            "size": {
+              "width": 1.2,
+              "height": 1.25
+            },
+            "colors": [
+              {
+                "color": "#173849",
+                "position": 0
+              },
+              {
+                "color": "#0B2535",
+                "position": 0.34
+              },
+              {
+                "color": "#061828",
+                "position": 0.78
+              },
+              {
+                "color": "#061828",
+                "position": 1
+              }
+            ],
+            "center": {
+              "x": 0.72,
+              "y": 0.58
+            }
+          },
           "layout": "vertical",
-          "gap": 44,
+          "gap": 36,
           "padding": [
-            64,
+            56,
             24
           ],
           "children": [
@@ -3366,10 +4989,10 @@
                   "name": "Contact section label",
                   "fill": "$blue",
                   "content": "04 / WHAT COMES NEXT",
-                  "fontFamily": "$mono",
+                  "fontFamily": "IBM Plex Sans Condensed",
                   "fontSize": 9,
-                  "fontWeight": "normal",
-                  "letterSpacing": 1.8
+                  "fontWeight": "200",
+                  "letterSpacing": 2.2
                 },
                 {
                   "type": "text",
@@ -3378,12 +5001,12 @@
                   "fill": "$ivory",
                   "textGrowth": "fixed-width",
                   "width": "fill_container",
-                  "content": "Let’s make\nsomething\nthat matters.",
+                  "content": "Make it\nmatter.",
                   "lineHeight": 1.12,
-                  "fontFamily": "$sans",
-                  "fontSize": 46,
-                  "fontWeight": "300",
-                  "letterSpacing": -1.8
+                  "fontFamily": "IBM Plex Sans Condensed",
+                  "fontSize": 44,
+                  "fontWeight": "200",
+                  "letterSpacing": 2.8
                 },
                 {
                   "type": "text",
@@ -3392,8 +5015,8 @@
                   "fill": "$silver",
                   "textGrowth": "fixed-width",
                   "width": "fill_container",
-                  "content": "A distinctive website. A dependable platform. A complex idea, thoughtfully brought to life.\nIt starts with a conversation.",
-                  "lineHeight": 1.8,
+                  "content": "Distinctive design. Dependable engineering.\nStart with a conversation.",
+                  "lineHeight": 1.65,
                   "fontFamily": "$sans",
                   "fontSize": 16,
                   "fontWeight": "normal"
@@ -3405,8 +5028,78 @@
               "id": "j589q",
               "name": "Project enquiry form",
               "width": "fill_container",
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "enabled": true,
+                "rotation": 135,
+                "size": {
+                  "height": 1.2
+                },
+                "colors": [
+                  {
+                    "color": "#FFFFFF1F",
+                    "position": 0
+                  },
+                  {
+                    "color": "#BDE7F20D",
+                    "position": 0.34
+                  },
+                  {
+                    "color": "#FFFFFF08",
+                    "position": 0.68
+                  },
+                  {
+                    "color": "#8EB7C814",
+                    "position": 1
+                  }
+                ]
+              },
+              "cornerRadius": 6,
+              "stroke": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "enabled": true,
+                "rotation": 135,
+                "size": {
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "#F1F7F680",
+                    "position": 0
+                  },
+                  {
+                    "color": "#7893A33D",
+                    "position": 0.42
+                  },
+                  {
+                    "color": "#DDEBEC66",
+                    "position": 1
+                  }
+                ]
+              },
+              "strokeWidth": 1,
+              "effect": [
+                {
+                  "type": "background_blur",
+                  "radius": 20
+                },
+                {
+                  "type": "shadow",
+                  "shadowType": "outer",
+                  "color": "#000B1266",
+                  "offset": {
+                    "x": 0,
+                    "y": 14
+                  },
+                  "blur": 36,
+                  "spread": -10
+                }
+              ],
               "layout": "vertical",
-              "gap": 26,
+              "gap": 22,
+              "padding": 24,
               "children": [
                 {
                   "type": "text",
@@ -3415,10 +5108,11 @@
                   "fill": "$ivory",
                   "textGrowth": "fixed-width",
                   "width": "fill_container",
-                  "content": "Tell us what you have in mind.",
-                  "fontFamily": "$sans",
+                  "content": "What are you building?",
+                  "fontFamily": "IBM Plex Sans Condensed",
                   "fontSize": 23,
-                  "letterSpacing": -0.6
+                  "fontWeight": "200",
+                  "letterSpacing": 1.2
                 },
                 {
                   "type": "frame",
@@ -3523,7 +5217,7 @@
                       "id": "Jvw51",
                       "name": "Project type label",
                       "fill": "$ivory",
-                      "content": "I’m interested in",
+                      "content": "Project type",
                       "fontFamily": "$sans",
                       "fontSize": 13,
                       "fontWeight": "normal"
@@ -3538,9 +5232,27 @@
                           "type": "frame",
                           "id": "tNn6d",
                           "name": "Website option",
-                          "fill": "#BDDFFF13",
+                          "fill": {
+                            "type": "gradient",
+                            "gradientType": "linear",
+                            "enabled": true,
+                            "rotation": 135,
+                            "size": {
+                              "height": 1
+                            },
+                            "colors": [
+                              {
+                                "color": "#EAF7F426",
+                                "position": 0
+                              },
+                              {
+                                "color": "#8FC8DE12",
+                                "position": 1
+                              }
+                            ]
+                          },
                           "cornerRadius": 2,
-                          "stroke": "$blue",
+                          "stroke": "#CBE8EE99",
                           "strokeWidth": 1,
                           "padding": [
                             12,
@@ -3563,9 +5275,9 @@
                           "type": "frame",
                           "id": "IQ8Vv",
                           "name": "Software option",
-                          "fill": "#061828",
+                          "fill": "#FFFFFF08",
                           "cornerRadius": 2,
-                          "stroke": "#667E905C",
+                          "stroke": "#AFC5CF4D",
                           "strokeWidth": 1,
                           "padding": [
                             12,
@@ -3588,9 +5300,9 @@
                           "type": "frame",
                           "id": "j47isE",
                           "name": "Let’s discuss option",
-                          "fill": "#061828",
+                          "fill": "#FFFFFF08",
                           "cornerRadius": 2,
-                          "stroke": "#667E905C",
+                          "stroke": "#AFC5CF4D",
                           "strokeWidth": 1,
                           "padding": [
                             12,
@@ -3626,7 +5338,7 @@
                       "id": "xWOzp",
                       "name": "Message label",
                       "fill": "$ivory",
-                      "content": "A little about your project",
+                      "content": "Project brief",
                       "fontFamily": "$sans",
                       "fontSize": 13,
                       "fontWeight": "normal"
@@ -3636,10 +5348,10 @@
                       "id": "l15vFQ",
                       "name": "Project brief input",
                       "width": "fill_container",
-                      "height": 134,
-                      "fill": "#FFFFFF05",
+                      "height": 100,
+                      "fill": "#FFFFFF0A",
                       "cornerRadius": 2,
-                      "stroke": "#ACBECE66",
+                      "stroke": "#C7D9DF52",
                       "strokeWidth": 1,
                       "padding": 18,
                       "children": [
@@ -3650,7 +5362,7 @@
                           "fill": "#8CA0B0",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
-                          "content": "Your goals, scope, and any timing you have in mind…",
+                          "content": "Goals, scope, timing…",
                           "lineHeight": 1.65,
                           "fontFamily": "$sans",
                           "fontSize": 15,
@@ -3669,7 +5381,7 @@
                   "name": "Send project enquiry",
                   "descendants": {
                     "aI10y": {
-                      "content": "Send project enquiry"
+                      "content": "Send enquiry"
                     }
                   }
                 }
@@ -3681,7 +5393,9 @@
           "type": "frame",
           "id": "GDGeR",
           "name": "07 · Mobile footer",
+          "clip": true,
           "width": "fill_container",
+          "height": 431,
           "fill": "$navy",
           "stroke": "#A3B8C42E",
           "strokeWidth": {
@@ -3692,7 +5406,7 @@
           "padding": [
             40,
             24,
-            28,
+            0,
             24
           ],
           "children": [
@@ -3712,16 +5426,6 @@
                   "layout": "vertical",
                   "gap": 14,
                   "children": [
-                    {
-                      "type": "text",
-                      "id": "L9WAD",
-                      "name": "Footer TexCra",
-                      "fill": "$ivory",
-                      "content": "TexCra",
-                      "fontFamily": "$sans",
-                      "fontSize": 40,
-                      "letterSpacing": -1.8
-                    },
                     {
                       "type": "text",
                       "id": "PcP9w",
@@ -3800,10 +5504,10 @@
                   "name": "© 2026 TexCra. All rights reserved.",
                   "fill": "#8CA0B0",
                   "content": "© 2026 TexCra. All rights reserved.",
-                  "fontFamily": "$mono",
+                  "fontFamily": "IBM Plex Sans Condensed",
                   "fontSize": 10,
-                  "fontWeight": "normal",
-                  "letterSpacing": 0.5
+                  "fontWeight": "200",
+                  "letterSpacing": 2.4
                 },
                 {
                   "type": "text",
@@ -3811,12 +5515,28 @@
                   "name": "PRECISION IN EVERY DETAIL.",
                   "fill": "#8CA0B0",
                   "content": "PRECISION IN EVERY DETAIL.",
-                  "fontFamily": "$mono",
+                  "fontFamily": "IBM Plex Sans Condensed",
                   "fontSize": 9,
-                  "fontWeight": "normal",
-                  "letterSpacing": 0.5
+                  "fontWeight": "200",
+                  "letterSpacing": 2.2
                 }
               ]
+            },
+            {
+              "type": "text",
+              "id": "L9WAD",
+              "layoutPosition": "absolute",
+              "x": -17,
+              "y": 360,
+              "name": "Footer TexCra",
+              "opacity": 0.94,
+              "fill": "#D7E0E1",
+              "content": "TEXCRA",
+              "lineHeight": 0.76,
+              "fontFamily": "IBM Plex Sans Condensed",
+              "fontSize": 120,
+              "fontWeight": "200",
+              "letterSpacing": 10
             }
           ]
         }
