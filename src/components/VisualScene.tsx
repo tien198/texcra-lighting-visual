@@ -12,10 +12,6 @@ import { ChromeRing } from "./ChromeRing";
 import { FlowField } from "./FlowField";
 import { TechnicalGrid } from "./TechnicalGrid";
 
-interface VisualSceneProps {
-  engaged: boolean;
-}
-
 function StudioEnvironment() {
   return (
     <Environment resolution={256}>
@@ -53,7 +49,7 @@ function StudioEnvironment() {
   );
 }
 
-function SceneContent({ engaged }: VisualSceneProps) {
+function SceneContent() {
   const { viewport } = useThree();
   const compact = viewport.width < 8;
 
@@ -66,8 +62,8 @@ function SceneContent({ engaged }: VisualSceneProps) {
         position={compact ? [0.65, -0.45, 0] : [0.45, -0.06, 0]}
       >
         <TechnicalGrid />
-        <FlowField engaged={engaged} />
-        <ChromeRing engaged={engaged} />
+        <FlowField />
+        <ChromeRing />
       </group>
       <StudioEnvironment />
       <EffectComposer multisampling={0}>
@@ -84,7 +80,7 @@ function SceneContent({ engaged }: VisualSceneProps) {
   );
 }
 
-export function VisualScene({ engaged }: VisualSceneProps) {
+export function VisualScene() {
   return (
     <div className={styles.visualScene} aria-hidden="true">
       <Canvas
@@ -98,7 +94,7 @@ export function VisualScene({ engaged }: VisualSceneProps) {
           outputColorSpace: THREE.SRGBColorSpace,
         }}
       >
-        <SceneContent engaged={engaged} />
+        <SceneContent />
       </Canvas>
     </div>
   );

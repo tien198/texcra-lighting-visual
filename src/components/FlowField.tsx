@@ -30,7 +30,6 @@ const vertexShader = /* glsl */ `
 const fragmentShader = /* glsl */ `
   uniform float uTime;
   uniform float uSeed;
-  uniform float uEnergy;
   uniform vec3 uColor;
   varying vec2 vUv;
   varying float vFacing;
@@ -46,11 +45,11 @@ const fragmentShader = /* glsl */ `
     float core = pow(crossSection, 7.5);
     float endFade = smoothstep(0.0, 0.06, vUv.x) * (1.0 - smoothstep(0.92, 1.0, vUv.x));
     float strandVariation = 0.88 + sin(uSeed * 11.3) * 0.12;
-    float energy = 0.72 + packet * 0.76 + secondaryPacket * 0.22 + uEnergy * 0.28;
+    float energy = 1.0 + packet * 0.76 + secondaryPacket * 0.22;
     vec3 hotCore = mix(uColor, vec3(0.96, 0.99, 1.0), 0.78);
     vec3 color =
       uColor * halo * energy * strandVariation +
-      hotCore * core * (1.35 + packet * 1.7 + uEnergy * 0.5);
+      hotCore * core * (1.85 + packet * 1.7);
     float alpha = endFade * (
       halo * (0.08 + packet * 0.16) +
       core * 0.72 +
@@ -103,7 +102,6 @@ function makeStrands() {
 
 interface FlowStrandProps extends StrandDefinition {
   index: number
-  engaged: boolean
   interaction: RefObject<FlowInteraction>
 }
 
@@ -119,7 +117,6 @@ function FlowStrand({
   restFocus,
   seed,
   index,
-  engaged,
   interaction,
 }: FlowStrandProps) {
   const material = useRef<THREE.ShaderMaterial>(null)
@@ -128,7 +125,6 @@ function FlowStrand({
     () => ({
       uTime: { value: 0 },
       uSeed: { value: seed },
-      uEnergy: { value: 0 },
       uColor: { value: color },
       uInteraction: { value: 0 },
       uPointer: { value: new THREE.Vector2(1.35, -0.16) },
@@ -143,12 +139,6 @@ function FlowStrand({
     material.current.uniforms.uTime.value = animationTime.current
     material.current.uniforms.uPointer.value.copy(interaction.current.point)
     material.current.uniforms.uInteraction.value = interaction.current.strength
-    material.current.uniforms.uEnergy.value = THREE.MathUtils.damp(
-      material.current.uniforms.uEnergy.value,
-      engaged ? 1 : 0,
-      2.4,
-      delta,
-    )
   })
 
   return (
@@ -168,11 +158,7 @@ function FlowStrand({
   )
 }
 
-interface FlowFieldProps {
-  engaged: boolean
-}
-
-export function FlowField({ engaged }: FlowFieldProps) {
+export function FlowField() {
   const group = useRef<THREE.Group>(null)
   const rawPointer = useRef(new THREE.Vector2())
   const interaction = useRef<FlowInteraction>({
@@ -262,7 +248,6 @@ export function FlowField({ engaged }: FlowFieldProps) {
           key={index}
           {...strand}
           index={index}
-          engaged={engaged}
           interaction={interaction}
         />
       ))}

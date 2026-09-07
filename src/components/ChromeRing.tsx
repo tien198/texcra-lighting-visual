@@ -8,11 +8,7 @@ const BASE_ROTATION_Y = -0.2
 const BASE_ROTATION_Z = -0.08
 const MAX_TILT = THREE.MathUtils.degToRad(30)
 
-interface ChromeRingProps {
-  engaged: boolean
-}
-
-export function ChromeRing({ engaged }: ChromeRingProps) {
+export function ChromeRing() {
   const ring = useRef<THREE.Group>(null)
   const drag = useRef(new THREE.Vector2())
   const dragging = useRef(false)
@@ -126,7 +122,7 @@ export function ChromeRing({ engaged }: ChromeRingProps) {
           <meshBasicMaterial
             color="#78bcf1"
             transparent
-            opacity={engaged ? 0.1 : 0.045}
+            opacity={0.1}
             blending={THREE.AdditiveBlending}
             depthWrite={false}
             toneMapped={false}
@@ -152,7 +148,7 @@ export function ChromeRing({ engaged }: ChromeRingProps) {
           ))}
         </group>
 
-        <pointLight color="#8dccff" intensity={engaged ? 4.5 : 2.2} distance={5} decay={2} />
+        <pointLight color="#8dccff" intensity={4.5} distance={5} decay={2} />
       </group>
     </group>
   )

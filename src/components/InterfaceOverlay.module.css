@@ -131,17 +131,6 @@
   font-family: 'Courier New', monospace;
   text-align: left;
   text-transform: uppercase;
-  cursor: pointer;
-  pointer-events: auto;
-  transition: border-color 250ms ease, background 250ms ease, transform 250ms ease;
-}
-
-.continuityPanel:hover,
-.continuityPanel:focus-visible {
-  border-color: rgba(194, 230, 255, 0.76);
-  background: linear-gradient(135deg, rgba(230, 240, 247, 0.6), rgba(128, 159, 181, 0.38));
-  transform: translateY(-2px);
-  outline: none;
 }
 
 .panelHeading {
@@ -156,13 +145,8 @@
 .signal {
   width: 0.38rem;
   height: 0.38rem;
-  border: 1px solid currentColor;
+  border: 1px solid #e7f7ff;
   border-radius: 50%;
-  transition: background 250ms ease, box-shadow 250ms ease;
-}
-
-.signal.isLive {
-  border-color: #e7f7ff;
   background: #bce7ff;
   box-shadow: 0 0 12px 3px rgba(151, 216, 255, 0.8);
 }
@@ -190,25 +174,10 @@
   opacity: 0.7;
 }
 
-.panelMeta,
-.panelAction {
+.panelMeta {
   font-size: 0.58rem;
   font-weight: 700;
   letter-spacing: 0.03em;
-}
-
-.panelAction {
-  align-self: flex-end;
-  margin-top: -0.6rem;
-  opacity: 0;
-  transform: translateX(-5px);
-  transition: opacity 200ms ease, transform 200ms ease;
-}
-
-.continuityPanel:hover .panelAction,
-.continuityPanel:focus-visible .panelAction {
-  opacity: 0.72;
-  transform: none;
 }
 
 .footerData {
@@ -312,13 +281,5 @@
 
   .interactionHint {
     display: none;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .continuityPanel,
-  .panelAction,
-  .signal {
-    transition: none;
   }
 }

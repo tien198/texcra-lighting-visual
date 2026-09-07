@@ -1,11 +1,6 @@
 import styles from "./InterfaceOverlay.module.css";
 
-interface InterfaceOverlayProps {
-  engaged: boolean;
-  onToggle: () => void;
-}
-
-export function InterfaceOverlay({ engaged, onToggle }: InterfaceOverlayProps) {
+export function InterfaceOverlay() {
   return (
     <section
       className={styles.interface}
@@ -38,29 +33,20 @@ export function InterfaceOverlay({ engaged, onToggle }: InterfaceOverlayProps) {
         <p className={styles.tagline}>Precision becomes atmosphere</p>
       </div>
 
-      <button
-        className={styles.continuityPanel}
-        type="button"
-        onClick={onToggle}
-        aria-pressed={engaged}
-        aria-label={`${engaged ? "Disengage" : "Engage"} continuum flow`}
-      >
+      <div className={styles.continuityPanel}>
         <span className={styles.panelHeading}>
           Continuity index
-          <span className={`${styles.signal} ${engaged ? styles.isLive : ""}`} />
+          <span className={styles.signal} />
         </span>
         <span className={styles.metric}>
-          {engaged ? "100.00" : "99.997"}
+          100.00
           <small>%</small>
         </span>
         <span className={styles.panelDivider} />
         <span className={styles.panelMeta}>
           △ 0.0001&nbsp;&nbsp; / &nbsp;&nbsp;R ∞
         </span>
-        <span className={styles.panelAction}>
-          {engaged ? "Flow engaged" : "Activate flow"}
-        </span>
-      </button>
+      </div>
 
       <footer className={styles.footerData}>
         <p>Persistence&nbsp; · &nbsp;Precision&nbsp; · &nbsp;Scale</p>
