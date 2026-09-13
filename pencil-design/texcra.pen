@@ -289,6 +289,56 @@
                     },
                     {
                       "type": "frame",
+                      "id": "DiEiA",
+                      "name": "Language selector",
+                      "context": "Opens the site language menu. Current language: English.",
+                      "height": 36,
+                      "fill": "#FFFFFF08",
+                      "cornerRadius": 2,
+                      "stroke": "#FFFFFF2E",
+                      "strokeWidth": 1,
+                      "gap": 7,
+                      "padding": [
+                        0,
+                        11
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "gSwpN",
+                          "name": "Language globe icon",
+                          "width": 14,
+                          "height": 14,
+                          "icon": "globe",
+                          "library": "lucide",
+                          "fill": "#BAC9D5"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Drp0l",
+                          "name": "Current language label",
+                          "fill": "$ivory",
+                          "content": "EN",
+                          "fontFamily": "$Manrope",
+                          "fontSize": 11,
+                          "fontWeight": "500",
+                          "letterSpacing": 1.2
+                        },
+                        {
+                          "type": "icon",
+                          "id": "w2TR2z",
+                          "name": "Language menu chevron",
+                          "width": 12,
+                          "height": 12,
+                          "icon": "chevron-down",
+                          "library": "lucide",
+                          "fill": "#BAC9D5"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
                       "id": "cMNbs",
                       "name": "Navigation · Start a project link",
                       "context": "Underlined navigation link that scrolls to the project enquiry section.",
